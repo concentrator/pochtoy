@@ -1,0 +1,364 @@
+.slick-slider {
+    position: relative;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    min-height: 1px;
+    position: relative;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/*--- CUSTOM STYLING ---*/
+.carousel {
+    margin: 0;
+}
+
+.carousel.promo-slider {
+    width: 900px;
+    margin: 0 auto;
+}
+
+@media(max-width: 1130px) {
+    .carousel.promo-slider {
+        width: 800px;
+    }
+}
+
+.carousel.promo-slider iframe {
+    max-width: 100%;
+    height: 392px;
+}
+
+@media(max-width: 1130px) {
+    .carousel.promo-slider iframe {
+        height: 356px;
+    }
+}
+
+@media(max-width: 990px) {
+    .carousel.promo-slider iframe {
+        height: 320px;
+    }
+}
+
+@media(max-width: 767px) {
+    .carousel.promo-slider iframe {
+        height: 240px;
+    }
+}
+
+@media(max-width: 575px) {
+    .carousel.promo-slider iframe {
+        height: 167px;
+    }
+}
+
+.carousel.promo-slider img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.carousel.logos {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.carousel.showcase, .carousel.reviews {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.carousel.reviews {
+    text-align: center;
+}
+
+.carousel.reviews iframe {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+@media(max-width: 990px) {
+    .carousel.promo-slider, .carousel.logos, .carousel.showcase, .carousel.reviews {
+        width: 100%;
+    }
+
+    .carousel.reviews iframe {
+        height: 200px;
+    }
+}
+
+.carousel.showcase .product-title {
+    font-family: 'TT Norms', sans-serif;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.carousel.showcase .product-desc {
+    display: block;
+    font-size: 0.8em;
+    color: #212529;
+}
+
+.carousel.showcase .product-hl {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.carousel.showcase .discount-badge {
+    width: 36px;
+    height: 36px;
+    background: #28a7df;
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+.carousel.showcase .discount-badge .discount-value {
+    font-size: 0.6em;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel.logos .slick-slide, .carousel.showcase .slick-slide {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.carousel.logos div img, .carousel.showcase div img {
+    width: 100%;
+}
+
+.carousel.full-width div img {
+    width: 880px;
+    margin: 0 auto;
+}
+
+@media(max-width: 1080px) {
+    .carousel.full-width div img {
+        width: 100%;
+    }
+}
+
+.carousel .slick-dots {
+    text-align: center;
+    padding-left: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.carousel .slick-dots li {
+    display: inline-block;
+}
+
+.carousel .slick-dots li button {
+    border: none;
+    width: 8px;
+    height: 12px;
+    border-radius: 0;
+    background: rgba(0,0,0,.1);
+    margin: 0 5px 0 5px;
+    text-indent: -9999px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.carousel .slick-dots li.slick-active button {
+    background: #ed779a;
+    box-shadow: none;
+}
+
+.carousel .slick-prev, .carousel .slick-next {
+    width: 60px;
+    height: 70px;
+    background-color: transparent;
+    position: absolute;
+    text-indent: -9999px;
+    top: 47%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border: none;
+    transition: all 0.3s linear;
+}
+
+.carousel .slick-prev:hover, .carousel .slick-next:hover {
+    cursor: pointer;
+}
+
+.carousel .slick-prev:hover, .carousel .slick-next:hover {
+    opacity: 1;
+}
+
+@media (max-width: 1080px) {
+    .carousel .slick-prev, .carousel .slick-next {
+        display: none !important;
+    }
+
+    .carousel.promo-slider .slick-prev, .carousel.promo-slider .slick-next {
+        display: block !important;
+        z-index: 2;
+    }
+}
+
+.carousel .slick-prev {
+    background-image: url('/img/v4/slider_arrow_left.png');
+    background-repeat: no-repeat;
+    background-size: 64px auto;
+    background-position: center;
+    left: -110px;
+}
+
+.carousel .slick-next {
+    background-image: url('/img/v4/slider_arrow_right.png');
+    background-repeat: no-repeat;
+    background-size: 64px auto;
+    background-position: center;
+    right: -100px;
+}
+
+@media (max-width: 1080px) {
+    .carousel.promo-slider .slick-prev {
+        top: auto;
+        right: 60px;
+        left: auto;
+    }
+
+    .carousel.promo-slider .slick-next {
+        top: auto;
+        right: 10px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .carousel .slick-prev, .carousel .slick-next  {
+        background-size: 28px 28px;
+    }
+
+    .carousel.promo-slider .slick-prev, .carousel.promo-slider .slick-next {
+        height: 60px;
+        background-size: 50px auto;
+        transform: none;
+        top: auto;
+        bottom: 45px;
+    }
+}
+
+.carousel.logos .slick-prev, .carousel.logos .slick-next {
+    width: 50px;
+    height: 55px;
+    top: 43%;
+    background-size: 32px auto;
+    background-position: center;
+}
+
+.carousel.logos .slick-prev {
+    left: -50px;
+}
+
+.carousel.logos .slick-next {
+    right: -50px;
+}
+/**/
