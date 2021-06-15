@@ -2,7 +2,12 @@
   display: inline-block;
   min-width: 297px;
   border-radius: 10px;
+  padding: 20px 15px 19px 15px;
+  border: none;
   text-align: center; }
+
+.delivery {
+  margin-bottom: 7px; }
 
 .delivery__wrapper {
   position: relative;
@@ -67,7 +72,242 @@
       max-width: 350px; } }
 
 .delivery__wrapper .lg {
-  padding: 20px 35px 20px 35px; }
+  padding: 20px 35px 19px 35px;
+  box-shadow: none; }
+
+.stock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  @media (max-width: 865px) {
+    .stock {
+      display: block; } }
+
+.stock__promo {
+  box-shadow: 0 0 60px #d5eaf1;
+  border-radius: 20px;
+  overflow: hidden; }
+  @media (max-width: 865px) {
+    .stock__promo {
+      margin-bottom: 50px; } }
+
+.stock__img {
+  transition: opacity 0.2s linear; }
+  .stock__img:hover {
+    opacity: 0.7; }
+  @media (max-width: 1071px) {
+    .stock__img {
+      width: 278px;
+      height: 278px; } }
+  @media (max-width: 865px) {
+    .stock__img {
+      width: 100%;
+      height: 100vw; } }
+
+.stock__link {
+  border: none; }
+  .stock__link:hover {
+    border: none; }
+
+.opportunities__wrapper {
+  position: relative; }
+  @media (max-width: 767px) {
+    .opportunities__wrapper {
+      text-align: center; } }
+
+.opportunities__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.opportunities__heading {
+  color: #ffffff; }
+
+.opportunities__heading--gapage-sale {
+  max-width: 500px; }
+
+.opportunities__heading--discount {
+  margin-bottom: 39px; }
+
+.opportunities__heading--economy {
+  max-width: 530px;
+  margin-bottom: 39px; }
+
+.opportunities__text {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 32px; }
+
+.opportunities__text--discount,
+.opportunities__text--economy {
+  margin-bottom: 48px; }
+
+.opportunities__item {
+  border-radius: 50px;
+  box-shadow: 0px 0px 60px #d5eaf1;
+  margin: 0; }
+  @media (max-width: 990px) {
+    .opportunities__item::before {
+      display: none; } }
+
+.opportunities__item--special {
+  display: none;
+  position: relative;
+  padding: 58px 493px 67px 98px;
+  background: linear-gradient(100.49deg, #A1B9F9 1.62%, #5575E7 98.14%); }
+  .opportunities__item--special::before {
+    position: absolute;
+    content: "";
+    background: url("/img/slider/special.svg") no-repeat;
+    width: 266px;
+    height: 414px;
+    right: 107px;
+    top: 32px; }
+  @media (max-width: 990px) {
+    .opportunities__item--special {
+      padding: 58px 84px 67px 84px; } }
+  @media (max-width: 767px) {
+    .opportunities__item--special {
+      padding: 58px 15px 67px 15px; } }
+
+.opportunities__item--gapage-sale {
+  display: none;
+  position: relative;
+  padding: 59px 84px 67px 441px;
+  background: linear-gradient(100.49deg, #8DEDF3 1.62%, #3A8DBC 98.14%); }
+  .opportunities__item--gapage-sale::before {
+    position: absolute;
+    content: "";
+    background: url("/img/slider/gapage-sale.svg") no-repeat;
+    width: 295px;
+    height: 392px;
+    left: 107px;
+    top: 19px; }
+  @media (max-width: 990px) {
+    .opportunities__item--gapage-sale {
+      padding: 58px 84px 67px 84px; } }
+  @media (max-width: 767px) {
+    .opportunities__item--gapage-sale {
+      padding: 58px 15px 67px 15px; } }
+
+.opportunities__item--discount {
+  display: none;
+  position: relative;
+  padding: 58px 493px 67px 98px;
+  background: linear-gradient(100.49deg, #F38DCA 1.62%, #BC3A88 98.14%); }
+  .opportunities__item--discount::before {
+    position: absolute;
+    content: "";
+    background: url("/img/slider/discount.svg") no-repeat;
+    width: 402px;
+    height: 393px;
+    right: 97px;
+    top: 43px; }
+  @media (max-width: 990px) {
+    .opportunities__item--discount {
+      padding: 58px 84px 67px 84px; } }
+  @media (max-width: 767px) {
+    .opportunities__item--discount {
+      padding: 58px 15px 67px 15px; } }
+
+.opportunities__item--economy {
+  display: none;
+  position: relative;
+  padding: 59px 84px 67px 451px;
+  background: linear-gradient(100.49deg, #F3BE8D 1.62%, #BC803A 98.14%); }
+  .opportunities__item--economy::before {
+    position: absolute;
+    content: "";
+    background: url("/img/slider/economy.svg") no-repeat;
+    width: 292px;
+    height: 269px;
+    left: 62px;
+    top: 96px; }
+  @media (max-width: 990px) {
+    .opportunities__item--economy {
+      padding: 58px 84px 67px 84px; } }
+  @media (max-width: 767px) {
+    .opportunities__item--economy {
+      padding: 58px 15px 67px 15px; } }
+
+.opportunities__item--special-additional {
+  display: none;
+  position: relative;
+  padding: 58px 493px 67px 98px;
+  background: linear-gradient(100.49deg, #A88DF3 1.62%, #733ABC 98.14%); }
+  .opportunities__item--special-additional::before {
+    position: absolute;
+    content: "";
+    background: url("/img/slider/special-2.svg") no-repeat;
+    width: 371px;
+    height: 456px;
+    right: 60px;
+    top: 17px; }
+  @media (max-width: 990px) {
+    .opportunities__item--special-additional {
+      padding: 58px 84px 67px 84px; } }
+  @media (max-width: 767px) {
+    .opportunities__item--special-additional {
+      padding: 58px 15px 67px 15px; } }
+
+.opportunities__btn {
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  padding-bottom: 16px;
+  border: 2px solid #ffffff; }
+  .opportunities__btn:not(:last-child) {
+    margin-right: 15px; }
+  @media (max-width: 767px) {
+    .opportunities__btn {
+      display: block;
+      text-align: center; }
+      .opportunities__btn:not(:last-child) {
+        margin: 0 0 15px 0; } }
+
+.opportunities__btn--condition {
+  background-color: #ffffff;
+  color: #000000; }
+
+.opportunities__btn-statistics {
+  color: #ffffff; }
+
+.opportunities__btn-wrapper {
+  display: flex; }
+  @media (max-width: 767px) {
+    .opportunities__btn-wrapper {
+      display: block;
+      text-align: center; } }
+
+.opportunities__btn-slider-wrapper {
+  position: absolute;
+  bottom: 76px;
+  left: 98px; }
+  @media (max-width: 767px) {
+    .opportunities__btn-slider-wrapper {
+      bottom: 10px; } }
+  @media (max-width: 480px) {
+    .opportunities__btn-slider-wrapper {
+      bottom: 10px;
+      right: 10%;
+      transform: translateX(-10%); } }
+
+.opportunities__btn-slider {
+  width: 61px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-right: 6px; }
+
+.opportunities__btn-slider--active {
+  background-color: #000000;
+  opacity: 0.5; }
+
+.opportunities__item--active {
+  display: block; }
 
 .shopping {
   background-color: #fbfbfb; }
@@ -159,36 +399,85 @@
     .shopping__btn {
       width: 100%; } }
 
-.stock {
+.statistics__wrapper {
+  position: relative;
+  background: linear-gradient(100.49deg, #8DBEF3 1.62%, #3A78BC 98.14%);
+  border-radius: 50px;
+  padding: 131px 99px 103px 99px;
+  overflow: hidden; }
+  @media (max-width: 767px) {
+    .statistics__wrapper {
+      padding: 60px 15px 50px 15px; } }
+  .statistics__wrapper::before {
+    position: absolute;
+    content: "";
+    width: 698px;
+    height: 668px;
+    background-image: url("/img/statistics/boxes.svg");
+    background-size: 100% 100%;
+    right: -170px;
+    top: 39px; }
+    @media (max-width: 1090px) {
+      .statistics__wrapper::before {
+        width: 538px;
+        height: 518px; } }
+    @media (max-width: 950px) {
+      .statistics__wrapper::before {
+        top: 109px;
+        width: 438px;
+        height: 418px; } }
+    @media (max-width: 790px) {
+      .statistics__wrapper::before {
+        display: none; } }
+
+.statistics__content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
-  @media (max-width: 865px) {
-    .stock {
-      display: block; } }
+  margin-bottom: 14px; }
+  @media (max-width: 767px) {
+    .statistics__content {
+      justify-content: center; } }
 
-.stock__promo {
-  box-shadow: 0 0 60px #d5eaf1;
-  border-radius: 20px;
-  overflow: hidden; }
-  @media (max-width: 865px) {
-    .stock__promo {
-      margin-bottom: 50px; } }
+.statistics__text {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  color: #ffffff;
+  margin-right: 45px; }
+  @media (max-width: 767px) {
+    .statistics__text {
+      margin-right: 10px; } }
 
-.stock__img {
-  transition: opacity 0.2s linear; }
-  .stock__img:hover {
-    opacity: 0.7; }
-  @media (max-width: 1071px) {
-    .stock__img {
-      width: 278px;
-      height: 278px; } }
-  @media (max-width: 865px) {
-    .stock__img {
-      width: 100%;
-      height: 100vw; } }
+.statistics__meaning {
+  font-size: 36px;
+  line-height: 42px; }
+  @media (max-width: 767px) {
+    .statistics__meaning {
+      font-size: 26px;
+      line-height: 32px; } }
 
-.stock__link {
-  border: none; }
-  .stock__link:hover {
-    border: none; }
+.statistics__btn {
+  background-color: #ffffff;
+  padding: 18px 35px 18px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #000000; }
+  @media (max-width: 767px) {
+    .statistics__btn {
+      width: 100%; } }
+
+.heading__second {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #ffffff; }
+  @media (max-width: 767px) {
+    .heading__second {
+      font-size: 28px;
+      line-height: 30px; } }
