@@ -6,7 +6,7 @@
   position: relative;
   padding-top: 94px;
   padding-bottom: 50px;
-  background-image: url("/img/delivery.png");
+  background-image: url("/img/delivery/delivery.svg");
   background-repeat: no-repeat;
   background-size: 587px 464px;
   background-position: right 30px; }
@@ -28,7 +28,7 @@
     content: "";
     width: 86px;
     height: 49px;
-    background: url("/img/delivery-icon.svg") no-repeat;
+    background: url("/img/delivery/delivery-icon.svg") no-repeat;
     top: -14px;
     left: -78px; }
     @media (max-width: 1200px) {
