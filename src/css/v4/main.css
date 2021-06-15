@@ -61,3 +61,37 @@
   @media (max-width: 767px) {
     .delivery__wrapper .lg {
       width: 100%; } }
+
+.stock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  @media (max-width: 865px) {
+    .stock {
+      display: block; } }
+
+.stock__promo {
+  box-shadow: 0 0 60px #d5eaf1;
+  border-radius: 20px;
+  overflow: hidden; }
+  @media (max-width: 865px) {
+    .stock__promo {
+      margin-bottom: 50px; } }
+
+.stock__img {
+  transition: opacity 0.2s linear; }
+  .stock__img:hover {
+    opacity: 0.7; }
+  @media (max-width: 1071px) {
+    .stock__img {
+      width: 278px;
+      height: 278px; } }
+  @media (max-width: 865px) {
+    .stock__img {
+      width: 100%;
+      height: 100vw; } }
+
+.stock__link {
+  border: none; }
+  .stock__link:hover {
+    border: none; }
