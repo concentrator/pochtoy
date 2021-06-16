@@ -44,6 +44,7 @@
 }
 
 .opportunities__item {
+    display: none;
     border-radius: 50px;
     box-shadow: 0px 0px 60px $grey-light-1;
     margin: 0;
@@ -56,7 +57,6 @@
 }
 
 .opportunities__item--special {
-    display: none;
     position: relative;
     padding: 58px 493px 67px 98px;
     background: linear-gradient(100.49deg, #A1B9F9 1.62%, #5575E7 98.14%);
@@ -81,7 +81,6 @@
 }
 
 .opportunities__item--gapage-sale {
-    display: none;
     position: relative;
     padding: 59px 84px 67px 441px;
     background: linear-gradient(100.49deg, #8DEDF3 1.62%, #3A8DBC 98.14%);
@@ -106,7 +105,6 @@
 }
 
 .opportunities__item--discount {
-    display: none;
     position: relative;
     padding: 58px 493px 67px 98px;
     background: linear-gradient(100.49deg, #F38DCA 1.62%, #BC3A88 98.14%);
@@ -131,7 +129,6 @@
 }
 
 .opportunities__item--economy {
-    display: none;
     position: relative;
     padding: 59px 84px 67px 451px;
     background: linear-gradient(100.49deg, #F3BE8D 1.62%, #BC803A 98.14%);
@@ -156,7 +153,6 @@
 }
 
 .opportunities__item--special-additional {
-    display: none;
     position: relative;
     padding: 58px 493px 67px 98px;
     background: linear-gradient(100.49deg, #A88DF3 1.62%, #733ABC 98.14%);
@@ -208,6 +204,11 @@
 
 .opportunities__btn-statistics {
     color: $white;
+
+    &:hover {
+        border: 2px solid #87CEEB;
+        color: #87CEEB;
+    }
 }
 
 .opportunities__btn-wrapper {

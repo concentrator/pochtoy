@@ -5,4 +5,8 @@
     padding: 20px 15px 19px 15px;
     border: none;
     text-align: center;
+
+    @media (max-width: 350px) {
+        min-width: 100%;
+    }
 }
