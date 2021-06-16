@@ -1,7 +1,7 @@
 .stock {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 
     @media (max-width: 865px) {
         display: block;
@@ -9,14 +9,28 @@
 }
 
 .stock__promo{
-    box-shadow: 0 0 60px #d5eaf1;
+    box-shadow: 0 0 60px $grey-light-1;
     border-radius: 20px;
     overflow: hidden;
 
-    @media (max-width: 865px) {
-        margin-bottom: 50px;
+    &:not(:last-child) {
+        margin-right: 50px;
+
+        @media (max-width: 1170px) {
+            margin-bottom: 50px;
+        }
+
+        @media (max-width: 865px) {
+            margin-bottom: 50px;
+            margin-right: 0;
+        }
     }
 
+    @media (max-width: 1120px) {
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
 }
 
 .stock__img {
@@ -26,10 +40,10 @@
         opacity: 0.7;
     }
 
-    @media (max-width: 1071px) {
+    /*@media (max-width: 1071px) {
         width: 278px;
         height: 278px;
-    }
+    }*/
 
     @media (max-width: 865px) {
         width: 100%;
