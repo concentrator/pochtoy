@@ -1,0 +1,12 @@
+.heading__second {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    color: $white;
+
+    @media (max-width: 767px) {
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
