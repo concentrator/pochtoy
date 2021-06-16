@@ -207,6 +207,7 @@
     color: $black;
 
     &:hover {
+        border: 2px solid $white;
         color: $black;
     }
 }

@@ -279,6 +279,7 @@
   background-color: #ffffff;
   color: #000000; }
   .opportunities__btn--condition:hover {
+    border: 2px solid #ffffff;
     color: #000000; }
 
 .opportunities__btn-statistics {
