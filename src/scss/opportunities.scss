@@ -182,6 +182,11 @@
     border: none;
     padding-bottom: 16px;
     border: 2px solid $white;
+    transition: box-shadow 0.3s linear;
+
+    &:hover {
+        box-shadow: 0 10px 25px rgba(192,192,192,0.7);
+    }
 
     &:not(:last-child) {
         margin-right: 15px;
@@ -200,14 +205,18 @@
 .opportunities__btn--condition {
     background-color: $white;
     color: $black;
+
+    &:hover {
+        color: $black;
+    }
 }
 
 .opportunities__btn-statistics {
     color: $white;
 
     &:hover {
-        border: 2px solid #87CEEB;
-        color: #87CEEB;
+        border: 2px solid $white;
+        color: $white;
     }
 }
 
