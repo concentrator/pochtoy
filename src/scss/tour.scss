@@ -1,0 +1,102 @@
+.tour__wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    padding: 105px 99px 96px 99px;
+    background: linear-gradient(100.49deg, #8DBEF3 1.62%, #3A78BC 98.14%);
+
+    @media (max-width: 900px) {
+        padding: 65px 99px 70px 99px;
+    }
+
+    @media (max-width: 540px) {
+        padding: 65px 30px 70px 30px;
+    }
+
+    @media (max-width: 400px) {
+        padding: 45px 15px 40px 15px;
+    }
+}
+
+.tour__text {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 500;
+    color: $white;
+    max-width: 400px;
+    margin: 0 0 23px 0;
+
+
+    @media (max-width: 767px) {
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    @media (max-width: 540px) {
+        text-align: center;
+        margin: 0 auto 23px;
+    }
+}
+
+.tour__highlight {
+    font-size: 48px;
+    line-height: 56px;
+
+    @media (max-width: 767px) {
+        font-size: 38px;
+        line-height: 56px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 28px;
+        line-height: 46px;
+    }
+}
+
+.tour__btn {
+    background-color: $white;
+    padding: 18px 35px 18px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: $black;
+    transition: box-shadow 0.3s linear;
+
+    &:hover {
+        box-shadow: 0 10px 25px rgba(255,255,255,0.4);
+        color: $black;
+    }
+
+    @media (max-width: 767px) {
+        min-width: 100%;
+    }
+}
+
+.tour__img-wrapper {
+    position: absolute;
+    right: 127px;
+    top: 60px;
+
+    @media (max-width: 950px) {
+        right: 80px;
+    }
+
+    @media (max-width: 805px) {
+        display: none;
+    }
+}
+
+.tour__img {
+    @media (max-width: 1040px) {
+        width: 333px;
+        height: 321px;
+    }
+
+    @media (max-width: 900px) {
+        width: 233px;
+        height: 221px;
+    }
+}
+
+
