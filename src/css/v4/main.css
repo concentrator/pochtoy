@@ -5,6 +5,9 @@
   padding: 20px 15px 19px 15px;
   border: none;
   text-align: center; }
+  @media (max-width: 350px) {
+    .button-new {
+      min-width: 100%; } }
 
 .delivery {
   margin-bottom: 7px; }
@@ -72,8 +75,7 @@
       max-width: 350px; } }
 
 .delivery__wrapper .lg {
-  padding: 20px 35px 19px 35px;
-  box-shadow: none; }
+  padding: 20px 35px 19px 35px; }
 
 .stock {
   display: flex;
@@ -108,12 +110,9 @@
     }*/ }
   .stock__img:hover {
     opacity: 0.7; }
-  @media (max-width: 767px) {
-    .stock__img {
-      width: 100%;
-      height: 100vw; } }
 
 .stock__link {
+  display: block;
   border: none; }
   .stock__link:hover {
     border: none; }
@@ -155,6 +154,7 @@
   margin-bottom: 48px; }
 
 .opportunities__item {
+  display: none;
   border-radius: 50px;
   box-shadow: 0px 0px 60px #d5eaf1;
   margin: 0; }
@@ -163,7 +163,6 @@
       display: none; } }
 
 .opportunities__item--special {
-  display: none;
   position: relative;
   padding: 58px 493px 67px 98px;
   background: linear-gradient(100.49deg, #A1B9F9 1.62%, #5575E7 98.14%); }
@@ -183,7 +182,6 @@
       padding: 58px 15px 67px 15px; } }
 
 .opportunities__item--gapage-sale {
-  display: none;
   position: relative;
   padding: 59px 84px 67px 441px;
   background: linear-gradient(100.49deg, #8DEDF3 1.62%, #3A8DBC 98.14%); }
@@ -203,7 +201,6 @@
       padding: 58px 15px 67px 15px; } }
 
 .opportunities__item--discount {
-  display: none;
   position: relative;
   padding: 58px 493px 67px 98px;
   background: linear-gradient(100.49deg, #F38DCA 1.62%, #BC3A88 98.14%); }
@@ -223,7 +220,6 @@
       padding: 58px 15px 67px 15px; } }
 
 .opportunities__item--economy {
-  display: none;
   position: relative;
   padding: 59px 84px 67px 451px;
   background: linear-gradient(100.49deg, #F3BE8D 1.62%, #BC803A 98.14%); }
@@ -243,7 +239,6 @@
       padding: 58px 15px 67px 15px; } }
 
 .opportunities__item--special-additional {
-  display: none;
   position: relative;
   padding: 58px 493px 67px 98px;
   background: linear-gradient(100.49deg, #A88DF3 1.62%, #733ABC 98.14%); }
@@ -267,7 +262,10 @@
   font-weight: 600;
   border: none;
   padding-bottom: 16px;
-  border: 2px solid #ffffff; }
+  border: 2px solid #ffffff;
+  transition: box-shadow 0.3s linear; }
+  .opportunities__btn:hover {
+    box-shadow: 0 10px 25px rgba(192, 192, 192, 0.7); }
   .opportunities__btn:not(:last-child) {
     margin-right: 15px; }
   @media (max-width: 767px) {
@@ -280,9 +278,15 @@
 .opportunities__btn--condition {
   background-color: #ffffff;
   color: #000000; }
+  .opportunities__btn--condition:hover {
+    border: 2px solid #ffffff;
+    color: #000000; }
 
 .opportunities__btn-statistics {
   color: #ffffff; }
+  .opportunities__btn-statistics:hover {
+    border: 2px solid #ffffff;
+    color: #ffffff; }
 
 .opportunities__btn-wrapper {
   display: flex; }
@@ -501,7 +505,7 @@
   color: #000000; }
   @media (max-width: 767px) {
     .statistics__btn {
-      width: 100%; } }
+      min-width: 100%; } }
 
 .heading__second {
   font-family: "Gilroy", Arial, sans-serif;

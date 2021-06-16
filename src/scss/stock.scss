@@ -44,14 +44,10 @@
         width: 278px;
         height: 278px;
     }*/
-
-    @media (max-width: 767px) {
-        width: 100%;
-        height: 100vw;
-    }
 }
 
 .stock__link {
+    display: block;
     border: none;
 
     &:hover {
