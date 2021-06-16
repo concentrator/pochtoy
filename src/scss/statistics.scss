@@ -47,6 +47,7 @@
 }
 
 .statistics__text {
+    position: relative;
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -54,6 +55,22 @@
     max-width: min-content;
     color: $white;
     margin-right: 45px;
+
+    &:not(:last-child):before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 55px;
+        background-color: $black-light;
+        right: -25px;
+        top: 14px;
+
+        @media (max-width: 767px) {
+            width: 2px;
+            right: -5px;
+            top: 1px;
+        }
+    }
 
     @media (max-width: 767px) {
         margin-right: 10px;

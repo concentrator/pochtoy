@@ -439,6 +439,7 @@
       justify-content: center; } }
 
 .statistics__text {
+  position: relative;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -448,6 +449,19 @@
   max-width: min-content;
   color: #ffffff;
   margin-right: 45px; }
+  .statistics__text:not(:last-child):before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.1);
+    right: -25px;
+    top: 14px; }
+    @media (max-width: 767px) {
+      .statistics__text:not(:last-child):before {
+        width: 2px;
+        right: -5px;
+        top: 1px; } }
   @media (max-width: 767px) {
     .statistics__text {
       margin-right: 10px; } }
