@@ -95,8 +95,10 @@
     font-size: 16px;
     font-weight: 600;
     padding: 20px 15px 15px 15px;
+    transition: box-shadow 0.3s linear;
 
     &:hover {
+        box-shadow: 0 10px 25px rgba(30,144,255,0.4);
         color: $white;
     }
 

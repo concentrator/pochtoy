@@ -109,7 +109,12 @@
     font-weight: 600;
     text-align: center;
     color: $black;
+    transition: box-shadow 0.3s linear;
 
+    &:hover {
+        box-shadow: 0 10px 25px rgba(255,255,255,0.4);
+        color: $black;
+    }
 
     @media (max-width: 767px) {
         min-width: 100%;
