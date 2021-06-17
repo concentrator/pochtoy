@@ -1,0 +1,221 @@
+.steps__top {
+    padding-top: 23px;
+}
+.steps__wrapper{
+    padding: 0 15px;
+    margin-bottom: 61px;
+}
+.steps__item {
+    display: flex;
+    padding: 0 0 46px 0;
+    border-bottom: 1px solid $black-light;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.steps__item--purchases {
+    justify-content: flex-end;
+    padding: 10px 0 35px 0;
+}
+
+.steps__item--pysulku {
+    justify-content: flex-end;
+    padding-bottom: 38px;
+}
+
+.steps__item--shipment {
+    padding-bottom: 62px;
+}
+
+.steps__heading {
+    max-width: 320px;
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+    color: $grey1;
+    padding-bottom: 23px;
+
+    @media (max-width: 450px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.steps__heading-highlighter {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 600;
+    color: $blue-light;
+
+    @media (max-width: 450px) {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+.steps__item-content {
+    display: flex;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+
+    }
+}
+
+.steps__digit {
+    color: $pink1;
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 144px;
+    line-height: 165px;
+    font-weight: 100;
+    padding: 68px 10px 20px 0;
+
+    @media (max-width: 900px) {
+        font-size: 4em;
+        line-height: 70px;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 3em;
+        line-height: 70px;
+    }
+}
+
+.steps__digit--shipment {
+    padding-top: 80px;
+}
+
+.steps__wrapper-text {
+    max-width: 600px;
+    padding: 99px 20px 20px 50px;
+
+}
+
+.steps__wrapper-text--shipment {
+    max-width: 450px;
+    padding: 108px 20px 20px 27px;
+    margin-right: 120px;
+}
+
+.steps__wrapper-text--purchases {
+    max-width: 407px;
+    padding: 82px 0 20px 44px;
+}
+
+.steps__wrapper-text--pysulku {
+    padding-left: 35px;
+    max-width: 400px;
+}
+
+.steps__secondary {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    color: $black;
+    text-transform: uppercase;
+    margin:0;
+
+    @media (max-width: 450px) {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+.steps__text {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: $grey;
+    margin: 0;
+}
+
+.steps__text--top {
+    padding-top: 10px;
+}
+
+.steps__text--help {
+    margin-bottom: 35px;
+}
+
+.steps__img-wrapper--purchases {
+    margin: 15px 90px 0 0;
+}
+
+.steps__img-wrapper--shipment {
+    padding-top: 60px;
+}
+
+.steps__img-wrapper--pysulku {
+    padding-top: 31px;
+    margin: 0 120px 0 0;
+}
+
+.steps__help {
+    max-width: 511px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.steps__btn {
+    background-color: $pink;
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 20px 15px 16px 15px;
+    transition: box-shadow 0.3s linear;
+
+    &:hover {
+        box-shadow: 0 10px 25px $pink;
+        color: $white;
+    }
+}
+
+@media (max-width: 900px){
+    .steps__wrapper-text--choice,
+    .steps__wrapper-text--shipment,
+    .steps__wrapper-text--purchases,
+    .steps__wrapper-text--pysulku {
+        padding: 10px 0 10px 0;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .steps__digit--choice,
+    .steps__digit--purchases,
+    .steps__digit--shipment,
+    .steps__digit--pysulku {
+        padding: 10px 0 10px 0;
+        margin: 0;
+    }
+
+    .steps__img-wrapper--shipment,
+    .steps__img-wrapper--pysulku,
+    .steps__img-wrapper--purchases,
+    .steps__img-wrapper--choice {
+        margin: 0;
+        padding: 0;
+    }
+
+    .steps__item-content--choice,
+    .steps__item-content--shipment {
+        order: 2;
+    }
+
+    .steps__img {
+        width: 35%;
+    }
+
+    .steps__img--dron {
+        width: 140px;
+    }
+}
