@@ -102,20 +102,13 @@
     .stock__promo:nth-child(2n) {
       margin-right: 0; } }
 
-.stock__img {
-  transition: opacity 0.2s linear;
-  /*@media (max-width: 1071px) {
-        width: 278px;
-        height: 278px;
-    }*/ }
-  .stock__img:hover {
-    opacity: 0.7; }
-
 .stock__link {
   display: block;
-  border: none; }
+  border: none;
+  transition: opacity 0.2s linear; }
   .stock__link:hover {
-    border: none; }
+    border: none;
+    opacity: 0.7; }
 
 .opportunities__wrapper {
   position: relative; }
@@ -405,8 +398,10 @@
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
-  padding: 20px 15px 15px 15px; }
+  padding: 20px 15px 15px 15px;
+  transition: box-shadow 0.3s linear; }
   .shopping__btn:hover {
+    box-shadow: 0 10px 25px rgba(30, 144, 255, 0.4);
     color: #ffffff; }
   @media (max-width: 767px) {
     .shopping__btn {
@@ -502,7 +497,11 @@
   font-size: 16px;
   font-weight: 600;
   text-align: center;
-  color: #000000; }
+  color: #000000;
+  transition: box-shadow 0.3s linear; }
+  .statistics__btn:hover {
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.4);
+    color: #000000; }
   @media (max-width: 767px) {
     .statistics__btn {
       min-width: 100%; } }
@@ -517,3 +516,129 @@
     .heading__second {
       font-size: 28px;
       line-height: 30px; } }
+
+.advantage__content {
+  position: relative;
+  text-align: center;
+  margin-bottom: 95px; }
+  .advantage__content::before {
+    position: absolute;
+    content: "";
+    width: 234px;
+    height: 18px;
+    background-image: url("/img/advantage/advantage.svg");
+    top: -48px;
+    right: 50%;
+    transform: translateX(50%); }
+
+.advantage__heading {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  font-weight: 600;
+  margin: 0 0 30px 0; }
+  @media (max-width: 550px) {
+    .advantage__heading {
+      font-size: 20px;
+      line-height: 24px; } }
+
+.advantage__text {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #586271; }
+  .advantage__text:not(:last-child) {
+    margin: 0 0 25px 0; }
+  .advantage__text:last-child {
+    margin: 0; }
+
+.advantage__wrapper {
+  padding: 76px 160px 0; }
+  @media (max-width: 767px) {
+    .advantage__wrapper {
+      padding: 30px 100px 0; } }
+  @media (max-width: 550px) {
+    .advantage__wrapper {
+      padding: 30px 30px 0; } }
+
+.tour__wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  padding: 105px 99px 96px 99px;
+  background: linear-gradient(100.49deg, #8DBEF3 1.62%, #3A78BC 98.14%); }
+  @media (max-width: 900px) {
+    .tour__wrapper {
+      padding: 65px 99px 70px 99px; } }
+  @media (max-width: 540px) {
+    .tour__wrapper {
+      padding: 65px 30px 70px 30px; } }
+  @media (max-width: 400px) {
+    .tour__wrapper {
+      padding: 45px 15px 40px 15px; } }
+
+.tour__text {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 500;
+  color: #ffffff;
+  max-width: 400px;
+  margin: 0 0 23px 0; }
+  @media (max-width: 767px) {
+    .tour__text {
+      font-size: 20px;
+      line-height: 38px; } }
+  @media (max-width: 540px) {
+    .tour__text {
+      text-align: center;
+      margin: 0 auto 23px; } }
+
+.tour__highlight {
+  font-size: 48px;
+  line-height: 56px; }
+  @media (max-width: 767px) {
+    .tour__highlight {
+      font-size: 38px;
+      line-height: 56px; } }
+  @media (max-width: 400px) {
+    .tour__highlight {
+      font-size: 28px;
+      line-height: 46px; } }
+
+.tour__btn {
+  background-color: #ffffff;
+  padding: 18px 35px 18px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #000000;
+  transition: box-shadow 0.3s linear; }
+  .tour__btn:hover {
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.4);
+    color: #000000; }
+  @media (max-width: 767px) {
+    .tour__btn {
+      min-width: 100%; } }
+
+.tour__img-wrapper {
+  position: absolute;
+  right: 127px;
+  top: 60px; }
+  @media (max-width: 950px) {
+    .tour__img-wrapper {
+      right: 80px; } }
+  @media (max-width: 805px) {
+    .tour__img-wrapper {
+      display: none; } }
+
+@media (max-width: 1040px) {
+  .tour__img {
+    width: 333px;
+    height: 321px; } }
+
+@media (max-width: 900px) {
+  .tour__img {
+    width: 233px;
+    height: 221px; } }

@@ -33,24 +33,13 @@
     }
 }
 
-.stock__img {
-    transition: opacity 0.2s linear;
-
-    &:hover {
-        opacity: 0.7;
-    }
-
-    /*@media (max-width: 1071px) {
-        width: 278px;
-        height: 278px;
-    }*/
-}
-
 .stock__link {
     display: block;
     border: none;
+    transition: opacity 0.2s linear;
 
     &:hover {
         border: none;
+        opacity: 0.7;
     }
 }
