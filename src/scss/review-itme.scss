@@ -44,6 +44,10 @@
 
 .review-itme__city-wrapper {
     padding: 0;
+
+    @media (max-width: 990px) {
+        padding-left: 15px;
+    }
 }
 
 .review-itme__city {
