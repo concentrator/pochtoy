@@ -7000,7 +7000,7 @@ a#highlight:hover {
     font-size: 0;
     white-space: nowrap;
     line-height: 19px;
-    background-image: url("/img/v4/star-array.svg");
+    background-image: url("/img//star-array.svg");
     background-position: left top;
 }
 .star-rating-input {
@@ -9082,7 +9082,7 @@ ul.info-block__text li {
         display: block;
         order: unset;
     }
-    
+
     .calc-header .tab-switch {
         flex-direction: column;
     }
