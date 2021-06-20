@@ -1,0 +1,159 @@
+.benefit {
+    background-image: url("/../img/benefit/rectangle6.png");
+    background-repeat: repeat-x;
+    background-position: center;
+
+    @media (max-width: 767px) {
+        background-color: $white-1;
+    }
+}
+
+.benefit__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 39px;
+
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.benefit__heading-wrapper {
+    padding: 147px 0 20px 0;
+
+    @media (max-width: 767px) {
+        order: 2;
+        padding: 0px;
+    }
+}
+
+.benefit__heading {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 55px;
+    font-weight: 500;
+    color: $black;
+    width: 508px;
+    padding-right: 175px;
+
+    @media (max-width: 1200px) {
+        width: 100%;
+        padding-right: 5px;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.benefit__hlight {
+    line-height: 45px;
+    font-size: 36px;
+}
+
+.benefit__hlight-2 {
+    font-weight: 600;
+    color: $blue-light;
+}
+
+.benefit__content-wrapper {
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}
+
+.benefit__reason {
+    position: relative;
+    padding: 25px 178px 32px 110px;
+    background-color: $white;
+    border-radius: 40px;
+    box-shadow: 0 0 60px $grey-light-1;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 45px;
+        height: 45px;
+        top: 39px;
+        left: 40px;
+    }
+
+    @media (max-width: 1200px) {
+        padding: 25px 20px 32px 110px;
+    }
+
+    @media (max-width: 870px) {
+        padding: 25px 20px 32px 20px;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+}
+
+.benefit__reason--profit {
+    &::before {
+        background-image: url("/../img/benefit/kettlebell.svg");
+    }
+}
+
+.benefit__reason--quickness {
+    &::before {
+        background-image: url("/../img/benefit/watch.svg");
+    }
+}
+
+.benefit__reason--sms {
+    &::before {
+        background-image: url("/../img/benefit/kettlebell.svg");
+    }
+}
+
+.benefit__secondary {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: 600;
+    color: $black;
+    margin-bottom: 0;
+
+    @media (max-width: 767px) {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+.benefit__text {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: $grey;
+    margin: 0;
+}
+
+.benefit__btn {
+    background-color: $blue-light;
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: box-shadow 0.3s linear;
+
+    &:hover {
+        box-shadow: 0 10px 25px rgba(30,144,255,0.4);
+        color: $white;
+    }
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}

@@ -1,0 +1,108 @@
+.about .inner {
+    padding-top: 8px;
+    padding-bottom: 53px;
+}
+
+.about__heading {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    padding-bottom: 9px;
+    color: $grey1;
+    margin: 0;
+
+    @media (max-width: 400px) {
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
+
+.about__text-history {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: $grey1;
+    max-width: 1096px;
+    margin: 0 auto 34px;
+
+    @media (max-width: 400px) {
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
+
+.about__item {
+    position: relative;
+    padding: 32px 35px 10px 98px;
+    margin-bottom: 19px;
+
+
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 45px;
+        height: 45px;
+        top: 23px;
+        left: 26px;
+
+        @media (max-width: 400px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 400px) {
+        padding: 32px 15px 10px 15px;
+    }
+}
+
+.about__item--shild {
+    &::before {
+        background-image: url("/../img/about/shild.svg");
+    }
+}
+
+.about__item--dollar {
+    &::before {
+        background-image: url("/../img/about/dollar.svg");
+    }
+}
+
+.about__item--hands {
+    &::before {
+        background-image: url("/../img/about/hands.svg");
+    }
+}
+
+.about__item--candy {
+    &::before {
+        background-image: url("/../img/about/candy.svg");
+    }
+}
+
+.about__secondary {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    color: $black;
+}
+
+.about__item .about__link {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: 600;
+    color: $blue-light1;
+}
+
+.about__item-text {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+    color: $grey-light;
+    margin: 0;
+}

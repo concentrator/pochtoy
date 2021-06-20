@@ -1,5 +1,5 @@
 .steps__top {
-    padding-top: 23px;
+    padding-top: 38px;
 }
 .steps__wrapper{
     padding: 0 15px;
@@ -18,7 +18,7 @@
 
 .steps__item--purchases {
     justify-content: flex-end;
-    padding: 10px 0 35px 0;
+    padding: 10px 0 22px 0;
 }
 
 .steps__item--pysulku {
@@ -38,7 +38,7 @@
     font-weight: 600;
     margin: 0 auto;
     text-align: center;
-    color: $grey1;
+    color: $grey;
     padding-bottom: 23px;
 
     @media (max-width: 450px) {
@@ -175,7 +175,7 @@
     transition: box-shadow 0.3s linear;
 
     &:hover {
-        box-shadow: 0 10px 25px $pink;
+        box-shadow: 0 10px 25px $pink2;
         color: $white;
     }
 }
