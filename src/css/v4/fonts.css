@@ -211,3 +211,11 @@
     src: url('../../fonts/gilroy-medium.woff2') format('woff2'),
         url('../../fonts/gilroy-medium.woff') format('woff');
 }
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 200;
+    font-style: normal;
+    src: url('../../fonts/gilroy-ultralight.woff2') format('woff2'),
+        url('../../fonts/gilroy-ultralight.woff') format('woff');
+}
