@@ -14,10 +14,12 @@
     display: flex;
 }
 
-.review-itme__start {
-    &:not(:last-child) {
-        margin-right: 4px;
-    }
+.review__fill[data-rating='5'] {
+    width: calc(100% - 11px);
+}
+
+.review__star {
+    background-image: url("/../img/reviews/star-array.svg");
 }
 
 .review-itme__labels {
