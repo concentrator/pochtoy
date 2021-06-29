@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="/css/v4/simplebar.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/v4/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/v4/user-room.css" type="text/css"/>
+    <link rel="stylesheet" href="css/v4/main.css" type="text/css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"
+            defer></script>
+
+    <script src="/js/v4/masonry.min.js"></script>
+
+    <title>New Pochtoy.com</title>
+</head>
+<body>
+    <div style="position:relative;">
+        <div class="mob-nav-overlay"></div>
+        <div class="header">
+            <div class="header__inner">
+                <div class="row flex justify-content-lg-between">
+                    <div class="col-md-auto c-col">
+                            <a href="/"><img class="logo"
+                                             alt="Логотип"
+                                             src="img/v4/logo_2.png"></a>
+                        <div class="mob-nav-btn-wrapper">
+                            <button class="mob-nav-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <nav class="header-nav">
+                            <ul class="nav  mob-nav">
+
+                                <li class="header__multilang">
+                                    <div class="header__multilang__wrapper">
+                                        <div class="header__multilang__wrapper__flag">
+                                            <!-- <img src="/img/multilang_flag_none.png" alt=""> -->
+                                        </div>
+                                        <div class="header__inner__multilang__wrapper__lang">...</div>
+                                    </div>
+
+                                    <div class="header__multilang__form">
+                                        <div class="header__multilang__form__wrap">
+                                            <div class="header__multilang__form__header">
+                                                <div class="header__multilang__form__title">
+
+                                                </div>
+                                                <div class="header__multilang__form__close">
+
+                                                </div>
+                                            </div>
+                                            <div class="header__multilang__form__body">
+                                                <label class="header__multilang__form__body__name">
+                                                    Язык
+                                                </label>
+                                                <select class="header__multilang__form__body__lang">
+                                                    <option
+                                                        data-google-lang="ru"
+                                                        data-img="/i/img/multilang_flag_rus.png/"
+                                                        data-short-text="Рус"
+                                                    >Русский
+                                                    </option>
+                                                    <option
+                                                        data-google-lang="en"
+                                                        data-img="/i/img/multilang_flag_eng.png/"
+                                                        data-short-text="Eng"
+                                                    >Английский
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <!-- <div class="header__multilang__form__footer">
+                                                <a class="btn">Применить</a>
+                                            </div> -->
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li><a  href='/how-to-buy/'>Как покупать</a></li>
+
+                                            <li><a  href='/sales/'>Распродажи</a></li>
+                                            <li><a title='Вы находитесь здесь' class='noHref '>Цены</a></li>        <!-- -->
+
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                       aria-expanded="true">Помощь</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a  href='/faq/'>Часто задаваемые вопросы</a></li>
+                                        <li><a  href='/newbies/'>Новичкам</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="dropdown header-nav__bonus-link">
+
+                                    <div class="header-nav__bonus-link__bubble" style="display:none;">
+                                        <svg class="header-nav__bonus-link__bubble__icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                    d="M19.873 14.7461C17.888 14.7461 16.1629 15.8801 15.3114 17.5343L9.8876 14.4028C10.1237 13.8142 10.2539 13.172 10.2539 12.5C10.2539 11.828 10.1237 11.1858 9.8876 10.5972L15.3114 7.46572C16.1629 9.11992 17.888 10.2539 19.873 10.2539C22.7 10.2539 25 7.95396 25 5.12695C25 2.29995 22.7 0 19.873 0C17.046 0 14.7461 2.29995 14.7461 5.12695C14.7461 5.44282 14.775 5.752 14.8299 6.05225L9.15337 9.32959C8.21372 8.13877 6.75811 7.37305 5.12695 7.37305C2.29995 7.37305 0 9.673 0 12.5C0 15.327 2.29995 17.627 5.12695 17.627C6.75811 17.627 8.21372 16.8612 9.15337 15.6704L14.8299 18.9478C14.775 19.2479 14.7461 19.5572 14.7461 19.873C14.7461 22.7 17.046 25 19.873 25C22.7 25 25 22.7 25 19.873C25 17.046 22.7 14.7461 19.873 14.7461ZM17.9635 8.25039C18.4221 7.6749 19.1235 7.32422 19.873 7.32422C20.6226 7.32422 21.324 7.6749 21.7826 8.25039C21.2263 8.5918 20.5723 8.78906 19.873 8.78906C19.1738 8.78906 18.5198 8.5918 17.9635 8.25039ZM19.1406 5.12695C19.1406 4.7231 19.4692 4.39453 19.873 4.39453C20.2769 4.39453 20.6055 4.7231 20.6055 5.12695C20.6055 5.53081 20.2769 5.85938 19.873 5.85938C19.4692 5.85938 19.1406 5.53081 19.1406 5.12695ZM19.873 1.46484C21.8923 1.46484 23.5352 3.10767 23.5352 5.12695C23.5352 5.91758 23.2825 6.64985 22.8548 7.24907C22.5342 6.87065 22.1461 6.55752 21.7136 6.325C21.9388 5.98013 22.0703 5.5687 22.0703 5.12695C22.0703 3.91538 21.0846 2.92969 19.873 2.92969C18.6615 2.92969 17.6758 3.91538 17.6758 5.12695C17.6758 5.5688 17.8073 5.98032 18.0327 6.32519C17.6001 6.55776 17.212 6.87085 16.8915 7.24936C16.4637 6.6501 16.2109 5.91772 16.2109 5.12695C16.2109 3.10767 17.8538 1.46484 19.873 1.46484ZM1.46484 12.5C1.46484 10.4807 3.10767 8.83789 5.12695 8.83789C7.14624 8.83789 8.78906 10.4807 8.78906 12.5C8.78906 13.2906 8.53638 14.0229 8.10869 14.6221C7.78813 14.2437 7.40005 13.9306 6.96743 13.698C7.19272 13.3532 7.32422 12.9417 7.32422 12.5C7.32422 11.2884 6.33853 10.3027 5.12695 10.3027C3.91538 10.3027 2.92969 11.2884 2.92969 12.5C2.92969 12.9417 3.06118 13.3532 3.28647 13.698C2.85391 13.9306 2.46577 14.2437 2.14521 14.6221C1.71753 14.0229 1.46484 13.2906 1.46484 12.5ZM4.39453 12.5C4.39453 12.0961 4.7231 11.7676 5.12695 11.7676C5.53081 11.7676 5.85938 12.0961 5.85938 12.5C5.85938 12.9038 5.53081 13.2324 5.12695 13.2324C4.7231 13.2324 4.39453 12.9039 4.39453 12.5ZM3.21738 15.6234C3.67603 15.0479 4.37744 14.6973 5.12695 14.6973C5.87646 14.6973 6.57788 15.0479 7.03652 15.6234C6.48018 15.9648 5.82622 16.1621 5.12695 16.1621C4.42769 16.1621 3.77373 15.9648 3.21738 15.6234ZM17.9634 22.9965C18.4221 22.421 19.1235 22.0703 19.873 22.0703C20.6226 22.0703 21.324 22.421 21.7827 22.9965C21.2263 23.3379 20.5723 23.5352 19.873 23.5352C19.1738 23.5352 18.5198 23.3379 17.9634 22.9965ZM19.873 20.6054C19.4692 20.6054 19.1406 20.2769 19.1406 19.873C19.1406 19.4691 19.4692 19.1406 19.873 19.1406C20.2769 19.1406 20.6055 19.4692 20.6055 19.873C20.6055 20.2769 20.2769 20.6054 19.873 20.6054ZM22.8548 21.9952C22.5342 21.6167 22.1461 21.3036 21.7135 21.0711C21.9388 20.7262 22.0703 20.3148 22.0703 19.873C22.0703 18.6615 21.0846 17.6758 19.873 17.6758C18.6615 17.6758 17.6758 18.6615 17.6758 19.873C17.6758 20.3148 17.8073 20.7262 18.0326 21.0711C17.6 21.3036 17.2119 21.6167 16.8913 21.9952C16.4636 21.3959 16.2109 20.6637 16.2109 19.873C16.2109 17.8538 17.8538 16.2109 19.873 16.2109C21.8923 16.2109 23.5352 17.8538 23.5352 19.873C23.5352 20.6637 23.2825 21.3959 22.8548 21.9952Z"
+                                                    fill="#FF006D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="25" height="25" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <a class="bubble_link"
+                                           href="/affiliates/"><span>Партнёрская программа – новые условия получения премий</span></a>
+                                        <svg class="header-nav__bonus-link__bubble__close" width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.63525 1.59588L7.82954 0.790161L4.63525 3.98445L1.44097 0.790161L0.635254 1.59588L3.82954 4.79016L0.635254 7.98445L1.44097 8.79016L4.63525 5.59588L7.82954 8.79016L8.63525 7.98445L5.44097 4.79016L8.63525 1.59588Z"
+                                                fill="#FF006D"/>
+                                        </svg>
+                                    </div>
+
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                       aria-expanded="true">Бонусы</a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a  href='/cashback/'>Кэшбэк</a></li>
+                                        <li><a  href='/affiliates'>Партнерская программа</a></li>
+                                    </ul>
+                                </li>
+
+                                    <li><a  href='/blog/'>Блог</a></li>
+                                <li class="nav-more dropdown">
+                                    <a href="#">Еще</a>
+
+                                        <ul class="nav-more__child">
+                                            <div class="nav-more__child-wrap">
+                                                <li><a href="/fast-buy/">Помощь с покупкой</a></li>
+                                                <li><a href="/size/">Как подобрать размер</a></li>
+                                                <li><a href="/black-list/">Черный список магазинов</a></li>
+                                                <li><a href="/forbidden-items/">Запрещенные к пересылке товары</a></li>
+                                            </div>
+                                        </ul>
+
+                                </li>
+                                <li>
+                                                    <a  href='/shops/' class='btn btn-default'>Магазины США</a>                    </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col r-col mob-nav col-lg-auto align-right nav--mb-test">
+                        <ul class="nav">
+                            <li class="autorization-lnk">
+                                <a href="/user-room/" class="autorization-lnk__user-login">Войти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            function toggleSteps(el) {
+                var val = parseFloat(el.value);
+                if(val >= 14.5) {
+                    el.step = 1;
+                }
+                else {
+                    el.step = 0.5;
+                }
+            }
+        </script>
+
+        <div class="delivery container first full-width" style="display:block;">
+            <div class="delivery__wrapper inner inner--sm">
+                <h1>Доставка из США от <span class="delivery__cost hlight">$11.99 и&nbsp;5&nbsp;дней</span></h1>
+                <p class="welcome-intro delivery__text">Помогаем с покупками в Америке и привозим их к вам домой быстро и недорого.</p>
+                <div class="reg-btn-wrapper"><a class="btn lg register-btn button-new" href="/registration/">Получить адрес в США</a></div>
+            </div>
+        </div>
+        <div class="opportunities container full-width">
+            <div class="inner inner--sm opportunities__wrapper swiper-container opportunities-swiper">
+                <ul class="opportunities__list swiper-wrapper">
+                    <li class="opportunities__item opportunities__item--left opportunities__item--special swiper-slide">
+                        <div class="opportunities__text-wrapper">
+                            <h2 class="heading__second opportunities__heading">Специальное предложение
+                                для постоянных клиентов
+                                и&nbsp;байеров</h2>
+                            <p class="opportunities__text">Мы разработали бонусную программу, чтобы вам было выгодно отправлять много посылок через наш сервис. Скидки на доставку до 20 процентов и дополнительные бонусы.</p>
+                        </div>
+                        <div class="opportunities__btn-wrapper">
+                            <a class="button-new lg opportunities__btn opportunities__btn--condition" href="#">Посмотреть условия</a>
+                            <a class="button-new lg opportunities__btn opportunities__btn-statistics" href="#">Посмотреть вашу статистику</a>
+                        </div>
+                    </li>
+                    <li class="opportunities__item opportunities__item--right opportunities__item--gapage-sale swiper-slide">
+                        <div class="opportunities__text-wrapper">
+                            <h2 class="heading__second opportunities__heading opportunities__heading--gapage-sale">Gapage Sale – гаражная распродажа товаров
+                                из&nbsp;США</h2>
+                            <p class="opportunities__text">Мы помогаем нашим партнерам реализовывать товары, которые по каким-то причинам задержались на нашем складе. А вы получаете очень выгодные цены и быструю доставку. Нам удобно – вам приятно!</p>
+                        </div>
+
+                        <div class="opportunities__btn-wrapper">
+                            <a class="button-new opportunities__btn opportunities__btn--condition" href="#">Посмотреть условия</a>
+                        </div>
+                    </li>
+                    <li class="opportunities__item opportunities__item--left opportunities__item--discount swiper-slide">
+                        <div class="opportunities__text-wrapper">
+                            <h2 class="heading__second opportunities__heading opportunities__heading--discount">Пользуетесь другим посредником и хотите попробовать Pochtoy.com</h2>
+                            <p class="opportunities__text opportunities__text--discount">Пришлите скриншот из вашего личного кабинета другого посредника и мы дадим вам 50% скидку на первую доставку.</p>
+                        </div>
+
+                        <div class="opportunities__btn-wrapper">
+                            <a class="button-new opportunities__btn opportunities__btn--condition" href="#">Посмотреть условия</a>
+                        </div>
+                    </li>
+                    <li class="opportunities__item opportunities__item--right opportunities__item--economy swiper-slide">
+                        <div class="opportunities__text-wrapper">
+                            <h2 class="heading__second opportunities__heading opportunities__heading--economy">Дополнительная экономия с кэшбек сервисами Mr.Rebates и Racuten</h2>
+                            <p class="opportunities__text opportunities__text--economy">Мы договорились с кэшбек сервисами о дополнительном бонусе для наших клиентов. Получитье  15 долларов на счет после первой покупки.</p>
+                        </div>
+
+                        <div class="opportunities__btn-wrapper">
+                            <a class="button-new opportunities__btn opportunities__btn--condition" href="#">Подробности</a>
+                        </div>
+                    </li>
+                    <li class="opportunities__item opportunities__item--left opportunities__item--special-additional swiper-slide">
+                        <div class="opportunities__text-wrapper">
+                            <h2 class="heading__second opportunities__heading">Специальное предложение
+                                для&nbsp;постоянных клиентов
+                                и&nbsp;байеров</h2>
+                            <p class="opportunities__text">Мы разработали бонусную программу, чтобы вам было выгодно отправлять много посылок через наш сервис. Скидки на доставку до 20 процентов и дополнительные бонусы.</p>
+                        </div>
+
+                        <div class="opportunities__btn-wrapper">
+                            <a class="button-new opportunities__btn opportunities__btn--condition" href="#">Посмотреть условия</a>
+                            <a class="button-new opportunities__btn opportunities__btn-statistics" href="#">Посмотреть вашу статистику</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="opportunities__btn-slider-wrapper"></div>
+            </div>
+        </div>
+
+
+
+        <div class="shopping container full-width">
+            <div class="af-banner-sm af-banner-sm--dark-blue">
+                <div class="inner">
+                    <div class="shopping__wrapper">
+                        <div class="shopping__wrapper-heading">
+                            <img class="af-banner-sm_img lazyloaded shopping__img" src="/img/shopping/shopping.svg" alt="Шопинг с операторами Pochtoy.com" data-src="/img/usa2rus/rocket.svg" width="130" height="183">
+                            <p class="shopping__text-heading">Шоппинг с&nbsp;операторами Pochtoy.com</p>
+                        </div>
+                        <div class="shopping__content">
+                            <p class="shopping__text">Поручите нашим <span class="shopping__highlighting">мастерам шопинга</span> оформить заказы в американских магазинах и <span class="shopping__highlighting">освободите время</span> для более важных дел.</p>
+                            <p class="shopping__text-explanation">Такой способ покупки также подойдёт, если магазин принимает только американские карты.</p>
+                            <div class="af-banner-sm_btn">
+                                <a class="button-new shopping__btn" href="/fast-buy/">Попробовать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stock container full-width inner centered">
+            <div class="stock__promo">
+                <a class="stock__link" href="/landings/fragrance/">
+                    <img class="stock__img" src="/img/stock/garage-sale.png" data-src="/img/main/parfume.png" width="347" height="347" alt="гаражная распродажа">
+                </a>
+            </div>
+            <div class="stock__promo">
+                <a class="stock__link" href="/landings/victoriassecret/">
+                    <img class="stock__img" src="/img/stock/delivery.png" data-src="/img/main/vs.png" width="347" height="347" alt="Доставка духов и мистов">
+                </a>
+            </div>
+            <div class="stock__promo">
+                <a class="stock__link" href="/landings/funko-pop/">
+                    <img class="stock__img" src="/img/stock/bot.png" data-src="/img/main/funkop.png" width="347" height="347" alt="Умный бот для Telegram">
+                </a>
+            </div>
+        </div>
+
+        <div class="statistics container full-width">
+            <div class="inner">
+                <div class="statistics__wrapper">
+                    <div class="statistics__content">
+                        <p class="statistics__text"><span class="statistics__meaning">204,&nbsp;746</span> отправлено</p>
+                        <p class="statistics__text"><span class="statistics__meaning">15,&nbsp;567</span> отзывов</p>
+                        <p class="statistics__text"><span class="statistics__meaning">10&nbsp;лет</span> на&nbsp;рынке</p>
+                    </div>
+                    <div class="statistics__btn-wrapper">
+                        <a class="button-new statistics__btn" href="">Отправить посылку</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="advantage container full-width">
+            <div class="inner advantage__wrapper">
+                <div class="advantage__content">
+                    <h2 class="advantage__heading">Pochtoy.com — удобная и быстрая доставка посылок из США</h2>
+                    <p class="advantage__text">Американские магазины не доставляют товары в Россию. С Pochtoy.com можно покупать по лучшим ценам и&nbspэкономить на доставке.</p>
+                    <p class="advantage__text">У нас есть два склада в США, вы можете использовать их адрес и делать заказы. Мы получим ваши посылки, надежно упакуем и отправим их к вам домой.</p>
+                </div>
+                <div class="advantage__content">
+                    <h2 class="advantage__heading">Pochtoy.com — удобная и быстрая доставка посылок из США</h2>
+                    <p class="advantage__text">Американские магазины не доставляют товары в Россию. С Pochtoy.com можно покупать по лучшим ценам и&nbspэкономить на доставке.</p>
+                    <p class="advantage__text">У нас есть два склада в США, вы можете использовать их адрес и делать заказы. Мы получим ваши посылки, надежно упакуем и отправим их к вам домой.</p>
+                </div>
+                <div class="advantage__content">
+                    <h2 class="advantage__heading">Pochtoy.com — удобная и быстрая доставка посылок из США</h2>
+                    <p class="advantage__text">Американские магазины не доставляют товары в Россию. С Pochtoy.com можно покупать по лучшим ценам и&nbspэкономить на доставке.</p>
+                    <p class="advantage__text">У нас есть два склада в США, вы можете использовать их адрес и делать заказы. Мы получим ваши посылки, надежно упакуем и отправим их к вам домой.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container full-width">
+            <div class="inner inner--sm">
+                <div class="calc-include">
+                    <div class="calc-header calc-header--index">
+
+                        <div class="calc-header__form">
+                            <form class="calc-filter">
+                                <div class="calc-filter__field calc-filter__field--country">
+                                    <label>Страна:</label>
+                                    <select class="" id="country" required="" autocomplete="off">
+                                        <option selected="selected" disabled>Выберите страну</option>
+                                        <option value="RU">Россия</option>
+                                    </select>
+                                </div>
+                                <div class="calc-filter__field calc-filter__field--city">
+                                    <label>Город:</label>
+                                    <select class="" id="city1" required="" autocomplete="off">
+                                        <option selected="selected" disabled>Выберите город</option>
+                                        <option value="mos">Москва</option>
+                                    </select>
+                                </div>
+                                <div class="calc-filter__field calc-filter__field--index">
+                                    <label>Индекс:</label>
+                                    <input id="zip" type="text" placeholder="Введите индекс">
+                                </div>
+                                <div class="calc-filter__field calc-filter__field--weight">
+                                    <label>Вес посылки:</label>
+                                    <input id="package-weight" type="text" placeholder="Введите вес">
+
+                                    <div class="calc-filter__weight-unit">
+                                        <select class="weight-unit-select package-weight js-select-auto" autocomplete="off">
+                                            <option value="kg" selected="selected">кг</option>
+                                            <option value="lb">фунты</option>
+                                        </select>
+                                    </div>
+                                    <span class="calc-filter__progress" style="width:50%"></span>
+                                    <input class="calc-filter__range" type="range">
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="calc-header__btn-wrapper">
+                            <a class="btn calc-filter-btn button-new" href="#">Рассчитать стоимость</a>
+                            <div>
+                                <a class="calc-filter-conditions" href="#">Условия для постоянных клиентов</a>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $('.js-select-auto').change(function() {
+                            var text = $(this).find('option:selected').text()
+                            if (text === 'фунты') {
+                                $(this).css('width', '54px')
+                            } else {
+                                $(this).css('width', '28px')
+                            }
+                        });
+                        $(".calc-filter__btn").click(function(e) {
+                            if (e.target.classList.contains("calc-filter__btn--active")) {
+                                $(".calc-filter__extra").slideUp();
+                                e.target.classList.remove("calc-filter__btn--active");
+                                $(".calc-filter__btn-less").hide();
+                                $(".calc-filter__btn-more").show();
+                            } else {
+                                $(".calc-filter__extra").slideDown();
+                                e.target.classList.add("calc-filter__btn--active");
+                                $(".calc-filter__btn-less").show();
+                                $(".calc-filter__btn-more").hide();
+                            }
+                        });
+                    </script>
+
+                    <div class="calc-output">
+                        <div class="delivery-services accordion" id="accordionDeliveryServices" style="display: block;">
+                            <!-- SUPERFAST -->
+                            <div class="dservice-card dservice" data-ds="bb_sf">
+                                <div class="dservice-card__header">
+                                    <div class="row align-items-center">
+                                        <div class="col-xl-3">
+                                            <div class="dservice-card__logotype">
+                                                <img class="" width="45" height="45" src="/img/superfast.svg">
+                                                <span class="dservice-name">SUPERFAST</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 col-xl-2">
+                                            <h4 class="dservice-card__heading">Сроки</h4>
+                                            <div class="dservice-days">5-10 дней</div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 col-xl-2">
+                                            <h4 class="dservice-card__heading">Стоимость</h4>
+                                            <div class="dservice-card__price dservice-price">20$</div>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-3">
+                                            <a href="/new-user-room/super-fast/?superfast=true" class="dservice-card__btn btn">Оформить посылку</a>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-2 text-lg-right">
+                                            <button class="dservice-card__heading dservice-card__heading--toggler" type="button" data-toggle="collapse" data-target="#deails_superfast" aria-expanded="false" aria-controls="deails_superfast">Описание</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dservice-card__collapse collapse" id="deails_superfast" data-parent="#accordionDeliveryServices">
+                                    <div class="dservice-card__body">
+                                        <div class="dservice-card__overflow" data-simplebar>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <h4 class="dservice-card__heading">Максимальный вес</h4>
+                                                    <p>Для ПВЗ — 31 кг</p>
+                                                    <p>Для постамата — 15 кг</p>
+                                                    <h4 class="dservice-card__heading">Максимальный размер</h4>
+                                                    <p>Для ПВЗ — сумма трех сторон 230 см, длина меньше 180 см; для постамата 62,5×56,5×40 см</p>
+                                                    <h4 class="dservice-card__heading">Средние сроки доставки</h4>
+                                                    <p>5-10 дней</p>
+                                                    <h4 class="dservice-card__heading">Участие Почты России</h4>
+                                                    <p>Нет</p>
+                                                    <h4 class="dservice-card__heading">Отслеживание посылки</h4>
+                                                    <p>На нашем сайте или на сайте <a href="https://boxberry.ru">Boxberry</a></p>
+                                                    <h4 class="dservice-card__heading">Частота отправлений</h4>
+                                                    <p>2 раза в неделю каждый понедельник и среду в 15:30 (по времени склада)</p>
+                                                    <h4 class="dservice-card__heading">Страховка</h4>
+                                                    <p>$3 на посылки до $100 и $5 на посылки до $500 <a href="/services/">Подробнее</a></p>
+                                                    <h4 class="dservice-card__heading">Таможенный лимит</h4>
+                                                    <p>До 200 евро и 31 кг на одну посылку пошлиной не облагаются</p>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column h-100">
+                                                        <div>
+                                                            <p>Доставка с предварительным оформлением без объединения посылок доступна только для самостоятельных.</p>
+                                                            <p>Обязательная полная страховка от утери и кражи вложений.</p>
+                                                            <h4 class="dservice-card__heading">Ограничения:</h4>
+                                                            <ul>
+                                                                <li>обязательно предварительное оформление посылки, до прихода на склад</li>
+                                                                <li>без объединения: не более одной входящей в каждой исходящей посылке</li>
+                                                                <li>без переупаковки: посылка улетает в той же упаковке, в которой попала на наш склад</li>
+                                                                <li>доставка возможна до ПВЗ (пункта выдачи заказа) и в постаматы</li>
+                                                                <li>
+                                                                    список товаров, которые нельзя пересылать: витамины, жидкости под давлением и аэрозоли, оружие, товары не относящиеся к товарам для личного пользования физ.лица, товарные (коммерческие) партии.<br>
+                                                                    <a class="dservice-card__link-more" href="/faq/express#10">Подробнее</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mt-auto">
+                                                            <a href="/faq/super-fast/" class="button button-secondary">Узнать подробнее</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fastbox -->
+                            <div class="dservice-card dservice" data-ds="bb_lc">
+                                <div class="dservice-card__header">
+                                    <div class="row align-items-center">
+                                        <div class="col-xl-3">
+                                            <div class="dservice-card__logotype">
+                                                <img class="" width="45" height="45" src="/img/v4/boxberry_logo.png">
+                                                <span class="dservice-name">FastBox</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 col-xl-2">
+                                            <h4 class="dservice-card__heading">Сроки</h4>
+                                            <div class="dservice-days">7-16 дней</div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 col-xl-2">
+                                            <h4 class="dservice-card__heading">Стоимость</h4>
+                                            <div class="dservice-card__price dservice-price">10$</div>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-3">
+                                        </div>
+                                        <div class="col-lg-4 col-xl-2 text-lg-right">
+                                            <button class="dservice-card__heading dservice-card__heading--toggler" type="button" data-toggle="collapse" data-target="#deails_fastbox" aria-expanded="false" aria-controls="deails_fastbox">Описание</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dservice-card__collapse collapse" id="deails_fastbox" data-parent="#accordionDeliveryServices">
+                                    <div class="dservice-card__body">
+                                        <div class="dservice-card__overflow" data-simplebar>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <h4 class="dservice-card__heading">Максимальный вес</h4>
+                                                    <p>для ПВЗ –– 31 кг.</p>
+                                                    <p>Для постамата — 15 кг.</p>
+                                                    <h4 class="dservice-card__heading">Максимальный размер</h4>
+                                                    <p>для ПВЗ –– сумма трех сторон 230 см, длина < 180 см для постамата –– 62,5 x 56,5 x 40 см</p>
+                                                    <h4 class="dservice-card__heading">Средние сроки доставки</h4>
+                                                    <p>7-16 дней</p>
+                                                    <h4 class="dservice-card__heading">Участие Почты России</h4>
+                                                    <p>Нет</p>
+                                                    <h4 class="dservice-card__heading">Отслеживание посылки</h4>
+                                                    <p>На нашем сайте или на сайте <a href="https://boxberry.ru">Boxberry</a></p>
+                                                    <h4 class="dservice-card__heading">Частота отправлений</h4>
+                                                    <p>2 раза в неделю каждый понедельник и среду в 15:30 (по времени склада)</p>
+                                                    <h4 class="dservice-card__heading">Страховка</h4>
+                                                    <p>$3 на посылки до $100 и $5 на посылки до $500 <a href="/services/">Подробнее</a></p>
+                                                    <h4 class="dservice-card__heading">Таможенный лимит</h4>
+                                                    <p>До 200 евро и 31 кг на одну посылку пошлиной не облагаются</p>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column h-100">
+                                                        <div>
+                                                            <p>Доставка без объединения посылок или заказов доступна как для самостоятельных покупок, так и для покупок, приобретенных с помощью наших операторов.</p>
+                                                            <p>Обязательная полная страховка (от утери и кражи вложений).</p>
+                                                            <h4 class="dservice-card__heading">Ограничения:</h4>
+                                                            <ul>
+                                                                <li>без объединения: не более одной входящей в каждой исходящей посылке</li>
+                                                                <li>без переупаковки: посылка улетает в той же упаковке, в которой попала на наш склад</li>
+                                                                <li>доставка возможна  до ПВЗ (пункта выдачи заказа) и в постаматы</li>
+                                                                <li>
+                                                                Список товаров, которые нельзя пересылать: Витамины, жидкости под давлением и аэрозоли, оружие, товары не относящиеся к товарам для личного пользования физ.лица, товарные (коммерческие) партии.<br>
+                                                                    <a class="dservice-card__link-more" href="/faq/express#10">Подробнее</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mt-auto">
+                                                            <a href="/faq/super-fast/" class="button button-secondary">Узнать подробнее</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Perfume-->
+                            <div class="dservice-card dservice" data-ds="bb_pf">
+                                <div class="dservice-card__header">
+                                    <div class="row align-items-center">
+                                        <div class="col-xl-3">
+                                            <div class="dservice-card__logotype">
+                                                <img class="" width="45" height="45" src="/img/perfume.svg">
+                                                <span class="dservice-name">PerfumeBox</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 col-xl-2">
+                                            <h4 class="dservice-card__heading">Сроки</h4>
+                                            <div class="dservice-days">7-16 дней</div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 col-xl-2">
+                                            <h4 class="dservice-card__heading">Стоимость</h4>
+                                            <div class="dservice-card__price dservice-price">$</div>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-3">
+                                        </div>
+                                        <div class="col-lg-4 col-xl-2 text-lg-right">
+                                            <button class="dservice-card__heading dservice-card__heading--toggler" type="button" data-toggle="collapse" data-target="#deails_perfume" aria-expanded="false" aria-controls="deails_fastbox">Описание</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dservice-card__collapse collapse" id="deails_perfume" data-parent="#accordionDeliveryServices">
+                                    <div class="dservice-card__body">
+                                        <div class="dservice-card__overflow" data-simplebar>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <h4 class="dservice-card__heading">Максимальный вес</h4>
+                                                    <p>3кг.</p>
+                                                    <h4 class="dservice-card__heading">Максимальный размер</h4>
+                                                    <p>для ПВЗ –– сумма трех сторон 230 см, длина < 180 см для постамата –– 62,5 x 56,5 x 40 см</p>
+                                                    <h4 class="dservice-card__heading">Средние сроки доставки</h4>
+                                                    <p>7-16 дней</p>
+                                                    <h4 class="dservice-card__heading">Участие Почты России</h4>
+                                                    <p>Нет</p>
+                                                    <h4 class="dservice-card__heading">Отслеживание посылки</h4>
+                                                    <p>На нашем сайте или на сайте <a href="https://boxberry.ru">Boxberry</a></p>
+                                                    <h4 class="dservice-card__heading">Частота отправлений</h4>
+                                                    <p>2 раза в неделю каждый понедельник и среду в 15:30 (по времени склада)</p>
+                                                    <h4 class="dservice-card__heading">Страховка</h4>
+                                                    <p>$3 на посылки до $100 и $5 на посылки до $500 <a href="/services/">Подробнее</a></p>
+                                                    <h4 class="dservice-card__heading">Таможенный лимит</h4>
+                                                    <p>До 200 евро и 31 кг на одну посылку пошлиной не облагаются</p>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column h-100">
+                                                        <div>
+                                                            <p>Доставка небольших (весом до 3 кг.) посылок, заказанных самостоятельно или через оператора, содержащие легковоспломеняющиеся жидкости одного класса опасности, например духи, мисты, спиртосодержащие косметические средства и тп.</p>
+                                                            <p><a href="/faq/perfume#7">Какие бренды мы доставляем</a></p>
+                                                            <p>Обязательная полная страховка от утери и кражи вложений. Обязательно заполнение подробной декларации на все товары, находящиеся в посылки.</p>
+
+                                                            <h4 class="dservice-card__heading">Ограничения:</h4>
+                                                            <ul>
+                                                                <li>без объединения: не более одной входящей в каждой исходящей посылке</li>
+                                                                <li>без переупаковки: посылка улетает в той же упаковке, в которой попала на наш склад</li>
+                                                                <li>вес посылки меньше или равен 3 кг.</li>
+                                                                <li>количество флаконов – не более 5 флаконов на посылку.</li>
+                                                                <li>объем флаконов – не более 100 мл.</li>
+                                                                <li>количество повторяющихся позиций – не более 2-3 на посылку.</li>
+                                                                <li>
+                                                                    Список товаров, которые нельзя пересылать: Витамины, жидкости под давлением и аэрозоли, оружие, товары не относящиеся к товарам для личного пользования физ.лица, товарные (коммерческие) партии.<br>
+                                                                    <a class="dservice-card__link-more" href="/faq/perfume#9">Подробнее</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mt-auto">
+                                                            <a href="/faq/perfume/" class="button button-secondary">Узнать подробнее</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Express -->
+                            <div class="dservice-card dservice" data-ds="bb_u">
+                                <div class="dservice-card__header">
+                                    <div class="row align-items-center">
+                                        <div class="col-xl-3">
+                                            <div class="dservice-card__logotype">
+                                                <img class="" width="45" height="45" src="/img/v4/boxberry_logo.png">
+                                                <span class="dservice-name">Express</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 col-xl-2">
+                                            <h4 class="dservice-card__heading">Сроки</h4>
+                                            <div class="dservice-days">7-16 дней</div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 col-xl-2">
+                                            <h4 class="dservice-card__heading">Стоимость</h4>
+                                            <div class="dservice-card__price dservice-price">$</div>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-3">
+                                        </div>
+                                        <div class="col-lg-4 col-xl-2 text-lg-right">
+                                            <button class="dservice-card__heading dservice-card__heading--toggler" type="button" data-toggle="collapse" data-target="#deails_express" aria-expanded="false" aria-controls="deails_express">Описание</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dservice-card__collapse collapse" id="deails_express" data-parent="#accordionDeliveryServices">
+                                    <div class="dservice-card__body">
+                                        <div class="dservice-card__overflow" data-simplebar>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <h4 class="dservice-card__heading">Максимальный вес</h4>
+                                                    <p>Для ПВЗ — 31 кг</p>
+                                                    <p>Для постамата и курьера — 15 кг</p>
+                                                    <h4 class="dservice-card__heading">Максимальный размер</h4>
+                                                    <p>Для ПВЗ — сумма трех сторон 230 см, длина меньше 180 см; для постамата и курьера 62,5×56,5×40 см </p>
+                                                    <h4 class="dservice-card__heading">Средние сроки доставки</h4>
+                                                    <p>7-16 дней</p>
+                                                    <h4 class="dservice-card__heading">Участие Почты России</h4>
+                                                    <p>Нет</p>
+                                                    <h4 class="dservice-card__heading">Отслеживание посылки</h4>
+                                                    <p>На нашем сайте или на сайте <a href="https://boxberry.ru">Boxberry</a></p>
+                                                    <h4 class="dservice-card__heading">Частота отправлений</h4>
+                                                    <p>2 раза в неделю каждый понедельник и среду в 15:30 (по времени склада)</p>
+                                                    <h4 class="dservice-card__heading">Страховка</h4>
+                                                    <p>$3 на посылки до $100 и $5 на посылки до $500 <a href="/services/">Подробнее</a></p>
+                                                    <h4 class="dservice-card__heading">Таможенный лимит</h4>
+                                                    <p>До 200 евро и 31 кг на одну посылку пошлиной не облагаются</p>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column h-100">
+                                                        <div>
+                                                            <p>Быстрая доставка консолидированных посылок заказанных самостоятельно или через оператора, с бесплатной переупаковкой и возможностью доставки курьером до двери без доплаты.</p>
+                                                            <p>Обязательная полная страховка от утери и кражи вложений.</p>
+                                                            <h4 class="dservice-card__heading">Ограничения:</h4>
+                                                            <ul>
+                                                                <li>
+                                                                    список товаров, которые нельзя пересылать: витамины, жидкости под давлением и аэрозоли, оружие, товары не относящиеся к товарам для личного пользования физ.лица, товарные (коммерческие) партии.<br>
+                                                                    <a class="dservice-card__link-more" href="/faq/express#10">Подробнее</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mt-auto">
+                                                            <a href="/faq/express/" class="button button-secondary">Узнать подробнее</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Эконом -->
+                            <div class="dservice-card dservice" data-ds="pe_p">
+                                <div class="dservice-card__header">
+                                    <div class="row align-items-center">
+                                        <div class="col-xl-3">
+                                            <div class="dservice-card__logotype">
+                                                <img class="" width="45" height="45" src="/img/v4/econom_logo.png">
+                                                <span class="dservice-name">Econom</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 col-xl-2">
+                                            <h4 class="dservice-card__heading">Сроки</h4>
+                                            <div class="dservice-days">20-30 дней</div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 col-xl-2">
+                                            <h4 class="dservice-card__heading">Стоимость</h4>
+                                            <div class="dservice-card__price dservice-price">$</div>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-3">
+                                        </div>
+                                        <div class="col-lg-4 col-xl-2 text-lg-right">
+                                            <button class="dservice-card__heading dservice-card__heading--toggler" type="button" data-toggle="collapse" data-target="#deails_econom" aria-expanded="false" aria-controls="deails_econom">Описание</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dservice-card__collapse collapse" id="deails_econom" data-parent="#accordionDeliveryServices">
+                                    <div class="dservice-card__body">
+                                        <div class="dservice-card__overflow" data-simplebar>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <h4 class="dservice-card__heading">Максимальный вес</h4>
+                                                    <p>20 кг.</p>
+                                                    <h4 class="dservice-card__heading">Максимальный размер</h4>
+                                                    <p>Любое измерение (ширина, длина или высота) — не более 1,05 м; сумма длины и периметра наибольшего поперечного сечения — не более 2 м.</p>
+                                                    <h4 class="dservice-card__heading">Средние сроки доставки</h4>
+                                                    <p>20-30 дней</p>
+                                                    <h4 class="dservice-card__heading">Участие Почты России</h4>
+                                                    <p>Посылки летят через Европу и там передаются Почте России</p>
+                                                    <h4 class="dservice-card__heading">Отслеживание посылки</h4>
+                                                    <p>На нашем сайте или на сайте <a href="https://www.pochta.ru/">Почты России</a></p>
+                                                    <h4 class="dservice-card__heading">Частота отправлений</h4>
+                                                    <p>2 раза в неделю по понедельникам и средам в 15:30 по времени склада</p>
+                                                    <h4 class="dservice-card__heading">Страховка</h4>
+                                                    <p>$3 на посылки до $100 и $5 на посылки до $500 <a href="/services/">Подробнее</a></p>
+                                                    <h4 class="dservice-card__heading">Таможенный лимит</h4>
+                                                    <p>До 200 евро и 31 кг на одну посылку пошлиной не облагаются</p>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column h-100">
+                                                        <div>
+                                                            <p>Доставка консолидированных посылок, заказанных самостоятельно или через оператора, с бесплатной переупаковкой и самой простой декларацией. Паспортные данные и ИНН не требуются.</p>
+                                                            <p>Обязательная полная страховка от утери и кражи вложений.</p>
+                                                            <h4 class="dservice-card__heading">Ограничения:</h4>
+                                                            <ul>
+                                                                <li>
+                                                                    список товаров, которые нельзя пересылать: парфюмерия, зажигалки, масла, топливо, лак для ногтей, баллоны под давлением (лак для волос, крем для бритья), батареи, огнестрельное оружие, вооружение и их части: военное, полицейское и тактическое оборудование любого вида, включая оружие, точные копии оружия, принадлежности оружия, компоненты оружия, боеприпасы и т. д.<br>
+                                                                    <a class="dservice-card__link-more" href="/faq/econom/#16">Подробнее</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mt-auto">
+                                                            <a href="/faq/econom/" class="button button-secondary">Узнать подробнее</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Эконом Лайт -->
+                            <div class="dservice-card dservice" data-ds="pe_l">
+                                <div class="dservice-card__header">
+                                    <div class="row align-items-center">
+                                        <div class="col-xl-3">
+                                            <div class="dservice-card__logotype">
+                                                <img class="" width="45" height="45" src="/img/v4/econom_logo.png">
+                                                <span class="dservice-name">Econom Lite</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 col-xl-2">
+                                            <h4 class="dservice-card__heading">Сроки</h4>
+                                            <div class="dservice-days">20-30 дней</div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 col-xl-2">
+                                            <h4 class="dservice-card__heading">Стоимость</h4>
+                                            <div class="dservice-card__price dservice-price">$</div>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-3">
+                                        </div>
+                                        <div class="col-lg-4 col-xl-2 text-lg-right">
+                                            <button class="dservice-card__heading dservice-card__heading--toggler" type="button" data-toggle="collapse" data-target="#deails_econom_lite" aria-expanded="false" aria-controls="deails_econom_lite">Описание</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dservice-card__collapse collapse" id="deails_econom_lite" data-parent="#accordionDeliveryServices">
+                                    <div class="dservice-card__body">
+                                        <div class="dservice-card__overflow" data-simplebar>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <h4 class="dservice-card__heading">Максимальный вес</h4>
+                                                    <p>1.8 кг.</p>
+                                                    <h4 class="dservice-card__heading">Максимальный размер</h4>
+                                                    <p>Любое измерение — не более 60 см; сумма длины, ширины и высоты не более 90 см.</p>
+                                                    <h4 class="dservice-card__heading">Средние сроки доставки</h4>
+                                                    <p>20-30 дней</p>
+                                                    <h4 class="dservice-card__heading">Участие Почты России</h4>
+                                                    <p>Посылки летят через Европу и там передаются Почте России</p>
+                                                    <h4 class="dservice-card__heading">Отслеживание посылки</h4>
+                                                    <p>На нашем сайте или на сайте <a href="https://www.pochta.ru/">Почты России</a></p>
+                                                    <h4 class="dservice-card__heading">Частота отправлений</h4>
+                                                    <p>2 раза в неделю по понедельникам и средам в 15:30 по времени склада</p>
+                                                    <h4 class="dservice-card__heading">Страховка</h4>
+                                                    <p>$3 на посылки до $100 и $5 на посылки до $500 <a href="/services/">Подробнее</a></p>
+                                                    <h4 class="dservice-card__heading">Таможенный лимит</h4>
+                                                    <p>До 200 евро и 31 кг на одну посылку пошлиной не облагаются</p>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column h-100">
+                                                        <div>
+                                                            <p>Доставка небольших (весом до 1.8 кг.) консолидированных посылок, заказанных самостоятельно или через оператора, с бесплатной переупаковкой и самой простой декларацией. Паспортные данные и ИНН не требуются.</p>
+                                                            <p>Обязательная полная страховка от утери и кражи вложений.</p>
+                                                            <h4 class="dservice-card__heading">Ограничения:</h4>
+                                                            <ul>
+                                                                <li>вес посылки меньше или равен 1.8 кг.</li>
+                                                                <li>
+                                                                    список товаров, которые нельзя пересылать: парфюмерия, зажигалки, масла, топливо, лак для ногтей, баллоны под давлением (лак для волос, крем для бритья), батареи, огнестрельное оружие, вооружение и их части: военное, полицейское и тактическое оборудование любого вида, включая оружие, точные копии оружия, принадлежности оружия, компоненты оружия, боеприпасы и т. д.<br>
+                                                                    <a class="dservice-card__link-more" href="/faq/econom/#16">Подробнее</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mt-auto">
+                                                            <a href="/faq/econom/" class="button button-secondary">Узнать подробнее</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- EMS Russia -->
+                            <div class="dservice-card dservice" data-ds="qw_ems">
+                                <div class="dservice-card__header">
+                                    <div class="row align-items-center">
+                                        <div class="col-xl-3">
+                                            <div class="dservice-card__logotype">
+                                                <img style="width: 56px; height: 28px" class="" src="/img/v4/qwems_logo.svg">
+                                                <span class="dservice-name">EMS Russia</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 col-xl-2">
+                                            <h4 class="dservice-card__heading">Сроки</h4>
+                                            <div class="dservice-days">12-20 дней</div>
+                                        </div>
+                                        <div class="col-6 col-md-4 col-lg-2 col-xl-2">
+                                            <h4 class="dservice-card__heading">Стоимость</h4>
+                                            <div class="dservice-card__price dservice-price">$</div>
+                                        </div>
+                                        <div class="col-lg-4 col-xl-3">
+                                        </div>
+                                        <div class="col-lg-4 col-xl-2 text-lg-right">
+                                            <button class="dservice-card__heading dservice-card__heading--toggler" type="button" data-toggle="collapse" data-target="#deails_ems-russia" aria-expanded="false" aria-controls="deails_ems-russia">Описание</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dservice-card__collapse collapse" id="deails_ems-russia" data-parent="#accordionDeliveryServices">
+                                    <div class="dservice-card__body">
+                                        <div class="dservice-card__overflow" data-simplebar>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <h4 class="dservice-card__heading">Максимальный вес</h4>
+                                                    <p>31 кг.</p>
+                                                    <h4 class="dservice-card__heading">Максимальный размер</h4>
+                                                    <p>Сумма трех сторон — не более 150 см, длина одной стороны — не более 1 метра.</p>
+                                                    <h4 class="dservice-card__heading">Средние сроки доставки</h4>
+                                                    <p>12-20 дней</p>
+                                                    <h4 class="dservice-card__heading">Участие Почты России</h4>
+                                                    <p>Посылки летят через Европу и там передаются ЕМС Почте России</p>
+                                                    <h4 class="dservice-card__heading">Отслеживание посылки</h4>
+                                                    <p>На нашем сайте или на сайте <a href="https://www.pochta.ru/">Почты России</a></p>
+                                                    <h4 class="dservice-card__heading">Частота отправлений</h4>
+                                                    <p>2 раза в неделю по понедельникам и средам в 15:30 по времени склада</p>
+                                                    <h4 class="dservice-card__heading">Страховка</h4>
+                                                    <p>$3 на посылки до $100 и $5 на посылки до $500 <a href="/services/">Подробнее</a></p>
+                                                    <h4 class="dservice-card__heading">Таможенный лимит</h4>
+                                                    <p>До 200 евро и 31 кг на одну посылку пошлиной не облагаются</p>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex flex-column h-100">
+                                                        <div>
+                                                            <p>Быстрая доставка консолидированных посылок, заказанных самостоятельно или через оператора, с бесплатной переупаковкой и самой простой декларацией. Паспортные данные и ИНН не требуются. Возможна бесплатная доставка курьером до двери.</p>
+                                                            <p>Обязательная полная страховка от утери и кражи вложений.</p>
+                                                            <h4 class="dservice-card__heading">Ограничения:</h4>
+                                                            <ul>
+                                                                <li>
+                                                                    список товаров, которые нельзя пересылать: парфюмерия, зажигалки, масла, топливо, лак для ногтей, баллоны под давлением (лак для волос, крем для бритья), батареи, огнестрельное оружие, вооружение и их части: военное, полицейское и тактическое оборудование любого вида, включая оружие, точные копии оружия, принадлежности оружия, компоненты оружия, боеприпасы и т. д.<br>
+                                                                    <a class="dservice-card__link-more" href="/faq/econom/#16">Подробнее</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mt-auto">
+                                                            <a href="/faq/econom/" class="button button-secondary">Узнать подробнее</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tour container full-width">
+            <div class="inner">
+                <div class="tour__wrapper">
+                    <div class="tour__img-wrapper">
+                        <img class="tour__img" src="/img/tour/tour.svg" data-src="/img/usa2rus/virtual-reality-glasses.svg" width="433" height="421" alt="Виртуальный тур по нашему складу">
+                    </div>
+                    <div class="tour__content-wrapper">
+                        <p class="tour__text"><span class="tour__highlight">Виртуальный&nbsp;тур</span> по&nbsp;нашему&nbsp;складу</p>
+                        <div class="tour__btn-wrapper">
+                            <a rel="nofollow" class="tour__btn button-new" target="_blank" href="https://360-captures-llc.captur3d.io/view/pochtoy-com/pochtoy-com">Прогуляться по складу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="steps container full-width">
+            <div class="inner steps__top">
+                <h3 class="steps__heading"><span class="steps__heading-highlighter">4 простых шага</span> для&nbsp;покупок в США</h3>
+                <div class="steps__wrapper">
+                    <div class="steps__item steps__item--choice">
+                        <div class="steps__item-content steps__item-content--choice">
+                            <div class="steps__digit steps__digit--choice">01</div>
+                            <div class="steps__wrapper-text steps__wrapper-text--choice">
+                                <h3 class="steps__secondary">Выбираете товар</h3>
+                                <p class="steps__text">в американском магазине, оплачиваете и указываете <a class="steps__link" href="/user-room/my-address/">адрес&nbsp;склада</a> Почтой.ком</p>
+                            </div>
+                        </div>
+                        <div class="steps__img-wrapper steps__img-wrapper--choice"><img class="steps__img" src="/img/steps/showcase.svg" width="267" height="265" alt="4 простых шага к покупкам в США"></div>
+                    </div>
+                    <div class="steps__item steps__item--purchases">
+                        <div class="steps__img-wrapper steps__img-wrapper--purchases"><img class="steps__img" src="/img/steps/notebook.svg" width="235" height="249" alt="Покупки приходят на склад"></div>
+                        <div class="steps__item-content">
+                            <div class="steps__digit steps__digit--purchases">02</div>
+                            <div class="steps__wrapper-text steps__wrapper-text--purchases">
+                                <h3 class="steps__secondary">Покупки приходят на склад</h3>
+                                <p class="steps__text steps__text--top">и появляются в вашем личном кабинете&nbsp;на&nbsp;сайте</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps__item steps__item--shipment">
+                        <div class="steps__item-content steps__item-content--shipment">
+                            <div class="steps__digit steps__digit--shipment">03</div>
+                            <div class="steps__wrapper-text steps__wrapper-text--shipment">
+                                <h3 class="steps__secondary">Отправляем их к вам домой</h3>
+                                <p class="steps__text steps__text--top">в надежной упаковке, по выгодной цене и&nbsp;очень быстро</p>
+                            </div>
+                        </div>
+                        <div class="steps__img-wrapper steps__img-wrapper--shipment"><img class="steps__img" src="/img/steps/plane.svg" width="245" height="122" alt="Отправляем их к вам домой"></div>
+                    </div>
+                    <div class="steps__item steps__item--pysulku">
+                        <div class="steps__img-wrapper steps__img-wrapper--pysulku"><img class="steps__img steps__img--dron" src="/img/steps/dron.svg" width="186" height="252" alt="через 7-10 дней в пункте выдачи, на почте или с курьером"></div>
+                        <div class="steps__item-content">
+                            <div class="steps__digit steps__digit--pysulku">04</div>
+                            <div class="steps__wrapper-text steps__wrapper-text--pysulku">
+                                <h3 class="steps__secondary">Забираете посылку</h3>
+                                <p class="steps__text steps__text--top">через 7-10 дней в пункте выдачи, на почте или с курьером</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="steps__help">
+                    <p class="steps__text steps__text--help">Не хотите разбираться самостоятельно, наши мастера шопинга с радостью купят все товары за вас.</p>
+                    <a class="button-new steps__btn" href="/fast-buy/">Быстрая покупка</a>
+               </div>
+            </div>
+        </div>
+
+        <div class="benefit container full-width">
+            <div class="inner benefit__wrapper">
+                <div class="benefit__heading-wrapper">
+                    <h2 class="benefit__heading"><span class="benefit__hlight"><span class="benefit__hlight-2">120 000</span> довольных клиентов в России</span> уже&nbsp;сделали&nbsp;свой выбор</h2>
+                    <a class="button-new benefit__btn" href="/shops/">Магазины США</a>
+                </div>
+
+                <div class="benefit__content-wrapper">
+                    <div class="benefit__reason benefit__reason--profit">
+                        <h4 class="benefit__secondary">Больше не значит дороже</h4>
+                        <p class="benefit__text">С ростом веса посылки цена за каждые 0.5 кг уменьшается в прогрессии.</p>
+                    </div>
+
+                    <div class="benefit__reason benefit__reason--quickness">
+                        <h4 class="benefit__secondary">Быстрая обработка посылок</h4>
+                        <p class="benefit__text">Посылка обрабатывается не дольше 48 часов после поступления на склад.</p>
+                    </div>
+
+                    <div class="benefit__reason benefit__reason--sms">
+                        <h4 class="benefit__secondary">SMS-уведомления</h4>
+                        <p class="benefit__text">Отслеживайте весь процесс с помощью sms-уведомлений.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="inner reviews">
+            <div class="reviews__heading-wrapper text-center">
+                <h3 class="reviews__heading">Отзывы и цитаты блогеров</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="reviews__btn-wrapper col-12 d-flex justify-content-center align-items-center order-0 order-lg-2">
+                            <a class="button-new reviews__btn" href="/reviews-map/">Смотреть отзывы на карте</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="font-weight-medium reviews__text">За послелние 12 месяцев десятки тысяч наших клиентов оформили заказ товаров из США и Европы и оставили более 14 733 отзыва</p>
+                <p class="m-0 font-weight-medium reviews__text-primary">Средняя оценка: 4.8</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="reviews-grid__item reviews__item-wrapper">
+                    <div class="reviews__item review review-item">
+                        <div class="review-item__header">
+                            <div class="row justify-content-between">
+                                <div class="col-sm-auto">
+                                    <div class="review__name review-item__name">
+                                        nikolay s
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="star-rating">
+                                        <div class="star-rating__fill" data-rating="4.5"></div>
+                                        <div class="star-rating__meter"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row review__labels review-item__labels">
+                                <div class="col-auto flex-shrink-1">
+                                    <div class="review__label review-item__data"><span>Дата: </span>27 Декабря 2020</div>
+                                </div>
+                                <div class="col-auto flex-shrink-1">
+                                    <div class="review__label review-item__number"><span>Номер посылки: </span>
+                                        <a rel="nofollow" href="http://gdebox.com/track/XMBT36399051/RU" target="_blank">
+                                            XMBT36399051
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-auto flex-shrink-1 review-item__city-wrapper">
+                                    <div class="review__label review-item__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Москва</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review__body review-item__body">
+                            <div class="review__text review-item__text">
+                                <div>Доехала за 12 дней посылка, упакована в пакет. Первый раз пользуюсь вашим сервисом. Буду заказывать еще.</div>
+                                <button class="js-review-text-toggler" type="button" style="display: none;">Показать весь комментарий</button>
+                            </div>
+                        </div>
+                        <div class="review__gallery review-item__gallery"></div>
+                    </div>
+                </div>
+
+                <div class="reviews-grid__item reviews__item-wrapper">
+                    <div class="reviews__item review review-item">
+                        <div class="review-item__header">
+                            <div class="row justify-content-between">
+                                <div class="col-sm-auto">
+                                    <div class="review__name review-item__name">
+                                        anton b
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="star-rating">
+                                        <div class="star-rating__fill" data-rating="4.5"></div>
+                                        <div class="star-rating__meter"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row review__labels review-item__labels">
+                                <div class="col-auto flex-shrink-1">
+                                    <div class="review__label  review-item__data"><span>Дата:</span> 27 Декабря 2020</div>
+                                </div>
+                                <div class="col-auto flex-shrink-1">
+                                    <div class="review__label review-item__number"><span>Номер посылки: </span>
+                                        <a rel="nofollow" href="http://gdebox.com/track/XMBT36374099/RU" target="_blank">
+                                            XMBT36374099
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-auto flex-shrink-1 review-item__city-wrapper">
+                                    <div class="review__label review-item__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Омск</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review__body review-item__body">
+                            <div class="review__text review-item__text">
+                                <div>Быстрая доставка</div>
+                                <button class="js-review-text-toggler" type="button" style="display: none;">Показать весь комментарий</button>
+                            </div>
+                        </div>
+                        <div class="review__gallery review-item__gallery"></div>
+                    </div>
+                </div>
+
+                <div class="reviews-grid__item reviews__item-wrapper">
+                    <div class="reviews__item review review-item">
+                        <div class="review-item__header">
+                            <div class="row justify-content-between">
+                                <div class="col-sm-auto">
+                                    <div class="review__name review-item__name">
+                                        aleksande g
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="star-rating">
+                                        <div class="star-rating__fill" data-rating="4.5"></div>
+                                        <div class="star-rating__meter"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row review__labels review-item__labels">
+                                <div class="col-auto flex-shrink-1">
+                                    <div class="review__label  review-item__data"><span>Дата:</span> 26 Декабря 2020</div>
+                                </div>
+                                <div class="col-auto flex-shrink-1">
+                                    <div class="review__label review-item__number"><span>Номер посылки: </span>
+                                        <a rel="nofollow" href="http://gdebox.com/track/XMBT36422509/RU" target="_blank">
+                                            XMBT36422509
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-auto flex-shrink-1 review-item__city-wrapper">
+                                    <div class="review__label review-item__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Тюмень</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review__body review-item__body">
+                            <div class="review__text review-item__text">
+                                <div>
+                                    Впечатлен работой сервиса, посылка быстро обработана и доставлена примерно за 10 дней. Ребенок получит свой подарок :)
+                                </div>
+                                <button class="js-review-text-toggler" type="button" style="display: none;">Показать весь комментарий</button>
+                            </div>
+                        </div>
+                        <div class="review__gallery review-item__gallery"></div>
+                    </div>
+                </div>
+
+                <div class="reviews-grid__item reviews__item-wrapper">
+                    <div class="reviews__item review review-item">
+                        <div class="review-item__header">
+                            <div class="row justify-content-between">
+                                <div class="col-sm-auto">
+                                    <div class="review__name review-item__name">
+                                        Roman K
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="star-rating">
+                                        <div class="star-rating__fill" data-rating="4.5"></div>
+                                        <div class="star-rating__meter"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row review__labels review-item__labels">
+                                <div class="col-auto flex-shrink-1">
+                                    <div class="review__label  review-item__data"><span>Дата:</span> 26 Декабря 2020</div>
+                                </div>
+                                <div class="col-auto flex-shrink-1">
+                                    <div class="review__label review-item__number"><span>Номер посылки: </span>
+                                        <a rel="nofollow" href="http://gdebox.com/track/XMBT36398610/RU" target="_blank">
+                                            XMBT36398610
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-auto flex-shrink-1 review-item__city-wrapper">
+                                    <div class="review__label review-item__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Москва</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review__body review-item__body">
+                            <div class="review__text review-item__text">
+                                <div>
+                                    Первый раз воспользовался вашим сервисом. Все понятно, быстро и удобно. Скоро за новыми покупками. Спасибо!
+                                </div>
+                                <button class="js-review-text-toggler" type="button" style="display: none;">Показать весь комментарий</button>
+                            </div>
+                        </div>
+                        <div class="review__gallery review-item__gallery"></div>
+                    </div>
+                </div>
+
+                <div class="reviews-grid__item reviews__item-wrapper">
+                    <div class="reviews__item review review-item">
+                        <div class="review-item__header">
+                            <div class="row justify-content-between">
+                                <div class="col-sm-auto">
+                                    <div class="review__name review-item__name">
+                                        bibinisa e
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="star-rating">
+                                        <div class="star-rating__fill" data-rating="4.5"></div>
+                                        <div class="star-rating__meter"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row review__labels review-item__labels">
+                                <div class="col-auto flex-shrink-1">
+                                    <div class="review__label  review-item__data"><span>Дата:</span> 26 Декабря 2020</div>
+                                </div>
+                                <div class="col-auto flex-shrink-1">
+                                    <div class="review__label review-item__number"><span>Номер посылки: </span>
+                                        <a rel="nofollow" href="http://gdebox.com/track/XMBT36539076/RU" target="_blank">
+                                            XMBT36539076
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-auto flex-shrink-1 review-item__city-wrapper">
+                                    <div class="review__label review-item__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Люберцы</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review__body review-item__body">
+                            <div class="review__text review-item__text">
+                                <div>Спасибо! Получила заказ.</div>
+                                <button class="js-review-text-toggler" type="button" style="display: none;">Показать весь комментарий</button>
+                            </div>
+                        </div>
+                        <div class="review__gallery review-item__gallery"></div>
+                    </div>
+                </div>
+
+                <div class="reviews-grid__item reviews__item-wrapper">
+                    <div class="reviews__item review review-item">
+                        <div class="review-item__header">
+                            <div class="row justify-content-between">
+                                <div class="col-sm-auto">
+                                    <div class="review__name review-item__name">
+                                        bulat k
+                                    </div>
+                                </div>
+                                <div class="col-sm-auto">
+                                    <div class="star-rating">
+                                        <div class="star-rating__fill" data-rating="4.5"></div>
+                                        <div class="star-rating__meter"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row review__labels review-item__labels">
+                                <div class="col-auto flex-shrink-1">
+                                    <div class="review__label  review-item__data"><span>Дата:</span> 26 Декабря 2020</div>
+                                </div>
+                                <div class="col-auto flex-shrink-1">
+                                    <div class="review__label review-item__number"><span>Номер посылки: </span>
+                                        <a rel="nofollow" href="http://gdebox.com/track/XMBT36538709/RU" target="_blank">
+                                            XMBT36538709
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-auto flex-shrink-1 review-item__city-wrapper">
+                                    <div class="review__label review-item__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Уфа</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review__body review-item__body">
+                            <div class="review__text review-item__text">
+                                <div>Посылка пришла в целости и сохранности, на удивление быстро</div>
+                                <button class="js-review-text-toggler" type="button" style="display: none;">Показать весь комментарий</button>
+                            </div>
+                        </div>
+                        <div class="review__gallery review-item__gallery"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="reviews__btn-reviews text-center mt-5">
+                <a class="btn lg px-5" href="/reviews/">Еще больше отзывов</a>
+            </div>
+        </div>
+
+        <div class="about container full-width">
+            <div class="inner">
+                <h3 class="centered about__heading">Доставка из США и не только</h3>
+                <p class="centered about__text-history">Pochtoy.com занимается доставкой из Штатов с 2010 года. За это время из небольшого мейлфорвардера мы выросли в крупную и надежную компанию – с двумя складами в Штатах, своими почтовыми службами и более чем десятью тысячами доставок из Америки ежегодно. Сотни тысяч клиентов из России, Казахстана, Украины и Беларуси уже получили свои посылки из США с Pochtoy.com!</p>
+                <p class="centered about__secondary">Наши услуги включают:</p>
+                <div class="row about__list">
+                    <div class="col-md-6 about__item about__item--shild">
+                        <h4><a class="about__link" href="/prices/">Мейлфорвардинг</a></h4>
+                        <p class="about__item-text">Покупайте товары в Америке, и указывайте в магазине адрес, который вы получили от нас при регистрации. А надежная доставка товаров из США до вашего дома – полностью на нас.</p>
+                    </div>
+                    <div class="col-md-6 about__item about__item--dollar">
+                        <h4><a class="about__link" href="/landings/pokupki-v-ssha/">Полное сопровождение</a></h4>
+                        <p class="about__item-text">Мы берем на себя всё оформление бумаг, коммуникации с продавцом и даже оплату (выгодно, если магазин не принимает российские карты). Вы даете нам ссылку – и наши мастера шопинга&nbsp;выкупают товары за вас.</p>
+                    </div>
+                    <div class="col-md-6 about__item about__item--hands">
+                        <h4><a class="about__link" href="/landings/fulfilment/">Фулфилмент</a></h4>
+                        <p class="about__item-text">Америка – самый большой рынок в мире. И вы можете на этом зарабатывать. Не обязательно оттуда покупать, можно туда продавать! Мы занимаемся хранением, упаковкой и доставкой ваших товаров клиентам из США.</p>
+                    </div>
+                    <div class="col-md-6 about__item about__item--candy">
+                        <h4><a class="about__link" href="/sweets/">Американские сладости</a></h4>
+                        <p class="about__item-text">Вместе с любой посылкой вы можете дополнительно взять пакет разнообразных, специально подобранных нами лучших американских вкусностей. Порадуйте себя или своего ребенка!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="personal-address container full-width">
+            <div class="inner pt-0 personal-address__wrapper">
+                <h3 class="centered personal-address__heading">Ваш личный адрес в США для покупок</h3>
+                <p>С нами вы получаете целых два адреса в США! У нас есть два склада для приема посылок – в солнечной Пенсильвании и безналоговом Делавэре. Указывайте в магазине тот из них, отправка на который обойдется дешевле (или покупка будет без налогов). Чаще всего в Пенсильванию наши клиенты заказывают одежду и обувь, а в Делавэр идут гаджеты и всё остальное. С Почтой вы всегда получаете максимальную выгоду!</p>
+                <p>При доставке из Америки в Россию все ваши товары обязательно страхуются. Прием посылок на наш склад, их обработка, удаление лишних коробок, хранение сроком до 70 дней – у нас полностью бесплатно. Мы также бесплатно проводим объединение посылок из разных магазинов в одну. Это необходимо для снижения стоимости доставки посылок из США в Россию.</p>
+                <p>У нас самая выгодная доставка! От $11.99 за посылку! А если у вас есть какие-то особенные требования, вроде проверки техники или дополнительной пленки для самых хрупких товаров, – операторы нашего склада с радостью выполнят их по <a href="/services/">спецзапросу</a>.</p>
+                <p>Pochtoy.com – это надежно, быстро и выгодно. А в наших <a href="https://www.instagram.com/pochtoy.usa/" target="_blank">соцсетях</a> вы всегда найдете информацию о лучших скидках американских магазинов. Не обязательно заходить в Черную пятницу или Prime Day, крутые акции проходят каждый день!</p>
+            </div>
+        </div>
+
+        <div class="reference inner pt-0">
+            <h3 class="centered reference__heading">Что еще надо знать о Pochtoy.com</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="icon-block reference__icon-wrapper">
+                        <img class="reference__img" src="/img/reference/shild.svg" width="100" height="100" alt="">
+                        <h3 class="icon-block__title reference__title">Надежный посредник<br>доставки из&nbsp;США</h3>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="icon-block reference__icon-wrapper">
+                        <img class="reference__img" src="/img/reference/mark.svg" width="100" height="100" alt="">
+                        <h3 class="icon-block__title reference__title">Бесплатный виртуальный<br>адрес в&nbsp;США</h3>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="icon-block reference__icon-wrapper">
+                        <img class="reference__img" src="/img/reference/plane.svg" width="100" height="100" alt="">
+                        <h3 class="icon-block__title reference__title">Доставка посылок в&nbsp;Россию<br>за 7-10 дней</h3>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="icon-block reference__icon-wrapper">
+                        <img class="reference__img" src="/img/reference/bag.svg" width="100" height="100" alt="">
+                        <h3 class="icon-block__title reference__title">Покупки в топовых<br>американских магазинах</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+
+            $(".delivery-services li").click(function(){
+                $(this).addClass('active').siblings('li').removeClass('active');
+                let ds=$(this).attr('data-ds');
+                $(".dservice-details").hide();
+                $(".dservice-details."+ds).show();
+
+            });
+
+        </script>
+
+
+        <!-- PAGE CONTENT -->
+
+
+        <div class="footer">
+            <div class="footer__top">
+                <div class="inner">
+
+                    <div class="footer__top-col">
+                        <p class="copyright">&copy; 2020 Pochtoy.com LLC . Все права защищены.</p>
+                        <address>
+                            510 Carroll Dr, New Castle, DE, 19720, United States<br>
+                            <a href="tel:+14125673010">+1 (412) 567-30-10</a>
+                        </address>
+                    </div>
+                    <div class="footer__top-col">
+                        <b class="footer__heading">Устанавливайте бота Телеграм</b>
+                        <ul class="social list-reset">
+                            <li class="social__item">
+                                <a class="social__link social__link--tg" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-col">
+                        <b class="footer__heading">Подписывайтесь на новости о распродажах</b>
+
+                        <ul class="social list-reset">
+                            <li class="social__item">
+                                <a class="social__link social__link--vk" href="#"></a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--fb" href="#"></a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--yt" href="#"></a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--in" href="#"></a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--in1" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="inner">
+                    <div class="footer__bottom-col">
+                        <b class="footer__heading">О компании</b>
+                        <ul class="footer__nav list-reset">
+                            <li class="footer__nav-item">
+                                <a href="#">Услуги</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Цены</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Вакансии</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Соглашение о персональных данных</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Условия использования</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__bottom-col">
+                        <b class="footer__heading">Полезное</b>
+                        <ul class="footer__nav list-reset">
+                            <li class="footer__nav-item">
+                                <a href="#">Как работает наш сервис</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Как покупать с оператором</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Ответы на частые вопросы</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Популярные магазины</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Черный список магазинов</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Актуальные распродажи</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Как подобрать американский размер</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Как рассчитать таможенную  пошлину</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Что мы не доставляем</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__bottom-col">
+                        <b class="footer__heading">Спецпроекты</b>
+                        <ul class="footer__nav list-reset">
+                            <li class="footer__nav-item">
+                                <a href="#">50% на первую доставку</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Скидки для постоянных клиентов</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Реферальная программа</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Кэшбек Mr. Rebates и Rakuten</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Гаражная распродажа</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Stop Fraud</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="msg-box">
+            <div class="message"></div>
+            <button class="close"></button>
+        </div>
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,500italic,700italic&subset=latin,cyrillic,cyrillic-ext"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/css/v4/fonts.css" type="text/css"/>
+        <!-- <link rel="stylesheet" href="/css/v4/slick.css?t" type="text/css"/> -->
+        <!-- <link rel="stylesheet" href="/css/v4/priority-nav-core.css?t" type="text/css"/> -->
+
+    </div>
+
+    <script src="/js/dropdown.jquery-0.2.2.js"></script>
+    <script src="/js/api-1.0.11.js"></script>
+    <script src="/js/calc-1.3.5.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".opportunities-swiper", {
+          loop: true,
+          spaceBetween: 15,
+          pagination: {
+            el: '.opportunities__btn-slider-wrapper',
+            type: 'bullets',
+            bulletElement: 'button',
+            bulletClass: 'opportunities__btn-slider',
+            bulletActiveClass: 'opportunities__btn-slider--active',
+            clickable: true
+        },
+      });
+    </script>
+
+</body>
+</html>
