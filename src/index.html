@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/css/v4/simplebar.min.css" type="text/css"/>
     <link rel="stylesheet" href="css/v4/style.css" type="text/css"/>
     <link rel="stylesheet" href="css/v4/user-room.css" type="text/css"/>
@@ -183,64 +184,72 @@
 
         <div class="delivery container first full-width" style="display:block;">
             <div class="delivery__wrapper inner inner--sm">
-                <h1>Доставка из США от <span class="delivery__cost hlight">$11.99 и 5 дней</span></h1>
+                <h1>Доставка из США от <span class="delivery__cost hlight">$11.99 и&nbsp;5&nbsp;дней</span></h1>
                 <p class="welcome-intro delivery__text">Помогаем с покупками в Америке и привозим их к вам домой быстро и недорого.</p>
                 <div class="reg-btn-wrapper"><a class="btn lg register-btn button-new" href="/registration/">Получить адрес в США</a></div>
             </div>
         </div>
         <div class="opportunities container full-width">
-            <div class="inner inner--sm opportunities__wrapper">
-                <ul class="opportunities__list">
-                    <li class="opportunities__item opportunities__item--special">
-                        <h2 class="heading__second opportunities__heading">Специальное предложение
-                            для постоянных клиентов
-                            и байеров</h2>
-                        <p class="opportunities__text">Мы разработали бонусную программу, чтобы вам было выгодно отправлять много посылок через наш сервис. Скидки на доставку до 20 процентов и дополнительные бонусы.</p>
+            <div class="inner inner--sm opportunities__wrapper swiper-container opportunities-swiper">
+                <ul class="opportunities__list swiper-wrapper">
+                    <li class="opportunities__item opportunities__item--left opportunities__item--special swiper-slide">
+                        <div class="opportunities__text-wrapper">
+                            <h2 class="heading__second opportunities__heading">Специальное предложение
+                                для постоянных клиентов
+                                и&nbsp;байеров</h2>
+                            <p class="opportunities__text">Мы разработали бонусную программу, чтобы вам было выгодно отправлять много посылок через наш сервис. Скидки на доставку до 20 процентов и дополнительные бонусы.</p>
+                        </div>
                         <div class="opportunities__btn-wrapper">
                             <a class="button-new lg opportunities__btn opportunities__btn--condition" href="#">Посмотреть условия</a>
                             <a class="button-new lg opportunities__btn opportunities__btn-statistics" href="#">Посмотреть вашу статистику</a>
                         </div>
                     </li>
-                    <li class="opportunities__item opportunities__item--gapage-sale">
-                        <h2 class="heading__second opportunities__heading opportunities__heading--gapage-sale">Gapage Sale – гаражная распродажа товаров
-                            из США</h2>
-                        <p class="opportunities__text">Мы помогаем нашим партнерам реализовывать товары, которые по каким-то причинам задержались на нашем складе. А вы получаете очень выгодные цены и быструю доставку. Нам удобно – вам приятно!</p>
+                    <li class="opportunities__item opportunities__item--right opportunities__item--gapage-sale swiper-slide">
+                        <div class="opportunities__text-wrapper">
+                            <h2 class="heading__second opportunities__heading opportunities__heading--gapage-sale">Gapage Sale – гаражная распродажа товаров
+                                из&nbsp;США</h2>
+                            <p class="opportunities__text">Мы помогаем нашим партнерам реализовывать товары, которые по каким-то причинам задержались на нашем складе. А вы получаете очень выгодные цены и быструю доставку. Нам удобно – вам приятно!</p>
+                        </div>
+
                         <div class="opportunities__btn-wrapper">
                             <a class="button-new opportunities__btn opportunities__btn--condition" href="#">Посмотреть условия</a>
                         </div>
                     </li>
-                    <li class="opportunities__item opportunities__item--discount">
-                        <h2 class="heading__second opportunities__heading opportunities__heading--discount">Пользуетесь другим посредником и хотите попробовать Pochtoy.com</h2>
-                        <p class="opportunities__text opportunities__text--discount">Пришлите скриншот из вашего личного кабинета другого посредника и мы дадим вам 50% скидку на первую доставку.</p>
+                    <li class="opportunities__item opportunities__item--left opportunities__item--discount swiper-slide">
+                        <div class="opportunities__text-wrapper">
+                            <h2 class="heading__second opportunities__heading opportunities__heading--discount">Пользуетесь другим посредником и хотите попробовать Pochtoy.com</h2>
+                            <p class="opportunities__text opportunities__text--discount">Пришлите скриншот из вашего личного кабинета другого посредника и мы дадим вам 50% скидку на первую доставку.</p>
+                        </div>
+
                         <div class="opportunities__btn-wrapper">
                             <a class="button-new opportunities__btn opportunities__btn--condition" href="#">Посмотреть условия</a>
                         </div>
                     </li>
-                    <li class="opportunities__item opportunities__item--economy">
-                        <h2 class="heading__second opportunities__heading opportunities__heading--economy">Дополнительная экономия с кэшбек сервисами Mr.Rebates и Racuten</h2>
-                        <p class="opportunities__text opportunities__text--economy">Мы договорились с кэшбек сервисами о дополнительном бонусе для наших клиентов. Получитье  15 долларов на счет после первой покупки.</p>
+                    <li class="opportunities__item opportunities__item--right opportunities__item--economy swiper-slide">
+                        <div class="opportunities__text-wrapper">
+                            <h2 class="heading__second opportunities__heading opportunities__heading--economy">Дополнительная экономия с кэшбек сервисами Mr.Rebates и Racuten</h2>
+                            <p class="opportunities__text opportunities__text--economy">Мы договорились с кэшбек сервисами о дополнительном бонусе для наших клиентов. Получитье  15 долларов на счет после первой покупки.</p>
+                        </div>
+
                         <div class="opportunities__btn-wrapper">
                             <a class="button-new opportunities__btn opportunities__btn--condition" href="#">Подробности</a>
                         </div>
                     </li>
-                    <li class="opportunities__item opportunities__item--special-additional opportunities__item--active">
-                        <h2 class="heading__second opportunities__heading">Специальное предложение
-                            для постоянных клиентов
-                            и байеров</h2>
-                        <p class="opportunities__text">Мы разработали бонусную программу, чтобы вам было выгодно отправлять много посылок через наш сервис. Скидки на доставку до 20 процентов и дополнительные бонусы.</p>
+                    <li class="opportunities__item opportunities__item--left opportunities__item--special-additional swiper-slide">
+                        <div class="opportunities__text-wrapper">
+                            <h2 class="heading__second opportunities__heading">Специальное предложение
+                                для&nbsp;постоянных клиентов
+                                и&nbsp;байеров</h2>
+                            <p class="opportunities__text">Мы разработали бонусную программу, чтобы вам было выгодно отправлять много посылок через наш сервис. Скидки на доставку до 20 процентов и дополнительные бонусы.</p>
+                        </div>
+
                         <div class="opportunities__btn-wrapper">
                             <a class="button-new opportunities__btn opportunities__btn--condition" href="#">Посмотреть условия</a>
                             <a class="button-new opportunities__btn opportunities__btn-statistics" href="#">Посмотреть вашу статистику</a>
                         </div>
                     </li>
                 </ul>
-                <div class="opportunities__btn-slider-wrapper">
-                    <button class="opportunities__btn-slider opportunities__btn-slider--active"></button>
-                    <button class="opportunities__btn-slider"></button>
-                    <button class="opportunities__btn-slider"></button>
-                    <button class="opportunities__btn-slider"></button>
-                    <button class="opportunities__btn-slider"></button>
-                </div>
+                <div class="opportunities__btn-slider-wrapper"></div>
             </div>
         </div>
 
@@ -288,9 +297,9 @@
             <div class="inner">
                 <div class="statistics__wrapper">
                     <div class="statistics__content">
-                        <p class="statistics__text"><span class="statistics__meaning">204,&nbsp;&nbsp;746</span> отправлено</p>
-                        <p class="statistics__text"><span class="statistics__meaning">15,&nbsp;&nbsp;567</span> отзывов</p>
-                        <p class="statistics__text"><span class="statistics__meaning">10&nbsp;&nbsp;лет</span> на&nbsp;рынке</p>
+                        <p class="statistics__text"><span class="statistics__meaning">204,&nbsp;746</span> отправлено</p>
+                        <p class="statistics__text"><span class="statistics__meaning">15,&nbsp;567</span> отзывов</p>
+                        <p class="statistics__text"><span class="statistics__meaning">10&nbsp;лет</span> на&nbsp;рынке</p>
                     </div>
                     <div class="statistics__btn-wrapper">
                         <a class="button-new statistics__btn" href="">Отправить посылку</a>
@@ -322,17 +331,8 @@
         <div class="container full-width">
             <div class="inner inner--sm">
                 <div class="calc-include">
-                    <div class="calc-header">
-                        <div class="calc-header__wrapper">
-                            <h2>Онлайн-калькулятор стоимости доставки товара</h2>
-                            <p>Задайте необходимые параметры посылки и калькулятор расчитает приблизительную стоимость доставки вашей посылки из США.</p>
-                            <div class="tab-switch-wrapper">
-                                <ul class="tab-switch">
-                                    <li class="active">Регулярный прайс</li>
-                                    <li class="">Постоянным клиентам</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="calc-header calc-header--index">
+
                         <div class="calc-header__form">
                             <form class="calc-filter">
                                 <div class="calc-filter__field calc-filter__field--country">
@@ -363,41 +363,17 @@
                                             <option value="lb">фунты</option>
                                         </select>
                                     </div>
-                                </div>
-                                <div class="calc-filter__drop-down">
-                                    <div class="calc-filter__extra">
-                                        <div class="calc-filter__field">
-                                            <label for="package-width">Ширина</label>
-                                            <div class="calc-filter__wrap">
-                                                <input id="package-width" type="text" value="0.5">
-                                                <span class="calc-filter__unit">см</span>
-                                            </div>
-                                        </div>
-                                        <div class="calc-filter__field">
-                                            <label for="package-height">Высота</label>
-                                            <div class="calc-filter__wrap">
-                                                <input id="package-height" type="text" value="0.5">
-                                                <span class="calc-filter__unit">см</span>
-                                            </div>
-                                        </div>
-                                        <div class="calc-filter__field">
-                                            <label for="package-length">Длина</label>
-                                            <div class="calc-filter__wrap">
-                                                <input id="package-length" type="text" value="0.5">
-                                                <span class="calc-filter__unit">см</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="calc-filter__control">
-                                        <button class="calc-filter__btn" type="button">
-                                            <span class="calc-filter__btn-more">Дополнительные параметры</span>
-                                            <span class="calc-filter__btn-less">Скрыть параметры</span>
-                                        </button>
-                                    </div>
+                                    <span class="calc-filter__progress" style="width:50%"></span>
+                                    <input class="calc-filter__range" type="range">
                                 </div>
 
                             </form>
+                        </div>
+                        <div class="calc-header__btn-wrapper">
+                            <a class="btn calc-filter-btn button-new" href="#">Рассчитать стоимость</a>
+                            <div>
+                                <a class="calc-filter-conditions" href="#">Условия для постоянных клиентов</a>
+                            </div>
                         </div>
                     </div>
                     <script>
@@ -976,10 +952,10 @@
                                 <p class="steps__text">в американском магазине, оплачиваете и указываете <a class="steps__link" href="/user-room/my-address/">адрес&nbsp;склада</a> Почтой.ком</p>
                             </div>
                         </div>
-                        <div class="steps__img-wrapper steps__img-wrapper--choice"><img class="steps__img" src="/img/steps/showcase.svg" alt="4 простых шага к покупкам в США"></div>
+                        <div class="steps__img-wrapper steps__img-wrapper--choice"><img class="steps__img" src="/img/steps/showcase.svg" width="267" height="265" alt="4 простых шага к покупкам в США"></div>
                     </div>
                     <div class="steps__item steps__item--purchases">
-                        <div class="steps__img-wrapper steps__img-wrapper--purchases"><img class="steps__img" src="/img/steps/notebook.svg"  alt="Покупки приходят на склад"></div>
+                        <div class="steps__img-wrapper steps__img-wrapper--purchases"><img class="steps__img" src="/img/steps/notebook.svg" width="235" height="249" alt="Покупки приходят на склад"></div>
                         <div class="steps__item-content">
                             <div class="steps__digit steps__digit--purchases">02</div>
                             <div class="steps__wrapper-text steps__wrapper-text--purchases">
@@ -996,10 +972,10 @@
                                 <p class="steps__text steps__text--top">в надежной упаковке, по выгодной цене и&nbsp;очень быстро</p>
                             </div>
                         </div>
-                        <div class="steps__img-wrapper steps__img-wrapper--shipment"><img class="steps__img" src="/img/steps/plane.svg" width="244" height="172" alt="Отправляем их к вам домой"></div>
+                        <div class="steps__img-wrapper steps__img-wrapper--shipment"><img class="steps__img" src="/img/steps/plane.svg" width="245" height="122" alt="Отправляем их к вам домой"></div>
                     </div>
                     <div class="steps__item steps__item--pysulku">
-                        <div class="steps__img-wrapper steps__img-wrapper--pysulku"><img class="steps__img steps__img--dron" src="/img/steps/dron.svg" width="185" height="251" alt="через 7-10 дней в пункте выдачи, на почте или с курьером"></div>
+                        <div class="steps__img-wrapper steps__img-wrapper--pysulku"><img class="steps__img steps__img--dron" src="/img/steps/dron.svg" width="186" height="252" alt="через 7-10 дней в пункте выдачи, на почте или с курьером"></div>
                         <div class="steps__item-content">
                             <div class="steps__digit steps__digit--pysulku">04</div>
                             <div class="steps__wrapper-text steps__wrapper-text--pysulku">
@@ -1059,287 +1035,258 @@
 
             <div class="reviews-grid">
                 <div class="reviews-grid__item reviews__item-wrapper">
-                    <div class="reviews__item review review-itme">
+                    <div class="reviews__item review review-item">
                         <div class="review-item__header">
                             <div class="row justify-content-between">
                                 <div class="col-sm-auto">
-                                    <div class="review__name review-itme__name">
+                                    <div class="review__name review-item__name">
                                         nikolay s
                                     </div>
                                 </div>
                                 <div class="col-sm-auto">
                                     <div class="star-rating">
-                                        <div class="star-rating__fill review__fill" data-rating="5"></div>
-                                        <div class="star-rating__meter review__star"></div>
-                                        <!--
-                                        <ul class="review-itme__list">
-                                            <li class="review-itme__start">
-                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z" fill="#FF006D"/>
-                                                </svg>
-                                            </li>
-                                            <li class="review-itme__start">
-                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z" fill="#FF006D"/>
-                                                </svg>
-                                            </li>
-                                            <li class="review-itme__start">
-                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z" fill="#FF006D"/>
-                                                </svg>
-                                            </li>
-                                            <li class="review-itme__start">
-                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10 15.27L16.18 19L14.54 11.97L20 7.24L12.81 6.63L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27Z" fill="#FF006D"/>
-                                                </svg>
-                                            </li>
-                                            <li class="review-itme__start">
-                                                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M20 7.24L12.81 6.62L10 0L7.19 6.63L0 7.24L5.46 11.97L3.82 19L10 15.27L16.18 19L14.55 11.97L20 7.24ZM10 13.4V4.1L11.71 8.14L16.09 8.52L12.77 11.4L13.77 15.68L10 13.4Z" fill="#FF006D"/>
-                                                </svg>
-                                            </li>
-                                        </ul>
-                                        -->
+                                        <div class="star-rating__fill" data-rating="4.5"></div>
+                                        <div class="star-rating__meter"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row review__labels review-itme__labels">
+                            <div class="row review__labels review-item__labels">
                                 <div class="col-auto flex-shrink-1">
-                                    <div class="review__label review-itme__data"><span>Дата: </span>27 Декабря 2020</div>
+                                    <div class="review__label review-item__data"><span>Дата: </span>27 Декабря 2020</div>
                                 </div>
                                 <div class="col-auto flex-shrink-1">
-                                    <div class="review__label review-itme__number"><span>Номер посылки: </span>
+                                    <div class="review__label review-item__number"><span>Номер посылки: </span>
                                         <a rel="nofollow" href="http://gdebox.com/track/XMBT36399051/RU" target="_blank">
                                             XMBT36399051
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-auto flex-shrink-1 review-itme__city-wrapper">
-                                    <div class="review__label review-itme__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Москва</div>
+                                <div class="col-auto flex-shrink-1 review-item__city-wrapper">
+                                    <div class="review__label review-item__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Москва</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="review__body review-itme__body">
-                            <div class="review__text review-itme__text">
+                        <div class="review__body review-item__body">
+                            <div class="review__text review-item__text">
                                 <div>Доехала за 12 дней посылка, упакована в пакет. Первый раз пользуюсь вашим сервисом. Буду заказывать еще.</div>
                                 <button class="js-review-text-toggler" type="button" style="display: none;">Показать весь комментарий</button>
                             </div>
                         </div>
-                        <div class="review__gallery review-itme__gallery"></div>
+                        <div class="review__gallery review-item__gallery"></div>
                     </div>
                 </div>
 
                 <div class="reviews-grid__item reviews__item-wrapper">
-                    <div class="reviews__item review review-itme">
+                    <div class="reviews__item review review-item">
                         <div class="review-item__header">
                             <div class="row justify-content-between">
                                 <div class="col-sm-auto">
-                                    <div class="review__name review-itme__name">
+                                    <div class="review__name review-item__name">
                                         anton b
                                     </div>
                                 </div>
                                 <div class="col-sm-auto">
                                     <div class="star-rating">
-                                        <div class="star-rating__fill review__fill" data-rating="5"></div>
-                                        <div class="star-rating__meter review__star"></div>
+                                        <div class="star-rating__fill" data-rating="4.5"></div>
+                                        <div class="star-rating__meter"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row review__labels review-itme__labels">
+                            <div class="row review__labels review-item__labels">
                                 <div class="col-auto flex-shrink-1">
-                                    <div class="review__label  review-itme__data"><span>Дата:</span> 27 Декабря 2020</div>
+                                    <div class="review__label  review-item__data"><span>Дата:</span> 27 Декабря 2020</div>
                                 </div>
                                 <div class="col-auto flex-shrink-1">
-                                    <div class="review__label review-itme__number"><span>Номер посылки: </span>
+                                    <div class="review__label review-item__number"><span>Номер посылки: </span>
                                         <a rel="nofollow" href="http://gdebox.com/track/XMBT36374099/RU" target="_blank">
                                             XMBT36374099
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-auto flex-shrink-1 review-itme__city-wrapper">
-                                    <div class="review__label review-itme__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Омск</div>
+                                <div class="col-auto flex-shrink-1 review-item__city-wrapper">
+                                    <div class="review__label review-item__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Омск</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="review__body review-itme__body">
-                            <div class="review__text review-itme__text">
+                        <div class="review__body review-item__body">
+                            <div class="review__text review-item__text">
                                 <div>Быстрая доставка</div>
                                 <button class="js-review-text-toggler" type="button" style="display: none;">Показать весь комментарий</button>
                             </div>
                         </div>
-                        <div class="review__gallery review-itme__gallery"></div>
+                        <div class="review__gallery review-item__gallery"></div>
                     </div>
                 </div>
 
                 <div class="reviews-grid__item reviews__item-wrapper">
-                    <div class="reviews__item review review-itme">
+                    <div class="reviews__item review review-item">
                         <div class="review-item__header">
                             <div class="row justify-content-between">
                                 <div class="col-sm-auto">
-                                    <div class="review__name review-itme__name">
+                                    <div class="review__name review-item__name">
                                         aleksande g
                                     </div>
                                 </div>
                                 <div class="col-sm-auto">
                                     <div class="star-rating">
-                                        <div class="star-rating__fill review__fill" data-rating="5"></div>
-                                        <div class="star-rating__meter review__star"></div>
+                                        <div class="star-rating__fill" data-rating="4.5"></div>
+                                        <div class="star-rating__meter"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row review__labels review-itme__labels">
+                            <div class="row review__labels review-item__labels">
                                 <div class="col-auto flex-shrink-1">
-                                    <div class="review__label  review-itme__data"><span>Дата:</span> 26 Декабря 2020</div>
+                                    <div class="review__label  review-item__data"><span>Дата:</span> 26 Декабря 2020</div>
                                 </div>
                                 <div class="col-auto flex-shrink-1">
-                                    <div class="review__label review-itme__number"><span>Номер посылки: </span>
+                                    <div class="review__label review-item__number"><span>Номер посылки: </span>
                                         <a rel="nofollow" href="http://gdebox.com/track/XMBT36422509/RU" target="_blank">
                                             XMBT36422509
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-auto flex-shrink-1 review-itme__city-wrapper">
-                                    <div class="review__label review-itme__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Тюмень</div>
+                                <div class="col-auto flex-shrink-1 review-item__city-wrapper">
+                                    <div class="review__label review-item__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Тюмень</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="review__body review-itme__body">
-                            <div class="review__text review-itme__text">
+                        <div class="review__body review-item__body">
+                            <div class="review__text review-item__text">
                                 <div>
                                     Впечатлен работой сервиса, посылка быстро обработана и доставлена примерно за 10 дней. Ребенок получит свой подарок :)
                                 </div>
                                 <button class="js-review-text-toggler" type="button" style="display: none;">Показать весь комментарий</button>
                             </div>
                         </div>
-                        <div class="review__gallery review-itme__gallery"></div>
+                        <div class="review__gallery review-item__gallery"></div>
                     </div>
                 </div>
 
                 <div class="reviews-grid__item reviews__item-wrapper">
-                    <div class="reviews__item review review-itme">
+                    <div class="reviews__item review review-item">
                         <div class="review-item__header">
                             <div class="row justify-content-between">
                                 <div class="col-sm-auto">
-                                    <div class="review__name review-itme__name">
+                                    <div class="review__name review-item__name">
                                         Roman K
                                     </div>
                                 </div>
                                 <div class="col-sm-auto">
                                     <div class="star-rating">
-                                        <div class="star-rating__fill review__fill" data-rating="5"></div>
-                                        <div class="star-rating__meter review__star"></div>
+                                        <div class="star-rating__fill" data-rating="4.5"></div>
+                                        <div class="star-rating__meter"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row review__labels review-itme__labels">
+                            <div class="row review__labels review-item__labels">
                                 <div class="col-auto flex-shrink-1">
-                                    <div class="review__label  review-itme__data"><span>Дата:</span> 26 Декабря 2020</div>
+                                    <div class="review__label  review-item__data"><span>Дата:</span> 26 Декабря 2020</div>
                                 </div>
                                 <div class="col-auto flex-shrink-1">
-                                    <div class="review__label review-itme__number"><span>Номер посылки: </span>
+                                    <div class="review__label review-item__number"><span>Номер посылки: </span>
                                         <a rel="nofollow" href="http://gdebox.com/track/XMBT36398610/RU" target="_blank">
                                             XMBT36398610
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-auto flex-shrink-1 review-itme__city-wrapper">
-                                    <div class="review__label review-itme__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Москва</div>
+                                <div class="col-auto flex-shrink-1 review-item__city-wrapper">
+                                    <div class="review__label review-item__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Москва</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="review__body review-itme__body">
-                            <div class="review__text review-itme__text">
+                        <div class="review__body review-item__body">
+                            <div class="review__text review-item__text">
                                 <div>
                                     Первый раз воспользовался вашим сервисом. Все понятно, быстро и удобно. Скоро за новыми покупками. Спасибо!
                                 </div>
                                 <button class="js-review-text-toggler" type="button" style="display: none;">Показать весь комментарий</button>
                             </div>
                         </div>
-                        <div class="review__gallery review-itme__gallery"></div>
+                        <div class="review__gallery review-item__gallery"></div>
                     </div>
                 </div>
 
                 <div class="reviews-grid__item reviews__item-wrapper">
-                    <div class="reviews__item review review-itme">
+                    <div class="reviews__item review review-item">
                         <div class="review-item__header">
                             <div class="row justify-content-between">
                                 <div class="col-sm-auto">
-                                    <div class="review__name review-itme__name">
+                                    <div class="review__name review-item__name">
                                         bibinisa e
                                     </div>
                                 </div>
                                 <div class="col-sm-auto">
                                     <div class="star-rating">
-                                        <div class="star-rating__fill review__fill" data-rating="5"></div>
-                                        <div class="star-rating__meter review__star"></div>
+                                        <div class="star-rating__fill" data-rating="4.5"></div>
+                                        <div class="star-rating__meter"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row review__labels review-itme__labels">
+                            <div class="row review__labels review-item__labels">
                                 <div class="col-auto flex-shrink-1">
-                                    <div class="review__label  review-itme__data"><span>Дата:</span> 26 Декабря 2020</div>
+                                    <div class="review__label  review-item__data"><span>Дата:</span> 26 Декабря 2020</div>
                                 </div>
                                 <div class="col-auto flex-shrink-1">
-                                    <div class="review__label review-itme__number"><span>Номер посылки: </span>
+                                    <div class="review__label review-item__number"><span>Номер посылки: </span>
                                         <a rel="nofollow" href="http://gdebox.com/track/XMBT36539076/RU" target="_blank">
                                             XMBT36539076
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-auto flex-shrink-1 review-itme__city-wrapper">
-                                    <div class="review__label review-itme__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Люберцы</div>
+                                <div class="col-auto flex-shrink-1 review-item__city-wrapper">
+                                    <div class="review__label review-item__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Люберцы</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="review__body review-itme__body">
-                            <div class="review__text review-itme__text">
+                        <div class="review__body review-item__body">
+                            <div class="review__text review-item__text">
                                 <div>Спасибо! Получила заказ.</div>
                                 <button class="js-review-text-toggler" type="button" style="display: none;">Показать весь комментарий</button>
                             </div>
                         </div>
-                        <div class="review__gallery review-itme__gallery"></div>
+                        <div class="review__gallery review-item__gallery"></div>
                     </div>
                 </div>
 
                 <div class="reviews-grid__item reviews__item-wrapper">
-                    <div class="reviews__item review review-itme">
+                    <div class="reviews__item review review-item">
                         <div class="review-item__header">
                             <div class="row justify-content-between">
                                 <div class="col-sm-auto">
-                                    <div class="review__name review-itme__name">
+                                    <div class="review__name review-item__name">
                                         bulat k
                                     </div>
                                 </div>
                                 <div class="col-sm-auto">
                                     <div class="star-rating">
-                                        <div class="star-rating__fill review__fill" data-rating="5"></div>
-                                        <div class="star-rating__meter review__star"></div>
+                                        <div class="star-rating__fill" data-rating="4.5"></div>
+                                        <div class="star-rating__meter"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row review__labels review-itme__labels">
+                            <div class="row review__labels review-item__labels">
                                 <div class="col-auto flex-shrink-1">
-                                    <div class="review__label  review-itme__data"><span>Дата:</span> 26 Декабря 2020</div>
+                                    <div class="review__label  review-item__data"><span>Дата:</span> 26 Декабря 2020</div>
                                 </div>
                                 <div class="col-auto flex-shrink-1">
-                                    <div class="review__label review-itme__number"><span>Номер посылки: </span>
+                                    <div class="review__label review-item__number"><span>Номер посылки: </span>
                                         <a rel="nofollow" href="http://gdebox.com/track/XMBT36538709/RU" target="_blank">
                                             XMBT36538709
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-auto flex-shrink-1 review-itme__city-wrapper">
-                                    <div class="review__label review-itme__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Уфа</div>
+                                <div class="col-auto flex-shrink-1 review-item__city-wrapper">
+                                    <div class="review__label review-item__city" data-toggle="popover" data-placement="top" data-trigger="hover" data-content=""><span>Город:</span> Уфа</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="review__body review-itme__body">
-                            <div class="review__text review-itme__text">
+                        <div class="review__body review-item__body">
+                            <div class="review__text review-item__text">
                                 <div>Посылка пришла в целости и сохранности, на удивление быстро</div>
                                 <button class="js-review-text-toggler" type="button" style="display: none;">Показать весь комментарий</button>
                             </div>
                         </div>
-                        <div class="review__gallery review-itme__gallery"></div>
+                        <div class="review__gallery review-item__gallery"></div>
                     </div>
                 </div>
 
@@ -1587,6 +1534,24 @@
     <script src="/js/dropdown.jquery-0.2.2.js"></script>
     <script src="/js/api-1.0.11.js"></script>
     <script src="/js/calc-1.3.5.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".opportunities-swiper", {
+          loop: true,
+          spaceBetween: 15,
+          pagination: {
+            el: '.opportunities__btn-slider-wrapper',
+            type: 'bullets',
+            bulletElement: 'button',
+            bulletClass: 'opportunities__btn-slider',
+            bulletActiveClass: 'opportunities__btn-slider--active',
+            clickable: true
+        },
+      });
+    </script>
 
 </body>
 </html>

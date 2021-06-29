@@ -1,5 +1,5 @@
 .benefit {
-    background-image: url("/../img/benefit/rectangle6.png");
+    background-image: url("/img/benefit/rectangle6.png");
     background-repeat: repeat-x;
     background-position: center;
 
@@ -11,6 +11,7 @@
 .benefit__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 39px;
 
     @media (max-width: 767px) {
@@ -19,8 +20,6 @@
 }
 
 .benefit__heading-wrapper {
-    padding: 147px 0 20px 0;
-
     @media (max-width: 767px) {
         order: 2;
         padding: 0px;
@@ -101,19 +100,19 @@
 
 .benefit__reason--profit {
     &::before {
-        background-image: url("/../img/benefit/kettlebell.svg");
+        background-image: url("/img/benefit/kettlebell.svg");
     }
 }
 
 .benefit__reason--quickness {
     &::before {
-        background-image: url("/../img/benefit/watch.svg");
+        background-image: url("/img/benefit/watch.svg");
     }
 }
 
 .benefit__reason--sms {
     &::before {
-        background-image: url("/../img/benefit/kettlebell.svg");
+        background-image: url("/img/benefit/kettlebell.svg");
     }
 }
 

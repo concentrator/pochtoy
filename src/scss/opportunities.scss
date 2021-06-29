@@ -44,117 +44,87 @@
 }
 
 .opportunities__item {
-    display: none;
+    position: relative;
+    height: auto;
     border-radius: 50px;
     box-shadow: 0px 0px 60px $grey-light-1;
     margin: 0;
 
     &::before {
+        position: absolute;
+        content: "";
+
         @media (max-width: 990px) {
             display: none;
         }
     }
+
+    &--left {
+        padding: 58px 455px 67px 98px;
+    }
+
+    &--right {
+        padding: 58px 44px 67px 455px;
+    }
+
+    @media (max-width: 990px) {
+        padding: 58px 84px 67px 84px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 58px 15px 67px 15px;
+    }
 }
 
 .opportunities__item--special {
-    position: relative;
-    padding: 58px 493px 67px 98px;
     background: linear-gradient(100.49deg, #A1B9F9 1.62%, #5575E7 98.14%);
 
     &::before {
-        position: absolute;
-        content: "";
         background: url("/img/slider/special.svg") no-repeat;
-        width: 266px;
+        width: 267px;
         height: 414px;
         right: 107px;
         top: 32px;
     }
-
-    @media (max-width: 990px) {
-        padding: 58px 84px 67px 84px;
-    }
-
-    @media (max-width: 767px) {
-        padding: 58px 15px 67px 15px;
-    }
 }
 
 .opportunities__item--gapage-sale {
-    position: relative;
-    padding: 59px 84px 67px 441px;
     background: linear-gradient(100.49deg, #8DEDF3 1.62%, #3A8DBC 98.14%);
 
     &::before {
-        position: absolute;
-        content: "";
         background: url("/img/slider/gapage-sale.svg") no-repeat;
         width: 295px;
-        height: 392px;
+        height: 393px;
         left: 107px;
         top: 19px;
-    }
-
-    @media (max-width: 990px) {
-        padding: 58px 84px 67px 84px;
-    }
-
-    @media (max-width: 767px) {
-        padding: 58px 15px 67px 15px;
     }
 }
 
 .opportunities__item--discount {
-    position: relative;
-    padding: 58px 493px 67px 98px;
     background: linear-gradient(100.49deg, #F38DCA 1.62%, #BC3A88 98.14%);
 
     &::before {
-        position: absolute;
-        content: "";
         background: url("/img/slider/discount.svg") no-repeat;
         width: 402px;
         height: 393px;
         right: 97px;
         top: 43px;
     }
-
-    @media (max-width: 990px) {
-        padding: 58px 84px 67px 84px;
-    }
-
-    @media (max-width: 767px) {
-        padding: 58px 15px 67px 15px;
-    }
 }
 
 .opportunities__item--economy {
-    position: relative;
-    padding: 59px 84px 67px 451px;
     background: linear-gradient(100.49deg, #F3BE8D 1.62%, #BC803A 98.14%);
 
     &::before {
-        position: absolute;
-        content: "";
         background: url("/img/slider/economy.svg") no-repeat;
         width: 292px;
-        height: 269px;
+        height: 270px;
         left: 62px;
         top: 96px;
-    }
-
-    @media (max-width: 990px) {
-        padding: 58px 84px 67px 84px;
-    }
-
-    @media (max-width: 767px) {
-        padding: 58px 15px 67px 15px;
     }
 }
 
 .opportunities__item--special-additional {
-    position: relative;
-    padding: 58px 493px 67px 98px;
     background: linear-gradient(100.49deg, #A88DF3 1.62%, #733ABC 98.14%);
 
     &::before {
@@ -162,17 +132,17 @@
         content: "";
         background: url("/img/slider/special-2.svg") no-repeat;
         width: 371px;
-        height: 456px;
+        height: 457px;
         right: 60px;
         top: 17px;
     }
+}
+
+.opportunities__text-wrapper {
+    padding-right: 20px;
 
     @media (max-width: 990px) {
-        padding: 58px 84px 67px 84px;
-    }
-
-    @media (max-width: 767px) {
-        padding: 58px 15px 67px 15px;
+        padding: 0;
     }
 }
 
@@ -180,7 +150,6 @@
     font-size: 16px;
     font-weight: 600;
     border: none;
-    padding-bottom: 16px;
     border: 2px solid $white;
     transition: box-shadow 0.3s linear;
 
@@ -232,17 +201,20 @@
 
 .opportunities__btn-slider-wrapper {
     position: absolute;
-    bottom: 76px;
-    left: 98px;
+    bottom: 76px !important;
+    left: 98px !important;
+    width: auto !important;
+    z-index: 10;
 
     @media (max-width: 767px) {
-        bottom: 10px;
+        padding: 0 10px;
+        bottom: 10px !important;
+        left: 15px !important;
+        right: 15px;
     }
 
     @media (max-width: 480px) {
-        bottom: 10px;
-        right: 10%;
-        transform: translateX(-10%);
+        bottom: 10px !important;
     }
 }
 
@@ -252,13 +224,10 @@
     background-color: $white;
     border-radius: 5px;
     margin-right: 6px;
+    cursor: pointer;
 }
 
 .opportunities__btn-slider--active {
     background-color: $black;
     opacity: 0.5;
-}
-
-.opportunities__item--active {
-    display: block;
 }

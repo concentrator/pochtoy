@@ -8,13 +8,14 @@
     padding-bottom: 50px;
     background-image: url("/img/delivery/delivery.svg");
     background-repeat: no-repeat;
-    background-size: 587px 464px;
+    background-size: 588px 464px;
     background-position: right 30px;
 
 
     @media (max-width: 990px) {
         padding-top: 54px;
         background-size: 437px 314px;
+        background-position: right center;
     }
 
     @media (max-width: 860px) {
