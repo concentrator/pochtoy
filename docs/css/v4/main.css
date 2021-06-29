@@ -18,7 +18,7 @@
   position: relative;
   padding-top: 94px;
   padding-bottom: 50px;
-  background-image: url("/img/delivery/delivery.svg");
+  background-image: url("img/delivery/delivery.svg");
   background-repeat: no-repeat;
   background-size: 588px 464px;
   background-position: right 30px; }
@@ -49,7 +49,7 @@
     content: "";
     width: 86px;
     height: 49px;
-    background: url("/img/delivery/delivery-icon.svg") no-repeat;
+    background: url("img/delivery/delivery-icon.svg") no-repeat;
     top: -14px;
     left: -78px; }
     @media (max-width: 1200px) {
@@ -179,7 +179,7 @@
 .opportunities__item--special {
   background: linear-gradient(100.49deg, #A1B9F9 1.62%, #5575E7 98.14%); }
   .opportunities__item--special::before {
-    background: url("/img/slider/special.svg") no-repeat;
+    background: url("img/slider/special.svg") no-repeat;
     width: 267px;
     height: 414px;
     right: 107px;
@@ -188,7 +188,7 @@
 .opportunities__item--gapage-sale {
   background: linear-gradient(100.49deg, #8DEDF3 1.62%, #3A8DBC 98.14%); }
   .opportunities__item--gapage-sale::before {
-    background: url("/img/slider/gapage-sale.svg") no-repeat;
+    background: url("img/slider/gapage-sale.svg") no-repeat;
     width: 295px;
     height: 393px;
     left: 107px;
@@ -197,7 +197,7 @@
 .opportunities__item--discount {
   background: linear-gradient(100.49deg, #F38DCA 1.62%, #BC3A88 98.14%); }
   .opportunities__item--discount::before {
-    background: url("/img/slider/discount.svg") no-repeat;
+    background: url("img/slider/discount.svg") no-repeat;
     width: 402px;
     height: 393px;
     right: 97px;
@@ -206,7 +206,7 @@
 .opportunities__item--economy {
   background: linear-gradient(100.49deg, #F3BE8D 1.62%, #BC803A 98.14%); }
   .opportunities__item--economy::before {
-    background: url("/img/slider/economy.svg") no-repeat;
+    background: url("img/slider/economy.svg") no-repeat;
     width: 292px;
     height: 270px;
     left: 62px;
@@ -217,7 +217,7 @@
   .opportunities__item--special-additional::before {
     position: absolute;
     content: "";
-    background: url("/img/slider/special-2.svg") no-repeat;
+    background: url("img/slider/special-2.svg") no-repeat;
     width: 371px;
     height: 457px;
     right: 60px;
@@ -400,7 +400,7 @@
     content: "";
     width: 698px;
     height: 668px;
-    background-image: url("/img/statistics/boxes.svg");
+    background-image: url("img/statistics/boxes.svg");
     background-size: 100% 100%;
     right: -170px;
     top: 39px; }
@@ -683,7 +683,7 @@
     content: "";
     width: 234px;
     height: 18px;
-    background-image: url("/img/advantage/advantage.svg");
+    background-image: url("img/advantage/advantage.svg");
     top: -48px;
     right: 50%;
     transform: translateX(50%); }
@@ -808,7 +808,7 @@
     height: 221px; } }
 
 .benefit {
-  background-image: url("/img/benefit/rectangle6.png");
+  background-image: url("img/benefit/rectangle6.png");
   background-repeat: repeat-x;
   background-position: center; }
   @media (max-width: 767px) {
@@ -885,13 +885,13 @@
       text-align: center; } }
 
 .benefit__reason--profit::before {
-  background-image: url("/img/benefit/kettlebell.svg"); }
+  background-image: url("img/benefit/kettlebell.svg"); }
 
 .benefit__reason--quickness::before {
-  background-image: url("/img/benefit/watch.svg"); }
+  background-image: url("img/benefit/watch.svg"); }
 
 .benefit__reason--sms::before {
-  background-image: url("/img/benefit/kettlebell.svg"); }
+  background-image: url("img/benefit/kettlebell.svg"); }
 
 .benefit__secondary {
   font-family: "Gilroy", Arial, sans-serif;
@@ -1093,16 +1093,16 @@
       padding: 32px 15px 10px 15px; } }
 
 .about__item--shild::before {
-  background-image: url("/img/about/shild.svg"); }
+  background-image: url("img/about/shild.svg"); }
 
 .about__item--dollar::before {
-  background-image: url("/img/about/dollar.svg"); }
+  background-image: url("img/about/dollar.svg"); }
 
 .about__item--hands::before {
-  background-image: url("/img/about/hands.svg"); }
+  background-image: url("img/about/hands.svg"); }
 
 .about__item--candy::before {
-  background-image: url("/img/about/candy.svg"); }
+  background-image: url("img/about/candy.svg"); }
 
 .about__secondary {
   font-family: "Gilroy", Arial, sans-serif;
