@@ -17,13 +17,15 @@ const styles = () => {
   return gulp.src('./src/scss/main.scss')
     .pipe(plumber())
     // .pipe(sourcemap.init())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    .pipe(sass({outputStyle: 'expanded'}))
+    // .pipe(postcss([
+    //   autoprefixer()
+    // ]))
     .pipe(gulp.dest('./src/css/v4'))
     .pipe(sync.stream());
 }
+
+exports.styles = styles;
 
 // const scripts = () => {
 //   return gulp.src('./src/js/**/*.js')
