@@ -1,0 +1,71 @@
+.easier-just {
+    background-color: $beige;
+}
+
+.easier-just__wrapper {
+    position: relative;
+
+    & h1 {
+        font-family: "Gilroy", Arial, sans-serif;
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: 600;
+        color: $blue-light;
+        margin-bottom: 11px;
+
+        @media (max-width: 780px) {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url("/../img/advantage/advantage.svg");
+        width: 234px;
+        height: 18px;
+        top: 191px;
+        right: 50%;
+        transform: translateX(50%);
+
+        @media (max-width: 440px) {
+            display: none;
+        }
+    }
+
+    & img {
+        @media (max-width: 1290px) {
+            width: 100%;
+            height: min-content;
+        }
+    }
+}
+
+.easier-just__text {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    color: $grey-light;
+    margin-bottom: 78px;
+
+    @media (max-width: 780px) {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    @media (max-width: 440px) {
+        margin-bottom: 28px;
+    }
+}
+
+.easier-just__desc {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: $grey-light;
+    max-width: 890px;
+    margin: 0 auto 29px auto;
+}
