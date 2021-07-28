@@ -1,0 +1,97 @@
+.shopping-masters__wrapper {
+    margin-left: 23px;
+}
+
+.shopping-masters__block-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 971px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.shopping-masters__heading {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    color: $grey-dark;
+    margin-top: 0;
+    margin-bottom: 91px !important;
+}
+
+.shopping-masters__block-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 35px auto;
+}
+
+.shopping-masters__block  h3 {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color: $blue-light2;
+    margin-top: 0;
+    margin-bottom: 10px !important;
+}
+
+.shopping-masters__block p {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+    color: $grey-light;
+    max-width: 261px;
+}
+
+.shopping-masters__block--percent p {
+    max-width: 317px;
+}
+
+.shopping-masters__more-detailed {
+    max-width: 588px;
+    padding: 29px 10px 6px 91px;
+    margin: 0 auto;
+    border-radius: 30px;
+    background: url("/../img/shopping-masters/detailed.svg") no-repeat 10px 6px;
+    box-shadow: 0 0 60px $grey-light-1;
+
+    @media (max-width: 601px) {
+        background-position: 10px 15px;
+    }
+
+    @media (max-width: 366px) {
+        background-position: 10px 30px;
+    }
+}
+
+.shopping-masters__more-detailed p {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 600;
+    color: $blue-light;
+}
+
+@media (max-width: 768px) {
+    .shopping-masters__block-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shopping-masters__wrapper {
+        margin-left: 0;
+    }
+
+    .shopping-masters__block--percent p {
+        max-width: 588px;
+    }
+
+    .shopping-masters__block p {
+        max-width: 588px;
+    }
+}
