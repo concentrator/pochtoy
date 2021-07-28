@@ -136,6 +136,11 @@
     border: none;
     margin-right: 11px;
 
+    &:hover {
+        box-shadow: 0 10px 25px rgba(255, 0, 109, 0.4);
+        color: #ffffff;
+    }
+
     @media (max-width: 991px) {
         margin: 0 0 10px 0;
     }
@@ -146,5 +151,11 @@
     border: 2px solid $pink;
     padding-top: 8px;
     padding-bottom: 8px;
+
+    &:hover {
+        border: 2px solid $pink;
+        box-shadow: 0 10px 25px rgba(255, 0, 109, 0.4);
+        color: $pink;
+    }
  }
 
