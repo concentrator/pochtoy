@@ -2,6 +2,10 @@
     background-color: $beige;
     margin-bottom: 30px;
     padding-bottom: 111px;
+
+    @media (max-width: 768px) {
+        padding-bottom: 60px;
+    }
 }
 
 .easier-just__wrapper {
@@ -13,7 +17,7 @@
     background-position: center bottom;
 
 
-    @media (max-width: 630px) {
+    @media (max-width: 768px) {
         padding-bottom: 600px;
         background-size: 1128px auto;
         background-position: 40% bottom;
