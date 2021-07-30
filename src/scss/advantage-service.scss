@@ -1,0 +1,61 @@
+.advantage-service__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 983px;
+    margin: 0 auto;
+
+    @media (max-width: 938px) {
+        justify-content: center;
+    }
+}
+
+.advantage-service__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 301px;
+    min-height: 210px;
+    padding: 37px 40px 34px 49px;
+    box-shadow: 0 0 60px $grey-light-1;
+    border-radius: 40px;
+
+    @media (max-width: 938px) {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        &:nth-child(2n+1) {
+            margin-right: 20px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        &:nth-child(2n+1) {
+            margin-right: 0;
+        }
+    }
+}
+
+.advantage-service__services {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $grey-light;
+    margin: 0 0 12px 0;
+}
+
+.advantage-service__price {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $pink;
+    margin: 0;
+}
+
+.advantage-service__price--letters {
+    text-transform: uppercase;
+    margin-left: 16px;
+}
