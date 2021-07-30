@@ -23,3 +23,15 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+
+.heading-secondary {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 600;
+    @media (max-width: 768px) {
+        font-size: 26px;
+        line-height: 33px;
+    }
+}
