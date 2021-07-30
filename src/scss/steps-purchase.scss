@@ -149,6 +149,10 @@
     @media (max-width: 991px) {
         margin: 0 0 10px 0;
     }
+
+    @media (max-width: 400px) {
+        line-height: 20px;
+    }
 }
 
 .steps-purchase__btn-white {
@@ -161,6 +165,10 @@
         border: 2px solid $pink;
         box-shadow: 0 10px 25px rgba(255, 0, 109, 0.4);
         color: $pink;
+    }
+
+    @media (max-width: 299px) {
+        line-height: 20px;
     }
  }
 

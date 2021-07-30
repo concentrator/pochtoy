@@ -1,13 +1,9 @@
-.shopping-masters__wrapper {
-    margin-left: 23px;
-}
-
 .shopping-masters__block-wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 971px;
+    max-width: 1000px;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 }
 
 .shopping-masters__heading {
@@ -29,6 +25,10 @@
     margin: 0 auto 35px auto;
 }
 
+.shopping-masters__block {
+    width: 317px;
+}
+
 .shopping-masters__block  h3 {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
@@ -46,10 +46,21 @@
     font-weight: 500;
     color: $grey-light;
     max-width: 261px;
+    margin: 0 auto;
 }
 
 .shopping-masters__block--percent p {
     max-width: 317px;
+}
+
+.shopping-masters__block--center {
+    @media (max-width: 860px) {
+        margin: 0 20px;
+    }
+
+    @media (max-width: 768px) {
+        margin: 0;
+    }
 }
 
 .shopping-masters__more-detailed {
