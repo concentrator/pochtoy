@@ -1,0 +1,62 @@
+.gifts-master__wrapper{
+    position: relative;
+    border: 2px solid $pink3;
+    border-radius: 40px;
+    padding: 244px 20px 69px 20px;
+    background-image: url("/../img/gifts-master/gifts-master.svg");
+    background-repeat: no-repeat;
+    background-position: center 54px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 234px;
+        height: 18px;
+        background-image: url("/../img/advantage/advantage.svg");
+        left: 50%;
+        transform: translateX(-50%);
+        top: 306px;
+    }
+}
+
+.gifts-master__heading {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    color: $grey-dark;
+    margin-top: 0;
+    margin-bottom: 70px !important;
+}
+
+.gifts-master__text {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    color: $black;
+    margin-bottom: 52px;
+}
+
+.gifts-master__list {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 829px;
+    padding: 0;
+}
+
+.gifts-master__item {
+    padding: 18px 20px 17px;
+    box-shadow: 0 0 60px $grey-light-1;
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+    color: $grey-light;
+    border-radius: 20px;
+    margin: 0;
+
+    &:not(:last-child) {
+        margin-bottom: 23px;
+    }
+}

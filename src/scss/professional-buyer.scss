@@ -1,0 +1,101 @@
+.professional-buyer {
+    padding: 25px 0 32px;
+    background-color: #FEFAFF;
+    margin-bottom: 40px;
+}
+
+.professional-buyer__wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.professional-buyer__slogan {
+    width: 260px;
+    flex-shrink: 0;
+    padding: 49px 30px 28px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 60px;
+    margin-right: 86px;
+}
+
+.professional-buyer__slogan::before {
+    border-radius: 60px;
+}
+
+.professional-buyer__foto {
+    margin-bottom: 33px;
+}
+
+.professional-buyer__slogan b {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 500;
+    color: #000;
+}
+
+.professional-buyer__slogan p {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: $grey-light;
+    margin-bottom: 13px;
+}
+
+.professional-buyer__main {
+    flex-grow: 1;
+    padding-top: 76px;
+    padding-bottom: 16px;
+
+    @media (max-width: 1000px) {
+        padding-top: 40px;
+    }
+}
+
+.professional-buyer__main h3 {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 500;
+    color: $black;
+    margin: 0;
+    margin-bottom: 25px !important;
+}
+
+.professional-buyer__main p {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: $grey-light;
+}
+
+@media (max-width: 767px) {
+    .professional-buyer {
+        padding-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .professional-buyer .inner {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .professional-buyer__wrapper {
+        display: block;
+    }
+
+    .professional-buyer__slogan {
+        margin: 0 auto;
+    }
+
+    .professional-buyer__main {
+        text-align: center;
+    }
+
+    .professional-buyer__main h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
