@@ -1,0 +1,95 @@
+.easier-just {
+    background-color: $beige;
+    margin-bottom: 30px;
+    padding-bottom: 111px;
+
+    @media (max-width: 768px) {
+        padding-bottom: 60px;
+    }
+}
+
+.easier-just__wrapper {
+    position: relative;
+    padding-bottom: 677px;
+    background-image: url("/../img/easier-just/easier-just.svg");
+    background-repeat: no-repeat;
+    background-size: 1228px auto;
+    background-position: center bottom;
+
+
+    @media (max-width: 768px) {
+        padding-bottom: 620px;
+        background-size: 1200px auto;
+        background-position: 40% bottom;
+    }
+
+    @media (max-width: 445px) {
+        padding-bottom: 420px;
+        background-size: 768px auto;
+        background-position: 40% bottom;
+    }
+
+    & h1 {
+        font-family: "Gilroy", Arial, sans-serif;
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: 600;
+        color: $blue-light;
+        margin-bottom: 11px;
+
+        @media (max-width: 780px) {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url("/../img/advantage/advantage.svg");
+        width: 234px;
+        height: 18px;
+        top: 191px;
+        right: 50%;
+        transform: translateX(50%);
+
+        @media (max-width: 440px) {
+            display: none;
+        }
+    }
+
+    & img {
+        @media (max-width: 1290px) {
+            width: 100%;
+            height: min-content;
+        }
+    }
+}
+
+.easier-just__text {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    color: $grey-light;
+    margin-bottom: 78px;
+
+    @media (max-width: 780px) {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    @media (max-width: 440px) {
+        margin-bottom: 28px;
+    }
+}
+
+.easier-just__desc {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: $grey-light;
+    max-width: 890px;
+    margin: 0 auto 29px auto;
+}
