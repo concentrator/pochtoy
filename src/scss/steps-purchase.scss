@@ -11,47 +11,56 @@
     margin-bottom: 40px;
 }
 
+.steps-purchase__blocks {
+    margin: 0 auto 32px auto;
+    max-width: 1141px;
+}
+
 .steps-purchase__block {
     display: flex;
-    max-width: 929px;
-    margin: 0 auto 85px auto;
 
-    @media (max-width: 768px) {
-        flex-direction: column;
-        margin-bottom: 30px;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid $black-light;
     }
 }
 
-.steps-purchase__image-block {
-    @media (max-width: 768px) {
-        text-align: center;
+.steps-purchase__block--right {
+    padding: 50px 100px 75px 462px;
+}
 
-        & img {
-            width: 35%;
-        }
+.steps-purchase__block--left {
+    padding: 75px 432px 75px 104px;
+}
+
+.steps-purchase__block--search-bar {
+    background-image: url("/../img/steps-purchase/search-bar.svg");
+    background-repeat: no-repeat;
+    background-position: 711px 57px;
+
+    @media (max-width: 1061px) {
+        background-position: 611px 57px;
+    }
+
+    @media (max-width: 961px) {
+        background-position: 511px 57px;
     }
 }
 
-.steps-purchase__image-block--showcase {
-    margin-right: 92px;
-
-    @media (max-width: 768px) {
-        margin-right: 0
-    }
+.steps-purchase__block--choice {
+    background-image: url("/../img/steps-purchase/showcase.svg");
+    background-repeat: no-repeat;
+    background-position: 106px 0;
 }
 
-.steps-purchase__image-block--operator {
-    margin-right: 72px;
-
-    @media (max-width: 768px) {
-        margin-right: 0
-    }
+.steps-purchase__block--vip {
+    background-image: url("/../img/steps-purchase/operator.svg");
+    background-repeat: no-repeat;
+    background-position: 73px 107px;
+    padding-top: 127px;
 }
 
 .steps-purchase__text-wrapper {
-    padding: 49px 0 0 0;
-    max-width: 571px;
-
     & h4 {
         font-family: "Gilroy", Arial, sans-serif;
         font-size: 24px;
@@ -90,24 +99,20 @@
     margin-bottom: 30px;
 }
 
+.steps-purchase__desc {
+    margin: 0;
+}
+
 .steps-purchase__text-wrapper--search-bar {
     margin-right: 37px;
+
+    & h4 {
+        margin-bottom: 20px;
+    }
 
     @media (max-width: 768px) {
         order: 2;
         margin-right: auto;
-    }
-}
-
-.steps-purchase__block--search-bar {
-    margin-bottom: 131px;
-
-    & img {
-        margin-top: 30px;
-    }
-
-    @media (max-width: 768px) {
-        margin-bottom: 30px;
     }
 }
 
@@ -159,3 +164,18 @@
     }
  }
 
+ @media (max-width: 865px) {
+    .steps-purchase__block {
+        background-position: center 57px;
+        text-align: center;
+        padding: 350px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .steps-purchase__block {
+        background-position: center 30px;
+        background-size: 220px auto;
+        padding: 270px 20px 20px 20px;
+    }
+}
