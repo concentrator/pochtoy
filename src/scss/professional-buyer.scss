@@ -12,7 +12,7 @@
 .professional-buyer__slogan {
     width: 260px;
     flex-shrink: 0;
-    padding: 221px 30px 28px;
+    padding: 49px 30px 28px;
     text-align: center;
     background-color: #fff;
     border-radius: 60px;
@@ -23,17 +23,8 @@
     border-radius: 60px;
 }
 
-.professional-buyer__slogan::after {
-    content: "";
-    display: block;
-    width: 141px;
-    height: 141px;
-    position: absolute;
-    top: 49px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-image: url("/img/professional-buyer/mariya-foto.jpg");
-    background-repeat: no-repeat;
+.professional-buyer__foto {
+    margin-bottom: 33px;
 }
 
 .professional-buyer__slogan b {
