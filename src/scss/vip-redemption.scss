@@ -1,0 +1,58 @@
+.vip-redemption__heading {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: $black;
+    max-width: 834px;
+    margin: 0 auto;
+    margin-bottom: 39px !important;
+
+    @media (max-width: 768px) {
+        font-size: 33px;
+        line-height: 40px;
+    }
+}
+
+.vip-redemption__text {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    color: $grey-light;
+    max-width: 801px;
+    margin: 0 auto 51px auto;
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+.vip-redemption__heading span {
+    color: $pink;
+}
+
+.vip-redemption__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 864px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.vip-redemption__intem {
+    padding: 5px 20px;
+    max-width: max-content;
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 600;
+    color: $white;
+    background-color: $blue-light;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
