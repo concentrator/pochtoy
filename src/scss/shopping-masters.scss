@@ -23,10 +23,19 @@
     width: 100px;
     height: 100px;
     margin: 0 auto 35px auto;
+
+    @media (max-width: 767px) {
+        margin: 0 auto 21px auto;
+    }
 }
 
 .shopping-masters__block {
-    width: 317px;
+    width: calc(33.3334% - 40px / 3);
+
+    @media (max-width: 767px) {
+        width: 100%;
+        padding: 20px 0;
+    }
 }
 
 .shopping-masters__block  h3 {
