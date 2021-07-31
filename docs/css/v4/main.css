@@ -1661,7 +1661,7 @@
 }
 
 .one-minute__wrapper {
-  background-image: url("/../img/one-minute/one-minute.svg");
+  background-image: url("../../img/one-minute/one-minute.svg");
   background-repeat: no-repeat;
   background-position: 468px 0;
   padding-top: 38px;
@@ -1819,7 +1819,7 @@
   border: 2px solid #D66C99;
   border-radius: 40px;
   padding: 244px 20px 69px 20px;
-  background-image: url("/../img/gifts-master/gifts-master.svg");
+  background-image: url("../../img/gifts-master/gifts-master.svg");
   background-repeat: no-repeat;
   background-position: center 54px;
 }
@@ -1829,7 +1829,7 @@
   content: "";
   width: 234px;
   height: 18px;
-  background-image: url("/../img/advantage/advantage.svg");
+  background-image: url("../../img/advantage/advantage.svg");
   left: 50%;
   transform: translateX(-50%);
   top: 306px;
@@ -1894,7 +1894,7 @@
   position: relative;
   padding-top: 95px;
   padding-bottom: 677px;
-  background-image: url("/../img/easier-just/easier-just.svg");
+  background-image: url("../../img/easier-just/easier-just.svg");
   background-repeat: no-repeat;
   background-size: 1228px auto;
   background-position: center bottom;
@@ -1924,7 +1924,7 @@
 .easier-just__wrapper::before {
   position: absolute;
   content: "";
-  background-image: url("/../img/advantage/advantage.svg");
+  background-image: url("../../img/advantage/advantage.svg");
   width: 234px;
   height: 18px;
   top: 225px;
@@ -2016,7 +2016,7 @@
 }
 
 .steps-purchase__block--search-bar {
-  background-image: url("/../img/steps-purchase/search-bar.svg");
+  background-image: url("../../img/steps-purchase/search-bar.svg");
   background-repeat: no-repeat;
   background-position: 711px 57px;
 }
@@ -2034,13 +2034,13 @@
 }
 
 .steps-purchase__block--choice {
-  background-image: url("/../img/steps-purchase/showcase.svg");
+  background-image: url("../../img/steps-purchase/showcase.svg");
   background-repeat: no-repeat;
   background-position: 106px 0;
 }
 
 .steps-purchase__block--vip {
-  background-image: url("/../img/steps-purchase/operator.svg");
+  background-image: url("../../img/steps-purchase/operator.svg");
   background-repeat: no-repeat;
   background-position: 73px 107px;
   padding-top: 127px;
@@ -2374,7 +2374,7 @@
   padding: 29px 10px 6px 91px;
   margin: 0 auto;
   border-radius: 30px;
-  background: url("/../img/shopping-masters/detailed.svg") no-repeat 10px 6px;
+  background: url("../../img/shopping-masters/detailed.svg") no-repeat 10px 6px;
   box-shadow: 0 0 60px #d5eaf1;
 }
 
