@@ -10,6 +10,7 @@
 
 .easier-just__wrapper {
     position: relative;
+    padding-top: 95px;
     padding-bottom: 677px;
     background-image: url("/../img/easier-just/easier-just.svg");
     background-repeat: no-repeat;
@@ -30,17 +31,8 @@
     }
 
     & h1 {
-        font-family: "Gilroy", Arial, sans-serif;
-        font-size: 40px;
-        line-height: 60px;
-        font-weight: 600;
         color: $blue-light;
         margin-bottom: 11px;
-
-        @media (max-width: 780px) {
-            font-size: 30px;
-            line-height: 40px;
-        }
     }
 
     &::before {
@@ -49,7 +41,7 @@
         background-image: url("/../img/advantage/advantage.svg");
         width: 234px;
         height: 18px;
-        top: 191px;
+        top: 225px;
         right: 50%;
         transform: translateX(50%);
 

@@ -34,3 +34,13 @@
         line-height: 33px;
     }
 }
+
+.heading-secondary1 {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    @media (max-width: 768px) {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}

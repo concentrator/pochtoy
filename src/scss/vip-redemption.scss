@@ -1,17 +1,18 @@
+.vip-redemption__wrapper {
+    padding-top: 30px;
+}
+
 .vip-redemption__heading {
-    font-family: "Gilroy", Arial, sans-serif;
-    font-size: 40px;
     line-height: 50px;
-    font-weight: 600;
     color: $black;
     max-width: 834px;
     margin: 0 auto;
     margin-bottom: 39px !important;
 
-    @media (max-width: 768px) {
-        font-size: 33px;
-        line-height: 40px;
-    }
+}
+
+.vip-redemption__heading span {
+    color: $pink;
 }
 
 .vip-redemption__text {
@@ -29,18 +30,19 @@
     }
 }
 
-.vip-redemption__heading span {
-    color: $pink;
-}
-
 .vip-redemption__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
     max-width: 864px;
-    padding: 0;
+    padding: 0 0 0 10px;
     margin: 0 auto;
+
+    @media (max-width: 870px) {
+        margin-right: -10px;
+        padding: 0;
+    }
 }
 
 .vip-redemption__intem {
