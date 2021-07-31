@@ -312,7 +312,7 @@ a.rarr:after {
 }
 
 .info-box {
-    background: #fff url('../../img/v4/info_2.png') no-repeat;
+    background: #fff url('/img/v4/info_2.png') no-repeat;
     background-size: 30px 30px;
     background-position: 20px 20px;
     box-shadow: 0 10px 20px rgba(0,0,0,.1);
@@ -382,7 +382,7 @@ p.special {
 }
 
 .ul-select li.selected {
-    background-image: url('../../img/v4/check.png');
+    background-image: url('/img/v4/check.png');
     background-repeat: no-repeat;
     background-position: 15px 13px;
     background-size: 18px 18px;
@@ -390,7 +390,7 @@ p.special {
 }
 
 .ul-select li.error {
-    background-image: url('../../img/v4/alert.png');
+    background-image: url('/img/v4/alert.png');
     background-repeat: no-repeat;
     background-position: 15px auto;
     background-size: 18px 18px;
@@ -555,7 +555,7 @@ input[type="file"] {
 .file-upload + label {
     font-size: 0.8em;
     color: #5977a0;
-    background: url('../../img/upload.png') no-repeat;
+    background: url('/img/upload.png') no-repeat;
     background-size: 28px 28px;
     background-position: -2px center;
     display: inline-block;
@@ -581,7 +581,7 @@ input[type="file"] {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9em;
     color: rgba(0,0,0,.6);
-    background: url('../../img/upload_2.png') no-repeat;
+    background: url('/img/upload_2.png') no-repeat;
     background-size: 10px auto;
     background-position: left 5px;
     padding-left: 20px;
@@ -796,7 +796,7 @@ input[type="file"] {
 .simple-form .sf-tbox input[type="text"].error, .simple-form .sf-tbox input[type="password"].error {
     border-bottom-color: #e73250;
     color: #e73250;
-    background-image: url('../../img/v4/alert.png');
+    background-image: url('/img/v4/alert.png');
     background-repeat: no-repeat;
     background-size: 16px 16px;
     background-position: calc(100% - 10px) 4px;
@@ -972,7 +972,7 @@ input[type="file"] {
 .notice-upp-line {
     width: 420px;
     margin: 0 auto;
-    background: url('../../img/v4/h_line_2.png') no-repeat;
+    background: url('/img/v4/h_line_2.png') no-repeat;
     background-size: 66px 1px;
     background-position: top center;
     padding-top: 20px;
@@ -993,7 +993,7 @@ input[type="file"] {
 .hint {
     min-height: 122px;
     border-radius: 10px;
-    background: #3a78bc url('../../img/v4/idea.png') no-repeat;
+    background: #3a78bc url('/img/v4/idea.png') no-repeat;
     background-size: 72px 72px;
     background-position: 25px 25px;
     padding: 25px;
@@ -1083,7 +1083,7 @@ select {
     border: 1px solid #e5e5e5;
     border-radius: 5px;
     -webkit-appearance: none;
-    background: #fff url('../../img/v4/arrow_down.png') no-repeat;
+    background: #fff url('/img/v4/arrow_down.png') no-repeat;
     background-position: calc(100% - 5px) center;
     background-size: 18px 18px;
     background-repeat: no-repeat;
@@ -1196,7 +1196,7 @@ button {
 }
 
 .btn.md.remove {
-    background-image: url('../../img/v4/close_2.png');
+    background-image: url('/img/v4/close_2.png');
     background-repeat: no-repeat;
     background-size: 14px 14px;
     background-position: center;
@@ -1264,7 +1264,7 @@ button {
         padding: 25px;
         margin: 0 !important;
         transform: none !important;
-        background: rgba(0,0,0,.9) url('../../img/v4/close_3.png') no-repeat;
+        background: rgba(0,0,0,.9) url('/img/v4/close_3.png') no-repeat;
         background-size: 64px 64px;
         background-position: center calc(100% - 35px);
     }
@@ -1454,7 +1454,7 @@ button {
 
 .tabs .tab .tab-price.loading {
     background-color: transparent !important;
-    background-image: url('../../img/v4/preloader.svg');
+    background-image: url('/img/v4/preloader.svg');
     background-repeat: no-repeat;
     background-size: 28px 28px;
     background-position: center;
@@ -1478,7 +1478,7 @@ button {
     }
 
     .tabs.compact .tab.active {
-        background: #ff006d url('../../img/v4/arrow_right_3.png') no-repeat !important;
+        background: #ff006d url('/img/v4/arrow_right_3.png') no-repeat !important;
         background-size: 18px 18px !important;
         background-position: calc(100% - 10px) center !important;
         border-radius: 3px;
@@ -1691,7 +1691,7 @@ button {
 
 .list-box.lg.checklist li.selected {
     background-color: #ff006d;
-    background-image: url('../../img/v4/check_2.png');
+    background-image: url('/img/v4/check_2.png');
     background-repeat: no-repeat;
     background-size: 48px 48px;
     background-position: 20px 20px;
@@ -1777,7 +1777,7 @@ button {
     flex-shrink: 0;
     width: 18px;
     height: 18px;
-    background: url('../../img/v4/help.png') no-repeat;
+    background: url('/img/v4/help.png') no-repeat;
     background-size: 18px;
     background-position: center;
     vertical-align: middle;
@@ -1949,7 +1949,7 @@ button {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: url('../../img/v4/close.png') no-repeat;
+    background: url('/img/v4/close.png') no-repeat;
     background-size: cover;
     background-position: center;
     transition: opacity 0.2s linear;
@@ -2130,7 +2130,7 @@ button {
 
 .promo-bar {
     width: 100%;
-    background: #e7f7fc url('../../img/cut.png') no-repeat;
+    background: #e7f7fc url('/img/cut.png') no-repeat;
     background-size: 36px 36px;
     background-position: calc(100% - 30px) bottom;
     border-bottom: 2px dashed #c7d1ea;
@@ -2259,7 +2259,7 @@ table tr td, .table {
 .h-form input[type="text"].error, .h-form input[type="password"].error {
     border-color: #e73250;
     color: #e73250;
-    background-image: url('../../img/v4/alert.png');
+    background-image: url('/img/v4/alert.png');
     background-repeat: no-repeat;
     background-size: 16px 16px;
     background-position: calc(100% - 10px) center;
@@ -2627,7 +2627,7 @@ table tr td, .table {
 }
 
 .header .r-col .nav .autorization-lnk .autorization-lnk__user-login {
-    background-image: url('../../img/v4/authorization.svg') !important;
+    background-image: url('/img/v4/authorization.svg') !important;
     background-repeat: no-repeat !important;
     background-size: 16px 16px !important;
     background-position: left center !important;
@@ -2951,13 +2951,13 @@ table tr td, .table {
 }
 
 .welcome {
-    background: url('../../img/v4/welcome_cover.png') no-repeat;
+    background: url('/img/v4/welcome_cover.png') no-repeat;
     background-size: 490px auto;
     background-position: calc(100% - 100px) -85px;
     padding-bottom: 30px;
 }
 .new_year_banner {
-    background: url('../../img/v4/page_banners/valentines_day.svg') no-repeat;
+    background: url('/img/v4/page_banners/valentines_day.svg') no-repeat;
     background-size: 560px auto;
     background-position: calc(100% - 130px) 20px;
     padding-bottom: 40px;
@@ -3043,7 +3043,7 @@ table tr td, .table {
     width: 468px;
     font-size: 1em;
     color: #5d6472;
-    background: url('../../img/v4/h_line.png') no-repeat;
+    background: url('/img/v4/h_line.png') no-repeat;
     background-size: 69px 3px;
     background-position: left center;
     padding-left: 100px;
@@ -3163,7 +3163,7 @@ table tr td, .table {
 }
 
 .four-steps .fs-heading {
-    background: url('../../img/v4/box_3.png') no-repeat;
+    background: url('/img/v4/box_3.png') no-repeat;
     background-size: 91px 91px;
     background-position: center top;
     padding-top: 106px;
@@ -3172,7 +3172,7 @@ table tr td, .table {
 .happy-customers {
     height: 557px;
     background-color: #5891ce;
-    background-image: url('../../img/v4/buyer_2.png');
+    background-image: url('/img/v4/buyer_2.png');
     background-repeat: no-repeat;
     background-size: 582px 337px;
     background-position: center calc(100% - 50px);
@@ -3298,7 +3298,7 @@ table tr td, .table {
     width: 275px;
     height: 247px;
     margin: 0 auto;
-    background: url('../../img/v4/bubble.png') no-repeat;
+    background: url('/img/v4/bubble.png') no-repeat;
     background-size: cover;
     background-position: center;
     padding: 25px;
@@ -3309,7 +3309,7 @@ table tr td, .table {
     width: 275px;
     height: 247px;
     margin: 0 auto;
-    background: url('../../img/v4/bubble_bloggers.png') no-repeat;
+    background: url('/img/v4/bubble_bloggers.png') no-repeat;
     background-size: 275px 247px;
     background-position: center;
 }
@@ -3319,7 +3319,7 @@ table tr td, .table {
     border: none;
     width: 100%;
     height: 100%;
-    background: url('../../img/v4/play.png') no-repeat;
+    background: url('/img/v4/play.png') no-repeat;
     background-size: 60px 60px;
     background-position: center 55px;
     transition: transform 0.2s linear;
@@ -3440,7 +3440,7 @@ table tr td, .table {
     padding: 0;
     width: 26px;
     height: 26px;
-    background: #ff006d url('../../img/v4/close_2.png') no-repeat;
+    background: #ff006d url('/img/v4/close_2.png') no-repeat;
     background-size: 12px 12px;
     background-position: center;
     border-radius: 100px;
@@ -3509,7 +3509,7 @@ table tr td, .table {
 }
 
 .vertical-nav .dropdown a {
-    background: url('../../img/v4/arrow_right_2.png') no-repeat;
+    background: url('/img/v4/arrow_right_2.png') no-repeat;
     background-size: 12px 12px;
     background-position: right center;
     padding-right: 16px;
@@ -3543,7 +3543,7 @@ table tr td, .table {
 }
 
 .cloud-shopping {
-    background-image: url('../../img/v4/cloud_shopping.png');
+    background-image: url('/img/v4/cloud_shopping.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center top;
@@ -3551,7 +3551,7 @@ table tr td, .table {
 
 @media(max-width: 768px) {
     .cloud-shopping {
-        background-image: url('../../img/v4/cloud_shopping_2.png');
+        background-image: url('/img/v4/cloud_shopping_2.png');
         background-repeat: no-repeat;
         background-size: 100% auto;
         background-position: center top;
@@ -3691,23 +3691,23 @@ table tr td, .table {
 }
 
 .social-btns-hz .social-btn.vk {
-    background: url('../../img/v4/vk.png') no-repeat;
+    background: url('/img/v4/vk.png') no-repeat;
 }
 
 .social-btns-hz .social-btn.facebook {
-    background: url('../../img/v4/facebook.png') no-repeat;
+    background: url('/img/v4/facebook.png') no-repeat;
 }
 
 .social-btns-hz .social-btn.instagram {
-    background: url('../../img/v4/instagram.png') no-repeat;
+    background: url('/img/v4/instagram.png') no-repeat;
 }
 
 .social-btns-hz .social-btn.telegram {
-    background: url('../../img/v4/telegram.png') no-repeat;
+    background: url('/img/v4/telegram.png') no-repeat;
 }
 
 .social-btns-hz .social-btn.twitter {
-    background: url('../../img/v4/twitter.png') no-repeat;
+    background: url('/img/v4/twitter.png') no-repeat;
 }
 
 .social-login-box {
@@ -3737,7 +3737,7 @@ table tr td, .table {
 
 .social-login-box .social-login-btn.google {
     background-color: #dc4e41;
-    background-image: url('../../img/v4/google_social_login_btn.png');
+    background-image: url('/img/v4/google_social_login_btn.png');
     background-repeat: no-repeat;
     background-size: 62px auto;
     background-position: left center;
@@ -3745,7 +3745,7 @@ table tr td, .table {
 
 .social-login-box .social-login-btn.vk {
     background-color: #5181b8;
-    background-image: url('../../img/v4/vk_social_login_btn.png');
+    background-image: url('/img/v4/vk_social_login_btn.png');
     background-repeat: no-repeat;
     background-size: 62px auto;
     background-position: left center;
@@ -3753,7 +3753,7 @@ table tr td, .table {
 
 .social-login-box .social-login-btn.facebook {
     background-color: #4267b2;
-    background-image: url('../../img/v4/facebook_social_login_btn.png');
+    background-image: url('/img/v4/facebook_social_login_btn.png');
     background-repeat: no-repeat;
     background-size: 62px auto;
     background-position: left center;
@@ -3787,21 +3787,21 @@ table tr td, .table {
 }
 
 .social-login-small-box .social-login-btn.google-login-btn {
-    background-image: url('../../img/v4/google_social_login_btn_2.png');
+    background-image: url('/img/v4/google_social_login_btn_2.png');
     background-repeat: no-repeat;
     background-size: 36px 36px;
     background-position: center;
 }
 
 .social-login-small-box .social-login-btn.vk-login-btn {
-    background-image: url('../../img/v4/vk_social_login_btn_2.png');
+    background-image: url('/img/v4/vk_social_login_btn_2.png');
     background-repeat: no-repeat;
     background-size: 36px 36px;
     background-position: center;
 }
 
 .social-login-small-box .social-login-btn.fb-login-btn {
-    background-image: url('../../img/v4/facebook_social_login_btn_2.png');
+    background-image: url('/img/v4/facebook_social_login_btn_2.png');
     background-repeat: no-repeat;
     background-size: 36px 36px;
     background-position: center;
@@ -3822,7 +3822,7 @@ table tr td, .table {
 .packages-sent:after {
     content: " ";
     display: block;
-    background: #4379c1 url('../../img/v4/boxes.png') no-repeat;
+    background: #4379c1 url('/img/v4/boxes.png') no-repeat;
     background-size: 133px 38px;
     background-position: center;
     width: 192px;
@@ -4040,7 +4040,7 @@ table tr td, .table {
     width: 145px;
     height: 145px;
     background-color: #ff006d;
-    background-image: url('../../img/v4/arrow_right_4.png');
+    background-image: url('/img/v4/arrow_right_4.png');
     background-repeat: no-repeat;
     background-size: 52px 52px;
     background-position: center 30px;
@@ -4629,7 +4629,7 @@ table tr td, .table {
 .cover-img .cover-arrow {
     width: 32px;
     height: 64px;
-    background: url('../../img/v4/arrow_down_2.png');
+    background: url('/img/v4/arrow_down_2.png');
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -4894,7 +4894,7 @@ table tr td, .table {
 .msg-box .close {
     width: 20px;
     height: 20px;
-    background: url('../../img/v4/close.png') no-repeat;
+    background: url('/img/v4/close.png') no-repeat;
     background-size: 20px 20px;
     position: absolute;
     top: 15px;
@@ -4908,7 +4908,7 @@ table tr td, .table {
 }
 
 .warning-box {
-    background: #fc136f url('../../img/v4/info_3.png') no-repeat;
+    background: #fc136f url('/img/v4/info_3.png') no-repeat;
     background-size: 40px auto;
     background-position: 20px center;
     padding: 20px;
@@ -5111,7 +5111,7 @@ table tr td, .table {
 
 .categories-list li.all-categories {
     background-color: #ff006d;
-    background-image: url('../../img/v4/menu.svg');
+    background-image: url('/img/v4/menu.svg');
     background-repeat: no-repeat;
     background-position: 10px -1px;
     background-size: 36px 36px;
@@ -5225,7 +5225,7 @@ table tr td, .table {
 .blog-posts .post-details .post-views {
     display: inline-block;
     margin-left: 25px;
-    background: url('../../img/v4/eye.png') no-repeat;
+    background: url('/img/v4/eye.png') no-repeat;
     background-size: 16px auto;
     background-position: left center;
     padding-left: 23px;
@@ -5262,37 +5262,37 @@ table tr td, .table {
 }
 
 .blog-posts .post-details .post-rating.rating-0 {
-    background: url('../../img/v4/rating_0.png') no-repeat;
+    background: url('/img/v4/rating_0.png') no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .blog-posts .post-details .post-rating.rating-1 {
-    background: url('../../img/v4/rating_1.png') no-repeat;
+    background: url('/img/v4/rating_1.png') no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .blog-posts .post-details .post-rating.rating-2 {
-    background: url('../../img/v4/rating_2.png') no-repeat;
+    background: url('/img/v4/rating_2.png') no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .blog-posts .post-details .post-rating.rating-3 {
-    background: url('../../img/v4/rating_3.png') no-repeat;
+    background: url('/img/v4/rating_3.png') no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .blog-posts .post-details .post-rating.rating-4 {
-    background: url('../../img/v4/rating_4.png') no-repeat;
+    background: url('/img/v4/rating_4.png') no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .blog-posts .post-details .post-rating.rating-5 {
-    background: url('../../img/v4/rating_5.png') no-repeat;
+    background: url('/img/v4/rating_5.png') no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -5489,14 +5489,14 @@ table tr td, .table {
     width: 20px;
     height: 19px;
     margin-right: 5px;
-    background: url('../../img/v4/star_gray.png') no-repeat;
+    background: url('/img/v4/star_gray.png') no-repeat;
     background-size: 20px 19px;
     background-position: center;
     cursor: pointer;
 }
 
 .blog-post-content .rate-post .not-voted .star:hover, .blog-post-content .rate-post .star.selected {
-    background: url('../../img/v4/star.png') no-repeat;
+    background: url('/img/v4/star.png') no-repeat;
     background-size: 20px 19px;
     background-position: center;
 }
@@ -5510,7 +5510,7 @@ table tr td, .table {
 }
 
 .faq .search input[type="text"] {
-    background-image: url('../../img/v4/search.svg');
+    background-image: url('/img/v4/search.svg');
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: 10px center;
@@ -5601,7 +5601,7 @@ table tr td, .table {
     font-size: 1.1em;
     margin: 0;
     margin-bottom: 30px;
-    background: url('../../img/v4/help.png') no-repeat;
+    background: url('/img/v4/help.png') no-repeat;
     background-size: 18px 18px;
     background-position: 0 6px;
     padding: 0;
@@ -5609,7 +5609,7 @@ table tr td, .table {
 }
 
 .newbies .newbies-sections ul li {
-    background: url('../../img/v4/menu_4.png') no-repeat;
+    background: url('/img/v4/menu_4.png') no-repeat;
     background-size: 18px 18px;
     background-position: 0 6px;
 }
@@ -5645,7 +5645,7 @@ table tr td, .table {
 
 .faq-list h3 {
     display: block;
-    background: #62ccda url('../../img/v4/menu_3.png') no-repeat;
+    background: #62ccda url('/img/v4/menu_3.png') no-repeat;
     background-position: calc(100% - 20px);
     background-size: 32px 32px;
     margin-top: 30px;
@@ -5660,7 +5660,7 @@ table tr td, .table {
 .faq-list li {
     margin-bottom: -1px;
     line-height: 32px;
-    background: #fff url('../../img/help_2.png') no-repeat;
+    background: #fff url('/img/help_2.png') no-repeat;
     background-size: 18px 18px;
     background-position: 25px 23px;
     padding: 0;
@@ -5901,7 +5901,7 @@ table tr td, .table {
     width: 5%;
     height: 100px;
     vertical-align: top;
-    background-image: url('../../img/v4/arrow_right_2.png');
+    background-image: url('/img/v4/arrow_right_2.png');
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: center center;
@@ -5916,7 +5916,7 @@ table tr td, .table {
         display: block;
         width: 100%;
         height: 120px;
-        background-image: url('../../img/v4/arrow_down_3.png');
+        background-image: url('/img/v4/arrow_down_3.png');
         background-repeat: no-repeat;
         background-size: 46px 46px;
         background-position: center center;
@@ -5947,7 +5947,7 @@ table tr td, .table {
 .reg-done-popup .close-rdp-btn {
     width: 26px;
     height: 26px;
-    background: #ff006d url('../../img/v4/close_2.png') no-repeat;
+    background: #ff006d url('/img/v4/close_2.png') no-repeat;
     background-size: 12px 12px;
     background-position: center;
     border-radius: 100px;
@@ -6119,7 +6119,7 @@ table tr td, .table {
     width: 414px;
     height: 413px;
     margin: 0 auto;
-    background: url('../../img/mail_pattern_2.png') no-repeat;
+    background: url('/img/mail_pattern_2.png') no-repeat;
     background-position: center;
     padding: 23px 25px 0 25px;
     box-sizing: border-box;
@@ -6159,7 +6159,7 @@ table tr td, .table {
 
 .my-address .address span:hover {
     color: #28a7df;
-    background: url('../../img/copy.png') no-repeat;
+    background: url('/img/copy.png') no-repeat;
     background-position: right center;
     background-size: 18px 18px;
     cursor: pointer;
@@ -6200,7 +6200,7 @@ table tr td, .table {
     line-height: 27px;
     margin: 0;
     margin-bottom: 10px !important;
-    background: url('../../img/v4/discount_2.png') no-repeat;
+    background: url('/img/v4/discount_2.png') no-repeat;
     background-size: 64px 64px;
     background-position: left top;
     padding-top: 5px;
@@ -6272,7 +6272,7 @@ table tr td, .table {
     line-height: 20px;
     padding-left: 50px;
     box-sizing: border-box;
-    background: url('../../img/v4/info_4.png') no-repeat;
+    background: url('/img/v4/info_4.png') no-repeat;
     background-size: 35px 35px;
     background-position: left top;
 }
@@ -6404,7 +6404,7 @@ a#highlight:hover {
 }
 .pvz-list-info #pvz-list li {
     display: block;
-    background: #eff9fe url(../../img/map.png) no-repeat;
+    background: #eff9fe url(/img/map.png) no-repeat;
     background-position: 5px 5px;
     background-size: 64px 64px;
     padding: 20px;
@@ -6890,7 +6890,7 @@ a#highlight:hover {
     font-size: 1.125rem;
     color: #9AA9C2;
     font-weight: 500;
-    background-image: url("../../img/v4/photo_camera@2x.png");
+    background-image: url("/img/v4/photo_camera@2x.png");
     background-repeat: no-repeat;
     background-position: left 32px top 50%;
     -webkit-background-size: 35px 35px;
@@ -7000,7 +7000,7 @@ a#highlight:hover {
     font-size: 0;
     white-space: nowrap;
     line-height: 19px;
-    background-image: url("../../img/v4/star-array.svg");
+    background-image: url("/img/v4/star-array.svg");
     background-position: left top;
 }
 .star-rating-input {
@@ -7040,26 +7040,26 @@ a#highlight:hover {
     font-size: 0;
     position: relative;
     cursor: pointer;
-    background-image: url("../../img/v4/star-rating-input@2x.png");
+    background-image: url("/img/v4/star-rating-input@2x.png");
     background-repeat: no-repeat;
     -webkit-background-size: 42px 40px;
     -moz-background-size: 42px 40px;
     background-size: 42px 40px;
 }
 .star-rating-input-item input:checked+label {
-    background-image: url("../../img/v4/star-rating-input-active@2x.png") !important;
+    background-image: url("/img/v4/star-rating-input-active@2x.png") !important;
 }
 .star-rating-input.active .star-rating-input-item label {
-    background-image: url("../../img/v4/star-rating-input-active@2x.png");
+    background-image: url("/img/v4/star-rating-input-active@2x.png");
 }
 .star-rating-input.active .star-rating-input-item.checked~.star-rating-input-item label {
-    background-image: url("../../img/v4/star-rating-input@2x.png");
+    background-image: url("/img/v4/star-rating-input@2x.png");
 }
 .star-rating-input:hover .star-rating-input-item label {
-    background-image: url("../../img/v4/star-rating-input-active@2x.png") !important;
+    background-image: url("/img/v4/star-rating-input-active@2x.png") !important;
 }
 .star-rating-input:hover .star-rating-input-item:hover~.star-rating-input-item label {
-    background-image: url("../../img/v4/star-rating-input@2x.png") !important;
+    background-image: url("/img/v4/star-rating-input@2x.png") !important;
 }
 
 .star-rating__fill[data-rating='']+.star-rating__meter {
@@ -7272,7 +7272,7 @@ a#highlight:hover {
 .ekko-lightbox-nav-overlay a:first-child {
     right: 100%;
     left: -30px;
-    background-image: url("../..../../img/v4/ekko-lightbox-arrow-left@2x.png");
+    background-image: url("../../img/v4/ekko-lightbox-arrow-left@2x.png");
     background-position: center left 10px;
     background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -7285,7 +7285,7 @@ a#highlight:hover {
 .ekko-lightbox-nav-overlay a:last-child {
     left: 100%;
     right: -30px;
-    background-image: url("../..../../img/v4/ekko-lightbox-arrow-right@2x.png");
+    background-image: url("../../img/v4/ekko-lightbox-arrow-right@2x.png");
     background-position: center right 10px;
     background-repeat: no-repeat;
     -webkit-background-size: contain;
@@ -7752,16 +7752,16 @@ a#highlight:hover {
     border-bottom: 0;
 }
 .ya-share2__item_service_facebook .ya-share2__icon {
-    background-image: url(../../img/v4/share-icons/fb.png) !important;
+    background-image: url(/img/v4/share-icons/fb.png) !important;
 }
 .ya-share2__item_service_vkontakte .ya-share2__icon {
-    background-image: url(../../img/v4/share-icons/vk.png) !important;
+    background-image: url(/img/v4/share-icons/vk.png) !important;
 }
 .ya-share2__item_service_twitter .ya-share2__icon {
-    background-image: url(../../img/v4/share-icons/tw.png) !important;
+    background-image: url(/img/v4/share-icons/tw.png) !important;
 }
 .ya-share2__item_service_odnoklassniki .ya-share2__icon {
-    background-image: url(../../img/v4/share-icons/ok.png) !important;
+    background-image: url(/img/v4/share-icons/ok.png) !important;
 }
 .ya-share2__container_size_m .ya-share2__icon {
     height: 40px !important;
@@ -8102,22 +8102,22 @@ body {
 
 .free-services__item--address .free-services__wrapper::after {
     height: 243px;
-    background-image: url("../../img/v4/pink-house.svg");
+    background-image: url("/img/v4/pink-house.svg");
 }
 
 .free-services__item--combine .free-services__wrapper::after {
     height: 206px;
-    background-image: url("../../img/v4/parcel-inside.svg");
+    background-image: url("/img/v4/parcel-inside.svg");
 }
 
 .free-services__item--extra .free-services__wrapper::after {
     height: 210px;
-    background-image: url("../../img/v4/clothes-stock.svg");
+    background-image: url("/img/v4/clothes-stock.svg");
 }
 
 .free-services__item--storage .free-services__wrapper::after {
     height: 273px;
-    background-image: url("../../img/v4/calendar-perspective.svg");
+    background-image: url("/img/v4/calendar-perspective.svg");
 }
 
 .free-services__text-box {
@@ -8252,16 +8252,16 @@ body {
 }
 
 .discounts__item--superfast::before {
-    background-image: url("../../img/superfast.svg");
+    background-image: url("/img/superfast.svg");
 }
 
 .discounts__item--econom::before {
-    background-image: url("../../img/v4/econom_logo.png");
+    background-image: url("/img/v4/econom_logo.png");
 }
 
 .discounts__item--express::before,
 .discounts__item--fastbox::before {
-    background-image: url("../../img/boxberry_logo_l.png");
+    background-image: url("/img/boxberry_logo_l.png");
 }
 
 .discounts__item:nth-child(2n) {
@@ -8358,19 +8358,19 @@ body {
 }
 
 .warehouse__item--storage .warehouse__wrapper::before {
-    background-image: url("../../img/v4/boxes-stock-grey.svg");
+    background-image: url("/img/v4/boxes-stock-grey.svg");
 }
 
 .warehouse__item--combine .warehouse__wrapper::before {
-    background-image: url("../../img/v4/parcel-inside.svg");
+    background-image: url("/img/v4/parcel-inside.svg");
 }
 
 .warehouse__item--storage-packed .warehouse__wrapper::before {
-    background-image: url("../../img/v4/boxes-stock-pink.svg");
+    background-image: url("/img/v4/boxes-stock-pink.svg");
 }
 
 .warehouse__item--storage-paid .warehouse__wrapper::before {
-    background-image: url("../../img/v4/box-pack-black.svg");
+    background-image: url("/img/v4/box-pack-black.svg");
 }
 
 .warehouse__title {
@@ -8448,7 +8448,7 @@ body {
     top: 56px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url("../../img/v4/easy-order-tshort.svg");
+    background-image: url("/img/v4/easy-order-tshort.svg");
 }
 
 .easy-orders__slogan b {
@@ -9097,12 +9097,12 @@ input.calc-filter__range::-moz-range-track {
 }
 
 .calc-filter__field--country::before {
-    background-image: url("../../img/v4/filter-globe.svg"),
+    background-image: url("/img/v4/filter-globe.svg"),
         linear-gradient(135deg, rgb(254, 188, 216), rgb(255, 134, 186));
 }
 
 .calc-filter__field--city::before {
-    background-image: url("../../img/v4/filter-building.svg"),
+    background-image: url("/img/v4/filter-building.svg"),
         linear-gradient(135deg, rgb(254, 188, 216), rgb(255, 134, 186));
 }
 
@@ -9339,27 +9339,27 @@ input.calc-filter__range::-moz-range-track {
 }
 
 .social__link--tg {
-    background-image: url("../../img/social-tg.svg");
+    background-image: url("/img/social-tg.svg");
 }
 
 .social__link--vk {
-    background-image: url("../../img/social-vk.svg");
+    background-image: url("/img/social-vk.svg");
 }
 
 .social__link--fb {
-    background-image: url("../../img/social-fb.svg");
+    background-image: url("/img/social-fb.svg");
 }
 
 .social__link--yt {
-    background-image: url("../../img/social-yt.svg");
+    background-image: url("/img/social-yt.svg");
 }
 
 .social__link--in {
-    background-image: url("../../img/social-in.svg");
+    background-image: url("/img/social-in.svg");
 }
 
 .social__link--in1 {
-    background-image: url("../../img/social-in1.svg");
+    background-image: url("/img/social-in1.svg");
 }
 
 .footer {
