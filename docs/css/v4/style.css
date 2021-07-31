@@ -6890,7 +6890,7 @@ a#highlight:hover {
     font-size: 1.125rem;
     color: #9AA9C2;
     font-weight: 500;
-    background-image: url("/img/v4/photo_camera@2x.png");
+    background-image: url("../../img/v4/photo_camera@2x.png");
     background-repeat: no-repeat;
     background-position: left 32px top 50%;
     -webkit-background-size: 35px 35px;
@@ -7000,7 +7000,7 @@ a#highlight:hover {
     font-size: 0;
     white-space: nowrap;
     line-height: 19px;
-    background-image: url("/img/v4/star-array.svg");
+    background-image: url("../../img/v4/star-array.svg");
     background-position: left top;
 }
 .star-rating-input {
@@ -7040,26 +7040,26 @@ a#highlight:hover {
     font-size: 0;
     position: relative;
     cursor: pointer;
-    background-image: url("/img/v4/star-rating-input@2x.png");
+    background-image: url("../../img/v4/star-rating-input@2x.png");
     background-repeat: no-repeat;
     -webkit-background-size: 42px 40px;
     -moz-background-size: 42px 40px;
     background-size: 42px 40px;
 }
 .star-rating-input-item input:checked+label {
-    background-image: url("/img/v4/star-rating-input-active@2x.png") !important;
+    background-image: url("../../img/v4/star-rating-input-active@2x.png") !important;
 }
 .star-rating-input.active .star-rating-input-item label {
-    background-image: url("/img/v4/star-rating-input-active@2x.png");
+    background-image: url("../../img/v4/star-rating-input-active@2x.png");
 }
 .star-rating-input.active .star-rating-input-item.checked~.star-rating-input-item label {
-    background-image: url("/img/v4/star-rating-input@2x.png");
+    background-image: url("../../img/v4/star-rating-input@2x.png");
 }
 .star-rating-input:hover .star-rating-input-item label {
-    background-image: url("/img/v4/star-rating-input-active@2x.png") !important;
+    background-image: url("../../img/v4/star-rating-input-active@2x.png") !important;
 }
 .star-rating-input:hover .star-rating-input-item:hover~.star-rating-input-item label {
-    background-image: url("/img/v4/star-rating-input@2x.png") !important;
+    background-image: url("../../img/v4/star-rating-input@2x.png") !important;
 }
 
 .star-rating__fill[data-rating='']+.star-rating__meter {
@@ -8102,22 +8102,22 @@ body {
 
 .free-services__item--address .free-services__wrapper::after {
     height: 243px;
-    background-image: url("/img/v4/pink-house.svg");
+    background-image: url("../../img/v4/pink-house.svg");
 }
 
 .free-services__item--combine .free-services__wrapper::after {
     height: 206px;
-    background-image: url("/img/v4/parcel-inside.svg");
+    background-image: url("../../img/v4/parcel-inside.svg");
 }
 
 .free-services__item--extra .free-services__wrapper::after {
     height: 210px;
-    background-image: url("/img/v4/clothes-stock.svg");
+    background-image: url("../../img/v4/clothes-stock.svg");
 }
 
 .free-services__item--storage .free-services__wrapper::after {
     height: 273px;
-    background-image: url("/img/v4/calendar-perspective.svg");
+    background-image: url("../../img/v4/calendar-perspective.svg");
 }
 
 .free-services__text-box {
@@ -8252,16 +8252,16 @@ body {
 }
 
 .discounts__item--superfast::before {
-    background-image: url("/img/superfast.svg");
+    background-image: url("../../img/superfast.svg");
 }
 
 .discounts__item--econom::before {
-    background-image: url("/img/v4/econom_logo.png");
+    background-image: url("../../img/v4/econom_logo.png");
 }
 
 .discounts__item--express::before,
 .discounts__item--fastbox::before {
-    background-image: url("/img/boxberry_logo_l.png");
+    background-image: url("../../img/boxberry_logo_l.png");
 }
 
 .discounts__item:nth-child(2n) {
@@ -8358,19 +8358,19 @@ body {
 }
 
 .warehouse__item--storage .warehouse__wrapper::before {
-    background-image: url("/img/v4/boxes-stock-grey.svg");
+    background-image: url("../../img/v4/boxes-stock-grey.svg");
 }
 
 .warehouse__item--combine .warehouse__wrapper::before {
-    background-image: url("/img/v4/parcel-inside.svg");
+    background-image: url("../../img/v4/parcel-inside.svg");
 }
 
 .warehouse__item--storage-packed .warehouse__wrapper::before {
-    background-image: url("/img/v4/boxes-stock-pink.svg");
+    background-image: url("../../img/v4/boxes-stock-pink.svg");
 }
 
 .warehouse__item--storage-paid .warehouse__wrapper::before {
-    background-image: url("/img/v4/box-pack-black.svg");
+    background-image: url("../../img/v4/box-pack-black.svg");
 }
 
 .warehouse__title {
@@ -8448,7 +8448,7 @@ body {
     top: 56px;
     left: 50%;
     transform: translateX(-50%);
-    background-image: url("/img/v4/easy-order-tshort.svg");
+    background-image: url("../../img/v4/easy-order-tshort.svg");
 }
 
 .easy-orders__slogan b {
@@ -9097,12 +9097,12 @@ input.calc-filter__range::-moz-range-track {
 }
 
 .calc-filter__field--country::before {
-    background-image: url("/img/v4/filter-globe.svg"),
+    background-image: url("../../img/v4/filter-globe.svg"),
         linear-gradient(135deg, rgb(254, 188, 216), rgb(255, 134, 186));
 }
 
 .calc-filter__field--city::before {
-    background-image: url("/img/v4/filter-building.svg"),
+    background-image: url("../../img/v4/filter-building.svg"),
         linear-gradient(135deg, rgb(254, 188, 216), rgb(255, 134, 186));
 }
 
@@ -9339,27 +9339,27 @@ input.calc-filter__range::-moz-range-track {
 }
 
 .social__link--tg {
-    background-image: url("/img/social-tg.svg");
+    background-image: url("../../img/social-tg.svg");
 }
 
 .social__link--vk {
-    background-image: url("/img/social-vk.svg");
+    background-image: url("../../img/social-vk.svg");
 }
 
 .social__link--fb {
-    background-image: url("/img/social-fb.svg");
+    background-image: url("../../img/social-fb.svg");
 }
 
 .social__link--yt {
-    background-image: url("/img/social-yt.svg");
+    background-image: url("../../img/social-yt.svg");
 }
 
 .social__link--in {
-    background-image: url("/img/social-in.svg");
+    background-image: url("../../img/social-in.svg");
 }
 
 .social__link--in1 {
-    background-image: url("/img/social-in1.svg");
+    background-image: url("../../img/social-in1.svg");
 }
 
 .footer {
