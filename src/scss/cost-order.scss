@@ -10,10 +10,10 @@
     max-width: 365px;
     min-height: 414px;
     height: max-content;
-    padding: 33px 20px 5px 20px;
+    padding: 33px 20px 15px 20px;
     box-shadow: 0 0 60px $grey-light-1;
     border-radius: 40px;
-    transition: all 0.2s linear;
+    // transition: min-height 0.2s linear;
 
     &:hover {
         border: 2px solid $pink;
