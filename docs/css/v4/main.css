@@ -2556,7 +2556,8 @@
 
 .advantage-service__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
   flex-wrap: wrap;
   max-width: 983px;
   margin: 0 auto;
@@ -2583,21 +2584,6 @@
   border-radius: 40px;
 }
 
-@media (max-width: 938px) {
-  .advantage-service__block:not(:last-child) {
-    margin-bottom: 20px;
-  }
-  .advantage-service__block:nth-child(2n+1) {
-    margin-right: 20px;
-  }
-}
-
-@media (max-width: 650px) {
-  .advantage-service__block:nth-child(2n+1) {
-    margin-right: 0;
-  }
-}
-
 .advantage-service__services {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
@@ -2614,11 +2600,6 @@
   font-weight: 700;
   color: #FF006D;
   margin: 0;
-}
-
-.advantage-service__price--letters {
-  text-transform: uppercase;
-  margin-left: 16px;
 }
 
 .vip-redemption__wrapper {

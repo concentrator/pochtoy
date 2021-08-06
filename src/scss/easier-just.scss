@@ -12,7 +12,7 @@
     position: relative;
     padding-top: 95px;
     padding-bottom: 677px;
-    background-image: url("/../img/easier-just/easier-just.svg");
+    background-image: url("/img/easier-just/easier-just.svg");
     background-repeat: no-repeat;
     background-size: 1228px auto;
     background-position: center bottom;
@@ -38,7 +38,7 @@
     &::before {
         position: absolute;
         content: "";
-        background-image: url("/../img/advantage/advantage.svg");
+        background-image: url("/img/advantage/advantage.svg");
         width: 234px;
         height: 18px;
         top: 225px;
