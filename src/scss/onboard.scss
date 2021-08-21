@@ -7,7 +7,7 @@
 }
 
 .onboard__slide-wrapper {
-   /* display: flex; /*Временно, пока они вряд выставленны*/
+    display: flex; /*Временно, пока они вряд выставленны*/
 }
 
 .onboard__slide {
@@ -18,7 +18,7 @@
     border-radius: 10px;
     background-repeat: no-repeat;
 
-    /*margin-right: 37px; /*Временно, пока они вряд выставленны*/
+    margin-right: 37px; /*Временно, пока они вряд выставленны*/
 
     @media (max-width: 637px) {
         padding: 98px 30px 30px 30px;
