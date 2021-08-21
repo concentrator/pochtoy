@@ -124,6 +124,26 @@
     }
 }
 
+.onboard__slide--guide {
+    background-image: url("/img/onboard/guide.svg"),
+    url("/img/onboard/background-guide.svg");
+    background-position: 80px 271px,-214px 175px;
+
+    @media (max-width: 637px) {
+        background-image: url("/img/onboard/guide.svg"),
+        url("/img/onboard/background-guide.svg");
+        background-size: 444px 343px, auto;
+        background-position: -75px 354px,-214px 175px
+    }
+
+    @media (max-width: 410px) {
+        background-image: url("/img/onboard/guide.svg"),
+        url("/img/onboard/background-guide-mobile.svg");
+        background-size: 444px 343px, auto;
+        background-position: -75px 354px, -146px 288px;
+    }
+}
+
 .onboard__heading {
     position: relative;
     font-weight: 700;
