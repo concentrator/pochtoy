@@ -7,7 +7,7 @@
 }
 
 .onboard__slide-wrapper {
-    display: flex;
+   /* display: flex; /*Временно, пока они вряд выставленны*/
 }
 
 .onboard__slide {
@@ -18,7 +18,7 @@
     border-radius: 10px;
     background-repeat: no-repeat;
 
-    margin-right: 37px; /*Временно, пока они вряд выставленны*/
+    /*margin-right: 37px; /*Временно, пока они вряд выставленны*/
 
     @media (max-width: 637px) {
         padding: 98px 30px 30px 30px;
@@ -84,6 +84,26 @@
         url("/img/onboard/background-assortment-mobile.svg");
         background-position: -47px 392px,-179px 245px;
     }
+}
+
+.onboard__slide--online-help {
+    background-image: url("/img/onboard/online-help.svg"),
+    url("/img/onboard/background-online-help.svg");
+    background-position: 119px 180px,-58px 169px;
+
+    @media (max-width: 637px) {
+        background-image: url("/img/onboard/online-help.svg"),
+        url("/img/onboard/background-online-help.svg");
+        background-size: 359px 359px, auto;
+        background-position: 9px 259px,-58px 169px;
+    }
+
+    @media (max-width: 376px) {
+        background-image: url("/img/onboard/online-help.svg"),
+        url("/img/onboard/background-online-help-mobile.svg");
+        background-position: 9px 259px,-88px 254px;
+    }
+
 }
 
 .onboard__heading {
@@ -152,6 +172,10 @@
 
 .onboard__text--bonus {
     max-width: 495px;
+}
+
+.onboard__text--online-help {
+    max-width: 381px;
 }
 
 .onboard__btn {
