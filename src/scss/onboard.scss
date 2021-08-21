@@ -43,7 +43,7 @@
         background-position: 0px 265px,-82px 243px;
     }
 
-    @media (max-width: 360px) {
+    @media (max-width: 410px) {
         background-image: url("/img/onboard/background-first-mobile.svg"),
         url("/img/onboard/background-wave-first-mobile.svg");
         background-position: -50px 265px,-82px 243px;
@@ -60,7 +60,7 @@
         background-position: 9px 409px,-100px 253px;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 410px) {
         background-image: url("/img/onboard/bonus.svg"),
         url("/img/onboard/background-bonus-mobile.svg");
         background-position: 9px 409px,-168px 254px;
@@ -79,7 +79,7 @@
         background-position: -47px 392px,-195px 251px;
     }
 
-    @media (max-width: 376px) {
+    @media (max-width: 410px) {
         background-image: url("/img/onboard/assortment.svg"),
         url("/img/onboard/background-assortment-mobile.svg");
         background-position: -47px 392px,-179px 245px;
@@ -98,12 +98,30 @@
         background-position: 9px 259px,-58px 169px;
     }
 
-    @media (max-width: 376px) {
+    @media (max-width: 410px) {
         background-image: url("/img/onboard/online-help.svg"),
         url("/img/onboard/background-online-help-mobile.svg");
         background-position: 9px 259px,-88px 254px;
     }
+}
 
+.onboard__slide--stocks {
+    padding-right: 40px;
+    background-image: url("/img/onboard/stocks.svg"),
+    url("/img/onboard/background-stocks.svg");
+    background-position: -63px 71px,-231px 287px;
+
+    @media (max-width: 485px) {
+        background-image: url("/img/onboard/stocks-mobile.svg"),
+        url("/img/onboard/background-stocks.svg");
+        background-position: 1px 238px,-231px 287px;
+    }
+
+    @media (max-width: 410px) {
+        background-image: url("/img/onboard/stocks-mobile.svg"),
+        url("/img/onboard/background-stocks-mobile.svg");
+        background-position: 1px 238px,-173px 338px;
+    }
 }
 
 .onboard__heading {
@@ -148,6 +166,14 @@
     max-width: 494px;
 }
 
+.onboard__heading--stocks {
+    margin: 0 0 60px 0 !important;
+
+    @media (max-width: 410px) {
+        margin: 0 0 51px 0 !important;
+    }
+}
+
 .onboard__text {
     font-weight: 400;
     font-size: 18px;
@@ -157,7 +183,7 @@
 
     @media (max-width: 637px) {
         font-size: 16px;
-        line-height: 19px;
+        line-height: 20px;
         margin-bottom: 21px;
     }
 }
