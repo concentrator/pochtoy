@@ -1,0 +1,196 @@
+.onboard {
+    padding: 30px;
+}
+
+.onboard__inner {
+    position: relative;
+    max-width: 701px;
+    border-radius: 10px;
+    box-shadow: 0 0 51px rgba(1,1,1, 0.4);
+    overflow: hidden;
+}
+
+.onboard__slide {
+    padding: 98px 30px 30px 30px;
+    min-height: 671px;
+
+    @media (max-width: 546px) {
+        min-height: 667px;
+    }
+}
+
+.onboard__slide--first {
+    background-image: url("/img/onboard/background-first.svg");
+    background-position: center 253px;
+    background-repeat: no-repeat;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-image: url("/img/onboard/paper-first.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        top: 269px;
+        left: 152px;
+        width: 536px;
+        height: 319px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url("/img/onboard/girl-first.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        left: 231px;
+        top: 218px;
+        width: 470px;
+        height: 470px;
+    }
+
+    @media (max-width: 707px) {
+        &::after {
+            left: auto;
+            right: -52px;
+        }
+    }
+
+    @media (max-width: 656px) {
+        &::before {
+            left: auto;
+            right: -91px;
+        }
+    }
+
+    @media (max-width: 546px) {
+        background-image: url("/img/onboard/background-first-mobile.svg");
+
+        &::after {
+            width: 385px;
+            height: 385px;
+            top: 298px;
+            right: -42px;
+        }
+
+        &::before {
+            width: 396px;
+            height: 236px;
+            right: -42px;
+            top: 265px;
+        }
+    }
+}
+
+.onboard__content {
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 4px;
+        background: $pink;
+        top: 166px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url("/img/onboard/bush-first.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 79px;
+        height: 110px;
+        top: 486px;
+        left: 60px;
+    }
+
+    @media (max-width: 681px) {
+        &::before {
+            top: 199px;
+        }
+    }
+
+    @media (max-width: 605px) {
+        &::after {
+            left: auto;
+            right: 406px;
+        }
+    }
+
+    @media (max-width: 546px) {
+        &::after {
+            width: 62px;
+            height: 87px; 
+            right: auto;
+            left: 0;  
+            top: 530px;         
+        }
+
+        &::before {
+            top: 199px;
+        }
+    }
+}
+
+.onboard__heading {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: $black;
+    margin: 0 0 49px 0 !important;
+
+    @media (max-width: 681px) {
+        margin: 0 0 44px 0 !important;
+    }
+
+    @media (max-width: 546px) {
+        font-size: 25px;
+        line-height: 25px;
+        margin: 0 0 51px 0 !important;
+    }
+}
+
+.onboard__text {
+    max-width: 277px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: $grey-dark1;
+    margin: 0 0 30px 0;
+
+    @media (max-width: 546px) {
+        margin-bottom: 25px;
+    }
+
+    @media (max-width: 546px) {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 21px;
+    }
+}
+
+.onboard__btn {
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 11px 20px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: $white;
+    border-radius: 10px;
+}
+
+.onboard__btn--content {
+    background-color: $pink;
+}
+
+.onboard__btn-close {
+    position: absolute;
+    border: none;
+    outline: none;
+    background: url("/img/onboard/icon-close.svg") transparent;
+    width: 24px;
+    height: 24px;
+    top: 28px;
+    right: 28px;
+}
