@@ -18,7 +18,7 @@
     border-radius: 10px;
     background-repeat: no-repeat;
 
-    margin-right: 37px; /*Временно, пока они вряд выставленны*/
+   margin-right: 37px; /*Временно, пока они вряд выставленны*/
 
     @media (max-width: 637px) {
         padding: 98px 30px 30px 30px;
@@ -144,6 +144,38 @@
     }
 }
 
+.onboard__slide--cashback {
+    padding-right: 70px;
+    background-image: url("/img/onboard/cashback.svg"),
+    url("/img/onboard/background-cashback.svg");
+    background-position: 20px 277px,-152px 302px;
+
+    @media (max-width: 410px) {
+        padding-right: 60px;
+        background-image: url("/img/onboard/cashback-mobile.svg"),
+        url("/img/onboard/background-cashback-mobile.svg");
+        background-position: 1px 294px,-240px 297px;
+    }
+}
+
+.onboard__slide--account {
+    background-image: url("/img/onboard/account.svg"),
+    url("/img/onboard/background-account.svg");
+    background-position: 136px 241px,-227px 305px;
+
+    @media (max-width: 491px) {
+        background-image: url("/img/onboard/account-mobile.svg"),
+        url("/img/onboard/background-account.svg");
+        background-position: 17px 334px,-227px 305px;
+    }
+
+    @media (max-width: 410px) {
+        background-image: url("/img/onboard/account-mobile.svg"),
+        url("/img/onboard/background-account-mobile.svg");
+        background-position: 17px 334px,-170px 303px;
+    }
+}
+
 .onboard__heading {
     position: relative;
     font-weight: 700;
@@ -194,6 +226,10 @@
     }
 }
 
+.onboard__heading--account {
+    max-width: 453px;
+}
+
 .onboard__text {
     font-weight: 400;
     font-size: 18px;
@@ -222,6 +258,10 @@
 
 .onboard__text--online-help {
     max-width: 381px;
+}
+
+.onboard__text--account {
+    max-width: 541px;
 }
 
 .onboard__btn {
