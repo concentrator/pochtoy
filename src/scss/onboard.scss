@@ -4,10 +4,10 @@
 
 .onboard__inner {
     position: relative;
-    /*max-width: 701px;*/
+
 }
 
-.onboard__slide-wrapper {
+.onboard__slide-list {
     margin: 0;
     padding: 0;
     display: flex; /*Временно, пока они вряд выставленны*/
@@ -27,6 +27,14 @@
         padding: 98px 30px 30px 30px;
         min-height: 667px;
     }
+}
+
+.onboard__slide-switching {
+    display: none;
+}
+
+.onboard__slide-active {
+    display: block;
 }
 
 .onboard__slide--first {
@@ -177,6 +185,10 @@
         url("/img/onboard/background-account-mobile.svg");
         background-position: 17px 334px,-170px 303px;
     }
+}
+
+.onboard__index-slide {
+    z-index: 1;
 }
 
 .onboard__heading {
@@ -350,6 +362,10 @@
     margin: 0 5px 0 0;
     padding: 0;
     background-color: $grey-light4;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .onboard__btn-nav--active {
