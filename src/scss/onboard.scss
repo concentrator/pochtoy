@@ -4,9 +4,12 @@
 
 .onboard__inner {
     position: relative;
+    /*max-width: 701px;*/
 }
 
 .onboard__slide-wrapper {
+    margin: 0;
+    padding: 0;
     display: flex; /*Временно, пока они вряд выставленны*/
 }
 
@@ -331,6 +334,27 @@
         font-size: 10px;
         line-height: 12px;
     }
+}
+
+.onboard__buttons-nav {
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    right: 259px;
+}
+
+.onboard__btn-nav {
+    width: 11px;
+    height: 4px;
+    border-radius: 20px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    background-color: $grey-light4;
+}
+
+.onboard__btn-nav--active {
+    width: 30px;
+    background-color: $pink;
 }
 
 .onboard__hide {
