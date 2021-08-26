@@ -1,19 +1,16 @@
-.onboard {
+.onboards {
     padding-top: 80px;
-}
-
-.onboard__inner {
+    margin: 0 auto;
     position: relative;
-
 }
 
-.onboard__slide-list {
+.onboard__list {
     margin: 0;
     padding: 0;
-    display: flex; /*Временно, пока они вряд выставленны*/
+    /*display: flex; /*Временно, пока они вряд выставленны*/
 }
 
-.onboard__slide {
+.onboard {
     padding: 82px 50px 30px 60px;
     max-width: 701px;
     min-height: 671px;
@@ -21,7 +18,7 @@
     border-radius: 10px;
     background-repeat: no-repeat;
 
-    margin-right: 37px; /*Временно, пока они вряд выставленны*/
+    /*margin-right: 37px; /*Временно, пока они вряд выставленны*/
 
     @media (max-width: 637px) {
         padding: 98px 30px 30px 30px;
@@ -29,15 +26,7 @@
     }
 }
 
-.onboard__slide-switching {
-    display: none;
-}
-
-.onboard__slide-active {
-    display: block;
-}
-
-.onboard__slide--first {
+.onboard__item--first {
     background-image: url("/img/onboard/background-first.svg"),
         url("/img/onboard/background-wave-first.svg");
     background-position: 60px 218px,-140px 254px;
@@ -61,7 +50,7 @@
     }
 }
 
-.onboard__slide--bonus {
+.onboard__item--bonus {
     background-image: url("/img/onboard/bonus.svg"),
         url("/img/onboard/background-bonus.svg");
     background-position: 80px 339px,-99px 254px;
@@ -78,7 +67,7 @@
     }
 }
 
-.onboard__slide--assortment {
+.onboard__item--assortment {
     background-image: url("/img/onboard/assortment.svg"),
     url("/img/onboard/background-assortment.svg");
     background-position: -69px 199px,-195px 251px;
@@ -97,7 +86,7 @@
     }
 }
 
-.onboard__slide--online-help {
+.onboard__item--online-help {
     background-image: url("/img/onboard/online-help.svg"),
     url("/img/onboard/background-online-help.svg");
     background-position: 119px 180px,-58px 169px;
@@ -116,7 +105,7 @@
     }
 }
 
-.onboard__slide--stocks {
+.onboard__item--stocks {
     padding-right: 40px;
     background-image: url("/img/onboard/stocks.svg"),
     url("/img/onboard/background-stocks.svg");
@@ -135,7 +124,7 @@
     }
 }
 
-.onboard__slide--guide {
+.onboard__item--guide {
     background-image: url("/img/onboard/guide.svg"),
     url("/img/onboard/background-guide.svg");
     background-position: 80px 271px,-214px 175px;
@@ -155,7 +144,7 @@
     }
 }
 
-.onboard__slide--cashback {
+.onboard__item--cashback {
     padding-right: 70px;
     background-image: url("/img/onboard/cashback.svg"),
     url("/img/onboard/background-cashback.svg");
@@ -169,7 +158,7 @@
     }
 }
 
-.onboard__slide--account {
+.onboard__item--account {
     background-image: url("/img/onboard/account.svg"),
     url("/img/onboard/background-account.svg");
     background-position: 136px 241px,-227px 305px;
@@ -185,10 +174,6 @@
         url("/img/onboard/background-account-mobile.svg");
         background-position: 17px 334px,-170px 303px;
     }
-}
-
-.onboard__index-slide {
-    z-index: 1;
 }
 
 .onboard__heading {
