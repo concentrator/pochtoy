@@ -11,7 +11,6 @@
 
 .onboards__wrapper {
     background-color: $white;
-    max-width: 701px;
     position: fixed;
     z-index: 2002;
     border-radius: 10px;
@@ -33,7 +32,7 @@
         url("/img/onboard/background-wave-first.svg");
     background-position: 60px 218px,-140px 254px;
 
-    @media (max-width: 637px) {
+   /* @media (max-width: 637px) {
         background-image: url("/img/onboard/background-first-mobile.svg"),
         url("/img/onboard/background-wave-first.svg");
         background-position: 0 265px,-140px 254px;
@@ -43,12 +42,12 @@
         background-image: url("/img/onboard/background-first-mobile.svg"),
         url("/img/onboard/background-wave-first-mobile.svg");
         background-position: 0px 265px,-82px 243px;
-    }
+    }*/
 
-    @media (max-width: 410px) {
+    @media (max-width: 768px) {
         background-image: url("/img/onboard/background-first-mobile.svg"),
         url("/img/onboard/background-wave-first-mobile.svg");
-        background-position: -50px 265px,-82px 243px;
+        background-position: 0px 265px,-82px 243px;
     }
 }
 
@@ -57,14 +56,10 @@
         url("/img/onboard/background-bonus.svg");
     background-position: 80px 339px,-99px 254px;
 
-    @media (max-width: 491px) {
-        background-size: 267px 279px, auto;
-        background-position: 9px 409px,-100px 253px;
-    }
-
-    @media (max-width: 410px) {
+    @media (max-width: 768px) {
         background-image: url("/img/onboard/bonus.svg"),
         url("/img/onboard/background-bonus-mobile.svg");
+        background-size: 267px 279px, auto;
         background-position: 9px 409px,-168px 254px;
     }
 }
@@ -74,16 +69,10 @@
     url("/img/onboard/background-assortment.svg");
     background-position: -69px 199px,-195px 251px;
 
-    @media (max-width: 637px) {
-        background-image: url("/img/onboard/assortment.svg"),
-        url("/img/onboard/background-assortment.svg");
-        background-size: 298px 298px, auto;
-        background-position: -47px 392px,-195px 251px;
-    }
-
-    @media (max-width: 410px) {
+    @media (max-width: 768px) {
         background-image: url("/img/onboard/assortment.svg"),
         url("/img/onboard/background-assortment-mobile.svg");
+        background-size: 298px 298px, auto;
         background-position: -47px 392px,-179px 245px;
     }
 }
@@ -93,16 +82,10 @@
     url("/img/onboard/background-online-help.svg");
     background-position: 119px 180px,-58px 169px;
 
-    @media (max-width: 637px) {
-        background-image: url("/img/onboard/online-help.svg"),
-        url("/img/onboard/background-online-help.svg");
-        background-size: 359px 359px, auto;
-        background-position: 9px 259px,-58px 169px;
-    }
-
-    @media (max-width: 410px) {
+    @media (max-width: 768px) {
         background-image: url("/img/onboard/online-help.svg"),
         url("/img/onboard/background-online-help-mobile.svg");
+        background-size: 359px 359px, auto;
         background-position: 9px 259px,-88px 254px;
     }
 }
@@ -113,13 +96,7 @@
     url("/img/onboard/background-stocks.svg");
     background-position: -63px 71px,-231px 287px;
 
-    @media (max-width: 485px) {
-        background-image: url("/img/onboard/stocks-mobile.svg"),
-        url("/img/onboard/background-stocks.svg");
-        background-position: 1px 238px,-231px 287px;
-    }
-
-    @media (max-width: 410px) {
+    @media (max-width: 768px) {
         background-image: url("/img/onboard/stocks-mobile.svg"),
         url("/img/onboard/background-stocks-mobile.svg");
         background-position: 1px 238px,-173px 338px;
@@ -131,14 +108,7 @@
     url("/img/onboard/background-guide.svg");
     background-position: 80px 271px,-214px 175px;
 
-    @media (max-width: 637px) {
-        background-image: url("/img/onboard/guide.svg"),
-        url("/img/onboard/background-guide.svg");
-        background-size: 444px 343px, auto;
-        background-position: -75px 354px,-214px 175px
-    }
-
-    @media (max-width: 410px) {
+    @media (max-width: 768px) {
         background-image: url("/img/onboard/guide.svg"),
         url("/img/onboard/background-guide-mobile.svg");
         background-size: 444px 343px, auto;
@@ -152,7 +122,7 @@
     url("/img/onboard/background-cashback.svg");
     background-position: 20px 277px,-152px 302px;
 
-    @media (max-width: 410px) {
+    @media (max-width: 768px) {
         padding-right: 60px;
         background-image: url("/img/onboard/cashback-mobile.svg"),
         url("/img/onboard/background-cashback-mobile.svg");
@@ -165,15 +135,81 @@
     url("/img/onboard/background-account.svg");
     background-position: 136px 241px,-227px 305px;
 
-    @media (max-width: 491px) {
-        background-image: url("/img/onboard/account-mobile.svg"),
-        url("/img/onboard/background-account.svg");
-        background-position: 17px 334px,-227px 305px;
-    }
-
-    @media (max-width: 410px) {
+    @media (max-width: 768px) {
         background-image: url("/img/onboard/account-mobile.svg"),
         url("/img/onboard/background-account-mobile.svg");
         background-position: 17px 334px,-170px 303px;
     }
+}
+
+.onboards__btn--next {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    background-color: $grey-light2;
+    transition: box-shadow 0.3s linear;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 10px 25px $grey-light;
+    }
+}
+
+.onboards__buttons-nav {
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    right: 259px;
+
+    @media (max-width: 768px) {
+        top: 33px;
+        right: auto;
+        left: 31px;
+    }
+}
+
+.onboards__btn-nav {
+    width: 11px;
+    height: 4px;
+    border-radius: 20px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    background-color: $grey-light4;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        width: 6px;
+        margin-right: 2px;
+    }
+}
+
+.onboards__btn-nav--active {
+    width: 30px;
+    background-color: $pink;
+
+    @media (max-width: 768px) {
+        width: 18px;
+    }
+}
+
+.onboards__btn-close {
+    position: absolute;
+    border: none;
+    outline: none;
+    background: url("/img/onboard/icon-close.svg") transparent;
+    width: 24px;
+    height: 24px;
+    top: 28px;
+    right: 28px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.onboards__hide {
+    display: none;
 }
