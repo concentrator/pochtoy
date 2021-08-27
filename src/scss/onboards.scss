@@ -2,6 +2,23 @@
     background-color: $white;
     max-width: 701px;
     position: fixed;
+    z-index: 2002;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);
+}
+
+.overlay {
+    position: fixed;
+    background-color: rgba(51,29,40,0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    z-index: 2001;
 }
 
 .onboards__list {
