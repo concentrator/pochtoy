@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/v4/style.css" type="text/css"/>
     <link rel="stylesheet" href="css/v4/user-room.css" type="text/css"/>
     <link rel="stylesheet" href="css/v4/main.css" type="text/css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" >
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
@@ -301,134 +302,135 @@
         </div>
 
         <div class="onboards">
-
             <div class="onboards__wrapper">
+                <div class="onboards__swiper swiper-container">
 
-                <ul class="onboards__list">
+                    <ul class="onboards__list swiper-wrapper">
 
-                    <li class="onboard--first onboard ">
-                        <div class="onboard__content onboard__content--first onboard__hide">
-                            <h3 class="onboard__heading onboard__heading--first">
-                                Спасибо, что зарегистрировались в&nbsp;Pochtoy.com
-                            </h3>
-                            <p class="onboard__text onboard__text--first ">
-                                Это небольшой гид по выгодным покупкам в США.
-                            </p>
-                            <button class="onboard__btn onboard__btn--content onboard__btn--first">Вперед</button>
-                        </div>
-                    </li>
+                        <li class="onboard--first onboard swiper-slide">
+                            <div class="onboard__content onboard__content--first ">
+                                <h3 class="onboard__heading onboard__heading--first">
+                                    Спасибо, что зарегистрировались в&nbsp;Pochtoy.com
+                                </h3>
+                                <p class="onboard__text onboard__text--first ">
+                                    Это небольшой гид по выгодным покупкам в США.
+                                </p>
+                                <button class="onboard__btn onboard__btn--content onboard__btn--first">Вперед</button>
+                            </div>
+                        </li>
 
-                    <li class="onboard--bonus onboard onboards__hide">
-                        <div class="onboard__content onboard__content--bonus">
-                            <h3 class="onboard__heading">
-                                Получайте $3 с&nbsp;каждой отправленной посылки
-                            </h3>
-                            <p class="onboard__text onboard__text--bonus">
-                                Отправьте вашу персональную скидку 10% друзьям и знакомым и получайте $3 с каждой отправленной ими посылки.
-                            </p>
-                            <a class="onboard__btn onboard__btn--content" href="#">Подробнее</a>
-                        </div>
-                    </li>
+                        <li class="onboard--bonus onboard swiper-slide">
+                            <div class="onboard__content onboard__content--bonus">
+                                <h3 class="onboard__heading">
+                                    Получайте $3 с&nbsp;каждой отправленной посылки
+                                </h3>
+                                <p class="onboard__text onboard__text--bonus">
+                                    Отправьте вашу персональную скидку 10% друзьям и знакомым и получайте $3 с каждой отправленной ими посылки.
+                                </p>
+                                <a class="onboard__btn onboard__btn--content" href="#">Подробнее</a>
+                            </div>
+                        </li>
 
-                    <li class="onboard--assortment onboard onboards__hide">
-                        <div class="onboard__content ">
-                            <h3 class="onboard__heading">
-                                Что вы хотите купить?
-                            </h3>
-                            <p class="onboard__text">
-                                Мы подготовили список лучших американских магазинов, чтобы вы&nbsp;смогли начать покупать прямо&nbsp;сейчас:
-                            </p>
-                            <div class="onboard__links-wrapper">
-                                <div class="onboard__links">
-                                    <a class="onboard__link" href="#">Популярные магазины</a>
-                                    <a class="onboard__link" href="#">Спорт</a>
-                                    <a class="onboard__link" href="#">Одежда и обувь</a>
-                                    <a class="onboard__link" href="#">Товары для детей</a>
-                                    <a class="onboard__link" href="#">Активный образ жизни</a>
-                                    <a class="onboard__link" href="#">Косметика</a>
-                                    <a class="onboard__link" href="#">Электроника и фото техника</a>
-                                    <a class="onboard__link" href="#">Часы и ювелирные изделия</a>
-                                    <a class="onboard__link" href="#">Музыкальные инструменты</a>
-                                    <a class="onboard__link" href="#">Товары для детей</a>
+                        <li class="onboard--assortment onboard swiper-slide">
+                            <div class="onboard__content ">
+                                <h3 class="onboard__heading">
+                                    Что вы хотите купить?
+                                </h3>
+                                <p class="onboard__text">
+                                    Мы подготовили список лучших американских магазинов, чтобы вы&nbsp;смогли начать покупать прямо&nbsp;сейчас:
+                                </p>
+                                <div class="onboard__links-wrapper">
+                                    <div class="onboard__links">
+                                        <a class="onboard__link" href="#">Популярные магазины</a>
+                                        <a class="onboard__link" href="#">Спорт</a>
+                                        <a class="onboard__link" href="#">Одежда и обувь</a>
+                                        <a class="onboard__link" href="#">Товары для детей</a>
+                                        <a class="onboard__link" href="#">Активный образ жизни</a>
+                                        <a class="onboard__link" href="#">Косметика</a>
+                                        <a class="onboard__link" href="#">Электроника и фото техника</a>
+                                        <a class="onboard__link" href="#">Часы и ювелирные изделия</a>
+                                        <a class="onboard__link" href="#">Музыкальные инструменты</a>
+                                        <a class="onboard__link" href="#">Товары для детей</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
+                        </li>
 
-                    <li class="onboard--online-help onboard onboards__hide">
-                        <div class="onboard__content">
-                            <h3 class="onboard__heading">
-                                Не хотите покупать самостоятельно?
-                            </h3>
-                            <p class="onboard__text onboard__text--online-help">
-                                Воспользуйтесь помощью с покупками в США от наших операторов.
-                            </p>
-                            <a class="onboard__btn onboard__btn--content" href="#">Воспользоваться</a>
-                        </div>
-                    </li>
+                        <li class="onboard--online-help onboard swiper-slide">
+                            <div class="onboard__content">
+                                <h3 class="onboard__heading">
+                                    Не хотите покупать самостоятельно?
+                                </h3>
+                                <p class="onboard__text onboard__text--online-help">
+                                    Воспользуйтесь помощью с покупками в США от наших операторов.
+                                </p>
+                                <a class="onboard__btn onboard__btn--content" href="#">Воспользоваться</a>
+                            </div>
+                        </li>
 
-                    <li class="onboard--stocks onboard onboards__hide">
-                        <div class="onboard__content">
-                            <h3 class="onboard__heading onboard__heading--stocks">
-                                Как узнавать про актуальные распродажи в&nbsp;Америке?
-                            </h3>
-                            <p class="onboard__text">
-                                Чтобы узнать про актуальные распродажи загляните в&nbsp;раздел&nbsp;«Скидки в США».Раздел обновляется каждую пятницу.
-                            </p>
-                            <a class="onboard__btn onboard__btn--content" href="#">Что купить со скидкой</a>
-                        </div>
-                    </li>
+                        <li class="onboard--stocks onboard swiper-slide">
+                            <div class="onboard__content">
+                                <h3 class="onboard__heading onboard__heading--stocks">
+                                    Как узнавать про актуальные распродажи в&nbsp;Америке?
+                                </h3>
+                                <p class="onboard__text">
+                                    Чтобы узнать про актуальные распродажи загляните в&nbsp;раздел&nbsp;«Скидки в США».Раздел обновляется каждую пятницу.
+                                </p>
+                                <a class="onboard__btn onboard__btn--content" href="#">Что купить со скидкой</a>
+                            </div>
+                        </li>
 
-                    <li class="onboard--guide onboard onboards__hide">
-                        <div class="onboard__content">
-                            <h3 class="onboard__heading">
-                                Не знаете, как определить свой американский размер?
-                            </h3>
-                            <p class="onboard__text">
-                                Мы подготовили для вас очень подробный гид.
-                            </p>
-                            <a class="onboard__btn onboard__btn--content" href="#">Определить размер</a>
-                        </div>
-                    </li>
+                        <li class="onboard--guide onboard swiper-slide">
+                            <div class="onboard__content">
+                                <h3 class="onboard__heading">
+                                    Не знаете, как определить свой американский размер?
+                                </h3>
+                                <p class="onboard__text">
+                                    Мы подготовили для вас очень подробный гид.
+                                </p>
+                                <a class="onboard__btn onboard__btn--content" href="#">Определить размер</a>
+                            </div>
+                        </li>
 
-                    <li class="onboard--cashback onboard onboards__hide">
-                        <div class="onboard__content">
-                            <h3 class="onboard__heading">
-                                Зарегистрируйтесь в&nbsp;кэшбэк&nbsp;сервисах
-                            </h3>
-                            <p class="onboard__text">
-                                Чтобы получить на счет <span class="onboard__bold">$20</span> после первой покупки и&nbsp;вернуть кэшбэком до <span class="onboard__bold">30%</span> от стоимости товаров.
-                            </p>
-                            <a class="onboard__btn onboard__btn--content" href="#">Подробнее</a>
-                        </div>
-                    </li>
+                        <li class="onboard--cashback onboard swiper-slide">
+                            <div class="onboard__content">
+                                <h3 class="onboard__heading">
+                                    Зарегистрируйтесь в&nbsp;кэшбэк&nbsp;сервисах
+                                </h3>
+                                <p class="onboard__text">
+                                    Чтобы получить на счет <span class="onboard__bold">$20</span> после первой покупки и&nbsp;вернуть кэшбэком до <span class="onboard__bold">30%</span> от стоимости товаров.
+                                </p>
+                                <a class="onboard__btn onboard__btn--content" href="#">Подробнее</a>
+                            </div>
+                        </li>
 
-                    <li class="onboard--account onboard onboards__hide">
-                        <div class="onboard__content">
-                            <h3 class="onboard__heading onboard__heading--account">
-                                Переходите в личный кабинет, чтобы посмотреть ваш адрес в США.
-                            </h3>
-                            <p class="onboard__text onboard__text--account">
-                                Обратите внимание на STE – это номер вашей персональной ячейки в Pochtoy.com, не забывайте указывать его в адресе, когда отправляете нам посылку.
-                            </p>
-                            <a class="onboard__btn onboard__btn--content" href="#">Посмотреть адрес</a>
-                        </div>
-                    </li>
+                        <li class="onboard--account onboard swiper-slide">
+                            <div class="onboard__content">
+                                <h3 class="onboard__heading onboard__heading--account">
+                                    Переходите в личный кабинет, чтобы посмотреть ваш адрес в США.
+                                </h3>
+                                <p class="onboard__text onboard__text--account">
+                                    Обратите внимание на STE – это номер вашей персональной ячейки в Pochtoy.com, не забывайте указывать его в адресе, когда отправляете нам посылку.
+                                </p>
+                                <a class="onboard__btn onboard__btn--content" href="#">Посмотреть адрес</a>
+                            </div>
+                        </li>
 
-                </ul>
+                    </ul>
 
 
-                <button class="onboards__btn-close" aria-label="Закрыть"></button>
-                <button class="onboards__btn onboards__btn--next onboards__hide">Далее</button>
-                <button class="onboards__btn onboards__btn--next onboards__hide">Завершить</button>
-                <div class="onboards__buttons-nav onboards__hide">
-                    <button class="onboards__btn-nav onboards__btn-nav--active"></button>
-                    <button class="onboards__btn-nav"></button>
-                    <button class="onboards__btn-nav"></button>
-                    <button class="onboards__btn-nav"></button>
-                    <button class="onboards__btn-nav"></button>
-                    <button class="onboards__btn-nav"></button>
-                    <button class="onboards__btn-nav"></button>
+                    <button class="onboards__btn-close" aria-label="Закрыть"></button>
+                    <button class="onboards__btn onboards__btn--next ">Далее</button>
+                    <button class="onboards__btn onboards__btn--next ">Завершить</button>
+                    <div class="onboards__buttons-nav ">
+                        <button class="onboards__btn-nav onboards__btn-nav--active"></button>
+                        <button class="onboards__btn-nav"></button>
+                        <button class="onboards__btn-nav"></button>
+                        <button class="onboards__btn-nav"></button>
+                        <button class="onboards__btn-nav"></button>
+                        <button class="onboards__btn-nav"></button>
+                        <button class="onboards__btn-nav"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -451,5 +453,6 @@
         <!-- <link rel="stylesheet" href="/css/v4/priority-nav-core.css?t" type="text/css"/> -->
 
     </div>
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
 </body>
 </html>
