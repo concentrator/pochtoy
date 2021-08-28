@@ -1,0 +1,132 @@
+.onboards {
+    position: fixed;
+    background-color: rgba(0,0,0, 0.27);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    z-index: 2001;
+}
+
+.onboards__wrapper {
+    box-shadow: 0 0 51px rgba(1,1,1, 0.4);
+    position: fixed;
+    z-index: 2002;
+    width: 700px;
+    top: 50%;
+    right: 50%;
+    border-radius: 10px;
+    transform: translateY(-50%) translateX(50%);
+
+    @media (max-width: 768px) {
+        width: 374px;
+    }
+
+    @media (max-width: 375px) {
+        width: 320px;
+    }
+}
+
+.onboards__swiper {
+    border-radius: 10px;
+}
+
+.onboards__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.onboards__btn {
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 11px 20px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: $white;
+    border-radius: 10px;
+}
+
+
+.onboards__btn--nav {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    background-color: $grey-light2;
+    transition: box-shadow 0.3s linear;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 10px 25px $grey-light;
+    }
+}
+
+.onboards__btn--next,
+.onboards__btn--close {
+    z-index: 2;
+}
+
+.onboards__buttons-nav {
+    display: inline-block;
+    position: absolute;
+    top: 23px !important;
+    left: 286px !important;
+    z-index: 1;
+    bottom: auto !important;
+
+    @media (max-width: 768px) {
+        top: 33px !important;
+        right: auto;
+        left: 31px !important;
+    }
+}
+
+.onboards__btn-nav {
+    width: 11px;
+    height: 4px;
+    border-radius: 20px;
+    margin: 0 5px 0 0 !important;
+    padding: 0;
+    background-color: $grey-light4;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        width: 6px;
+        margin-right: 2px;
+    }
+}
+
+.onboards__btn-nav--active {
+    width: 30px;
+    background-color: $pink;
+
+    @media (max-width: 768px) {
+        width: 18px;
+    }
+}
+
+.onboards__btn-close {
+    position: absolute;
+    border: none;
+    outline: none;
+    background: url("/img/onboard/icon-close.svg") transparent;
+    width: 24px;
+    height: 24px;
+    top: 28px;
+    right: 28px;
+    z-index: 4;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.onboards__hide {
+    display: none;
+}
