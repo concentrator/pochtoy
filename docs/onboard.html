@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/v4/simplebar.min.css" type="text/css"/>
+    <link rel="stylesheet" href="css/v4/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/v4/user-room.css" type="text/css"/>
+    <link rel="stylesheet" href="css/v4/main.css" type="text/css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"
+            defer></script>
+
+
+
+    <title>New Pochtoy.com</title>
+</head>
+<body>
+    <div style="position:relative;">
+        <div class="header">
+            <div class="header__inner">
+                <div class="row flex justify-content-lg-between">
+                    <div class="col-md-auto c-col">
+                            <a href="/"><img class="logo"
+                                             alt="Логотип"
+                                             src="img/v4/logo_2.png"></a>
+                        <div class="mob-nav-btn-wrapper">
+                            <button class="mob-nav-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                        <nav class="header-nav">
+                            <ul class="nav  mob-nav">
+
+                                <li class="header__multilang">
+                                    <div class="header__multilang__wrapper">
+                                        <div class="header__multilang__wrapper__flag">
+                                            <!-- <img src="/img/multilang_flag_none.png" alt=""> -->
+                                        </div>
+                                        <div class="header__inner__multilang__wrapper__lang">...</div>
+                                    </div>
+
+                                    <div class="header__multilang__form">
+                                        <div class="header__multilang__form__wrap">
+                                            <div class="header__multilang__form__header">
+                                                <div class="header__multilang__form__title">
+
+                                                </div>
+                                                <div class="header__multilang__form__close">
+
+                                                </div>
+                                            </div>
+                                            <div class="header__multilang__form__body">
+                                                <label class="header__multilang__form__body__name">
+                                                    Язык
+                                                </label>
+                                                <select class="header__multilang__form__body__lang">
+                                                    <option
+                                                        data-google-lang="ru"
+                                                        data-img="/i/img/multilang_flag_rus.png/"
+                                                        data-short-text="Рус"
+                                                    >Русский
+                                                    </option>
+                                                    <option
+                                                        data-google-lang="en"
+                                                        data-img="/i/img/multilang_flag_eng.png/"
+                                                        data-short-text="Eng"
+                                                    >Английский
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <!-- <div class="header__multilang__form__footer">
+                                                <a class="btn">Применить</a>
+                                            </div> -->
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li><a  href='/how-to-buy/'>Как покупать</a></li>
+
+                                            <li><a  href='/sales/'>Распродажи</a></li>
+                                            <li><a title='Вы находитесь здесь' class='noHref '>Цены</a></li>        <!-- -->
+
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                       aria-expanded="true">Помощь</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a  href='/faq/'>Часто задаваемые вопросы</a></li>
+                                        <li><a  href='/newbies/'>Новичкам</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li class="dropdown header-nav__bonus-link">
+
+                                    <div class="header-nav__bonus-link__bubble" style="display:none;">
+                                        <svg class="header-nav__bonus-link__bubble__icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0)">
+                                                <path
+                                                    d="M19.873 14.7461C17.888 14.7461 16.1629 15.8801 15.3114 17.5343L9.8876 14.4028C10.1237 13.8142 10.2539 13.172 10.2539 12.5C10.2539 11.828 10.1237 11.1858 9.8876 10.5972L15.3114 7.46572C16.1629 9.11992 17.888 10.2539 19.873 10.2539C22.7 10.2539 25 7.95396 25 5.12695C25 2.29995 22.7 0 19.873 0C17.046 0 14.7461 2.29995 14.7461 5.12695C14.7461 5.44282 14.775 5.752 14.8299 6.05225L9.15337 9.32959C8.21372 8.13877 6.75811 7.37305 5.12695 7.37305C2.29995 7.37305 0 9.673 0 12.5C0 15.327 2.29995 17.627 5.12695 17.627C6.75811 17.627 8.21372 16.8612 9.15337 15.6704L14.8299 18.9478C14.775 19.2479 14.7461 19.5572 14.7461 19.873C14.7461 22.7 17.046 25 19.873 25C22.7 25 25 22.7 25 19.873C25 17.046 22.7 14.7461 19.873 14.7461ZM17.9635 8.25039C18.4221 7.6749 19.1235 7.32422 19.873 7.32422C20.6226 7.32422 21.324 7.6749 21.7826 8.25039C21.2263 8.5918 20.5723 8.78906 19.873 8.78906C19.1738 8.78906 18.5198 8.5918 17.9635 8.25039ZM19.1406 5.12695C19.1406 4.7231 19.4692 4.39453 19.873 4.39453C20.2769 4.39453 20.6055 4.7231 20.6055 5.12695C20.6055 5.53081 20.2769 5.85938 19.873 5.85938C19.4692 5.85938 19.1406 5.53081 19.1406 5.12695ZM19.873 1.46484C21.8923 1.46484 23.5352 3.10767 23.5352 5.12695C23.5352 5.91758 23.2825 6.64985 22.8548 7.24907C22.5342 6.87065 22.1461 6.55752 21.7136 6.325C21.9388 5.98013 22.0703 5.5687 22.0703 5.12695C22.0703 3.91538 21.0846 2.92969 19.873 2.92969C18.6615 2.92969 17.6758 3.91538 17.6758 5.12695C17.6758 5.5688 17.8073 5.98032 18.0327 6.32519C17.6001 6.55776 17.212 6.87085 16.8915 7.24936C16.4637 6.6501 16.2109 5.91772 16.2109 5.12695C16.2109 3.10767 17.8538 1.46484 19.873 1.46484ZM1.46484 12.5C1.46484 10.4807 3.10767 8.83789 5.12695 8.83789C7.14624 8.83789 8.78906 10.4807 8.78906 12.5C8.78906 13.2906 8.53638 14.0229 8.10869 14.6221C7.78813 14.2437 7.40005 13.9306 6.96743 13.698C7.19272 13.3532 7.32422 12.9417 7.32422 12.5C7.32422 11.2884 6.33853 10.3027 5.12695 10.3027C3.91538 10.3027 2.92969 11.2884 2.92969 12.5C2.92969 12.9417 3.06118 13.3532 3.28647 13.698C2.85391 13.9306 2.46577 14.2437 2.14521 14.6221C1.71753 14.0229 1.46484 13.2906 1.46484 12.5ZM4.39453 12.5C4.39453 12.0961 4.7231 11.7676 5.12695 11.7676C5.53081 11.7676 5.85938 12.0961 5.85938 12.5C5.85938 12.9038 5.53081 13.2324 5.12695 13.2324C4.7231 13.2324 4.39453 12.9039 4.39453 12.5ZM3.21738 15.6234C3.67603 15.0479 4.37744 14.6973 5.12695 14.6973C5.87646 14.6973 6.57788 15.0479 7.03652 15.6234C6.48018 15.9648 5.82622 16.1621 5.12695 16.1621C4.42769 16.1621 3.77373 15.9648 3.21738 15.6234ZM17.9634 22.9965C18.4221 22.421 19.1235 22.0703 19.873 22.0703C20.6226 22.0703 21.324 22.421 21.7827 22.9965C21.2263 23.3379 20.5723 23.5352 19.873 23.5352C19.1738 23.5352 18.5198 23.3379 17.9634 22.9965ZM19.873 20.6054C19.4692 20.6054 19.1406 20.2769 19.1406 19.873C19.1406 19.4691 19.4692 19.1406 19.873 19.1406C20.2769 19.1406 20.6055 19.4692 20.6055 19.873C20.6055 20.2769 20.2769 20.6054 19.873 20.6054ZM22.8548 21.9952C22.5342 21.6167 22.1461 21.3036 21.7135 21.0711C21.9388 20.7262 22.0703 20.3148 22.0703 19.873C22.0703 18.6615 21.0846 17.6758 19.873 17.6758C18.6615 17.6758 17.6758 18.6615 17.6758 19.873C17.6758 20.3148 17.8073 20.7262 18.0326 21.0711C17.6 21.3036 17.2119 21.6167 16.8913 21.9952C16.4636 21.3959 16.2109 20.6637 16.2109 19.873C16.2109 17.8538 17.8538 16.2109 19.873 16.2109C21.8923 16.2109 23.5352 17.8538 23.5352 19.873C23.5352 20.6637 23.2825 21.3959 22.8548 21.9952Z"
+                                                    fill="#FF006D"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0">
+                                                    <rect width="25" height="25" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <a class="bubble_link"
+                                           href="/affiliates/"><span>Партнёрская программа – новые условия получения премий</span></a>
+                                        <svg class="header-nav__bonus-link__bubble__close" width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8.63525 1.59588L7.82954 0.790161L4.63525 3.98445L1.44097 0.790161L0.635254 1.59588L3.82954 4.79016L0.635254 7.98445L1.44097 8.79016L4.63525 5.59588L7.82954 8.79016L8.63525 7.98445L5.44097 4.79016L8.63525 1.59588Z"
+                                                fill="#FF006D"/>
+                                        </svg>
+                                    </div>
+
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                       aria-expanded="true">Бонусы</a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a  href='/cashback/'>Кэшбэк</a></li>
+                                        <li><a  href='/affiliates'>Партнерская программа</a></li>
+                                    </ul>
+                                </li>
+
+                                    <li><a  href='/blog/'>Блог</a></li>
+                                <li class="nav-more dropdown">
+                                    <a href="#">Еще</a>
+
+                                        <ul class="nav-more__child">
+                                            <div class="nav-more__child-wrap">
+                                                <li><a href="/fast-buy/">Помощь с покупкой</a></li>
+                                                <li><a href="/size/">Как подобрать размер</a></li>
+                                                <li><a href="/black-list/">Черный список магазинов</a></li>
+                                                <li><a href="/forbidden-items/">Запрещенные к пересылке товары</a></li>
+                                            </div>
+                                        </ul>
+
+                                </li>
+                                <li>
+                                                    <a  href='/shops/' class='btn btn-default'>Магазины США</a>                    </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col r-col mob-nav col-lg-auto align-right nav--mb-test">
+                        <ul class="nav">
+                            <li class="autorization-lnk">
+                                <a href="/user-room/" class="autorization-lnk__user-login">Войти</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__top">
+                <div class="inner">
+
+                    <div class="footer__top-col">
+                        <p class="copyright">&copy; 2021 Pochtoy.com LLC . Все права защищены.</p>
+                        <address>
+                            510 Carroll Dr, New Castle, DE, 19720, United States<br>
+                            <a href="tel:+14125673010">+1 (412) 567-30-10</a>
+                        </address>
+                    </div>
+                    <div class="footer__top-col">
+                        <b class="footer__heading">Устанавливайте бота Телеграм</b>
+                        <ul class="social list-reset">
+                            <li class="social__item">
+                                <a class="social__link social__link--tg" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-col">
+                        <b class="footer__heading">Подписывайтесь на новости о распродажах</b>
+
+                        <ul class="social list-reset">
+                            <li class="social__item">
+                                <a class="social__link social__link--vk" href="#"></a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--fb" href="#"></a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--yt" href="#"></a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--in" href="#"></a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--in1" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="inner">
+                    <div class="footer__bottom-col">
+                        <b class="footer__heading">О компании</b>
+                        <ul class="footer__nav list-reset">
+                            <li class="footer__nav-item">
+                                <a href="#">Услуги</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Цены</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Вакансии</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Соглашение о персональных данных</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Условия использования</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__bottom-col">
+                        <b class="footer__heading">Полезное</b>
+                        <ul class="footer__nav list-reset">
+                            <li class="footer__nav-item">
+                                <a href="#">Как работает наш сервис</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Как покупать с оператором</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Ответы на частые вопросы</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Популярные магазины</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Черный список магазинов</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Актуальные распродажи</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Как подобрать американский размер</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Как рассчитать таможенную  пошлину</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Что мы не доставляем</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__bottom-col">
+                        <b class="footer__heading">Спецпроекты</b>
+                        <ul class="footer__nav list-reset">
+                            <li class="footer__nav-item">
+                                <a href="#">50% на первую доставку</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Скидки для постоянных клиентов</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Реферальная программа</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Кэшбек Mr. Rebates и Rakuten</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Гаражная распродажа</a>
+                            </li>
+                            <li class="footer__nav-item">
+                                <a href="#">Stop Fraud</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="onboards">
+
+            <div class="onboard--first onboard">
+                <div>
+                    <h3 class="onboard__heading onboard__heading--first">
+                        Спасибо, что зарегистрировались в&nbsp;Pochtoy.com
+                    </h3>
+                    <p class="onboard__text onboard__text--first ">
+                        Это небольшой гид по выгодным покупкам в США.
+                    </p>
+                    <button class="onboard__btn onboard__btn--content onboard__btn--first">Вперед</button>
+                </div>
+                <button class="onboards__btn-close" aria-label="Закрыть"></button>
+            </div>
+
+            <div class="onboards__wrapper">
+
+                <div class="onboards__swiper swiper-container">
+
+                    <ul class="onboards__list swiper-wrapper">
+
+                        <li class="onboard--bonus onboard swiper-slide">
+                            <div class="onboard__content onboard__content--bonus">
+                                <h3 class="onboard__heading">
+                                    Получайте $3 с&nbsp;каждой отправленной посылки
+                                </h3>
+                                <p class="onboard__text onboard__text--bonus">
+                                    Отправьте вашу персональную скидку 10% друзьям и знакомым и получайте $3 с каждой отправленной ими посылки.
+                                </p>
+                                <a class="onboard__btn onboard__btn--content" href="#">Подробнее</a>
+                            </div>
+                        </li>
+
+                        <li class="onboard--assortment onboard swiper-slide">
+                            <div class="onboard__content ">
+                                <h3 class="onboard__heading">
+                                    Что вы хотите купить?
+                                </h3>
+                                <p class="onboard__text">
+                                    Мы подготовили список лучших американских магазинов, чтобы вы&nbsp;смогли начать покупать прямо&nbsp;сейчас:
+                                </p>
+                                <div class="onboard__links-wrapper">
+                                    <div class="onboard__links">
+                                        <a class="onboard__link" href="#">Популярные магазины</a>
+                                        <a class="onboard__link" href="#">Спорт</a>
+                                        <a class="onboard__link" href="#">Одежда и обувь</a>
+                                        <a class="onboard__link" href="#">Товары для детей</a>
+                                        <a class="onboard__link" href="#">Активный образ жизни</a>
+                                        <a class="onboard__link" href="#">Косметика</a>
+                                        <a class="onboard__link" href="#">Электроника и фото техника</a>
+                                        <a class="onboard__link" href="#">Часы и ювелирные изделия</a>
+                                        <a class="onboard__link" href="#">Музыкальные инструменты</a>
+                                        <a class="onboard__link" href="#">Товары для детей</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="onboard--online-help onboard swiper-slide">
+                            <div class="onboard__content">
+                                <h3 class="onboard__heading">
+                                    Не хотите покупать самостоятельно?
+                                </h3>
+                                <p class="onboard__text onboard__text--online-help">
+                                    Воспользуйтесь помощью с покупками в США от наших операторов.
+                                </p>
+                                <a class="onboard__btn onboard__btn--content" href="#">Воспользоваться</a>
+                            </div>
+                        </li>
+
+                        <li class="onboard--stocks onboard swiper-slide">
+                            <div class="onboard__content">
+                                <h3 class="onboard__heading onboard__heading--stocks">
+                                    Как узнавать про актуальные распродажи в&nbsp;Америке?
+                                </h3>
+                                <p class="onboard__text">
+                                    Чтобы узнать про актуальные распродажи загляните в&nbsp;раздел&nbsp;«Скидки в США».Раздел обновляется каждую пятницу.
+                                </p>
+                                <a class="onboard__btn onboard__btn--content" href="#">Что купить со скидкой</a>
+                            </div>
+                        </li>
+
+                        <li class="onboard--guide onboard swiper-slide">
+                            <div class="onboard__content">
+                                <h3 class="onboard__heading">
+                                    Не знаете, как определить свой американский размер?
+                                </h3>
+                                <p class="onboard__text">
+                                    Мы подготовили для вас очень подробный гид.
+                                </p>
+                                <a class="onboard__btn onboard__btn--content" href="#">Определить размер</a>
+                            </div>
+                        </li>
+
+                        <li class="onboard--cashback onboard swiper-slide">
+                            <div class="onboard__content">
+                                <h3 class="onboard__heading">
+                                    Зарегистрируйтесь в&nbsp;кэшбэк&nbsp;сервисах
+                                </h3>
+                                <p class="onboard__text">
+                                    Чтобы получить на счет <span class="onboard__bold">$20</span> после первой покупки и&nbsp;вернуть кэшбэком до <span class="onboard__bold">30%</span> от стоимости товаров.
+                                </p>
+                                <a class="onboard__btn onboard__btn--content" href="#">Подробнее</a>
+                            </div>
+                        </li>
+
+                        <li class="onboard--account onboard swiper-slide">
+                            <div class="onboard__content">
+                                <h3 class="onboard__heading onboard__heading--account">
+                                    Переходите в личный кабинет, чтобы посмотреть ваш адрес в США.
+                                </h3>
+                                <p class="onboard__text onboard__text--account">
+                                    Обратите внимание на STE – это номер вашей персональной ячейки в Pochtoy.com, не забывайте указывать его в адресе, когда отправляете нам посылку.
+                                </p>
+                                <a class="onboard__btn onboard__btn--content" href="#">Посмотреть адрес</a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <button class="onboards__btn-close" aria-label="Закрыть"></button>
+                    <button class="onboards__btn onboards__btn--nav onboards__btn--next onboard__swiper-next">Далее</button>
+                    <button class="onboards__btn onboards__btn--nav onboards__btn--close onboards__hide">Завершить</button>
+                    <div class="onboards__buttons-nav"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="msg-box">
+            <div class="message"></div>
+            <button class="close"></button>
+        </div>
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,500italic,700italic&subset=latin,cyrillic,cyrillic-ext"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/css/v4/fonts.css" type="text/css"/>
+
+    </div>
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script src="js/onboard.js"></script>
+</body>
+</html>

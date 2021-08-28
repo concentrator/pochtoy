@@ -2665,3 +2665,457 @@
   margin-right: 10px;
   margin-bottom: 10px;
 }
+
+.onboard {
+  padding: 82px 50px 30px 60px;
+  width: 701px;
+  min-height: 671px;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .onboard {
+    padding: 98px 30px 30px 30px;
+    width: 375px;
+    min-height: 667px;
+  }
+}
+
+@media (max-width: 375px) {
+  .onboard {
+    width: 320px;
+  }
+}
+
+.onboard--first {
+  position: fixed;
+  z-index: 2003;
+  border-radius: 10px;
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%) translateX(50%);
+  background-image: url("../../img/onboard/background-first.svg"), url("../../img/onboard/background-wave-first.svg");
+  background-position: 60px 218px,-140px 254px;
+}
+
+@media (max-width: 768px) {
+  .onboard--first {
+    background-image: url("../../img/onboard/background-first-mobile.svg"), url("../../img/onboard/background-wave-first-mobile.svg");
+    background-position: 0px 265px,-82px 243px;
+    width: 374px;
+    min-height: 666px;
+  }
+}
+
+@media (max-width: 375px) {
+  .onboard--first {
+    width: 320px;
+  }
+}
+
+.onboard--fadeout {
+  opacity: 0;
+  transition-property: opacity, z-index;
+  transition-delay: 0s, 0.3s;
+  transition-duration: 0.2s, 0s;
+  transition-timing-function: linear;
+  z-index: 2000;
+}
+
+.onboard--bonus {
+  background-image: url("../../img/onboard/bonus.svg"), url("../../img/onboard/background-bonus.svg");
+  background-position: 80px 339px,-110px 247px;
+}
+
+@media (max-width: 768px) {
+  .onboard--bonus {
+    background-image: url("../../img/onboard/bonus.svg"), url("../../img/onboard/background-bonus-mobile.svg");
+    background-size: 267px 279px, auto;
+    background-position: 9px 409px,-168px 254px;
+  }
+}
+
+.onboard--assortment {
+  background-image: url("../../img/onboard/assortment.svg"), url("../../img/onboard/background-assortment.svg");
+  background-position: -69px 199px,-195px 251px;
+}
+
+@media (max-width: 768px) {
+  .onboard--assortment {
+    background-image: url("../../img/onboard/assortment.svg"), url("../../img/onboard/background-assortment-mobile.svg");
+    background-size: 298px 298px, auto;
+    background-position: -47px 392px,-179px 245px;
+  }
+}
+
+.onboard--online-help {
+  background-image: url("../../img/onboard/online-help.svg"), url("../../img/onboard/background-online-help.svg");
+  background-position: 119px 180px,-58px 169px;
+}
+
+@media (max-width: 768px) {
+  .onboard--online-help {
+    background-image: url("../../img/onboard/online-help.svg"), url("../../img/onboard/background-online-help-mobile.svg");
+    background-size: 359px 359px, auto;
+    background-position: 9px 259px,-88px 254px;
+  }
+}
+
+.onboard--stocks {
+  padding-right: 40px;
+  background-image: url("../../img/onboard/stocks.svg"), url("../../img/onboard/background-stocks.svg");
+  background-position: -63px 71px,-231px 287px;
+}
+
+@media (max-width: 768px) {
+  .onboard--stocks {
+    background-image: url("../../img/onboard/stocks-mobile.svg"), url("../../img/onboard/background-stocks-mobile.svg");
+    background-position: 1px 238px,-173px 338px;
+  }
+}
+
+.onboard--guide {
+  background-image: url("../../img/onboard/guide.svg"), url("../../img/onboard/background-guide.svg");
+  background-position: 80px 271px,-214px 175px;
+}
+
+@media (max-width: 768px) {
+  .onboard--guide {
+    background-image: url("../../img/onboard/guide.svg"), url("../../img/onboard/background-guide-mobile.svg");
+    background-size: 444px 343px, auto;
+    background-position: -75px 354px, -146px 288px;
+  }
+}
+
+.onboard--cashback {
+  padding-right: 70px;
+  background-image: url("../../img/onboard/cashback.svg"), url("../../img/onboard/background-cashback.svg");
+  background-position: 20px 277px,-152px 302px;
+}
+
+@media (max-width: 768px) {
+  .onboard--cashback {
+    padding-right: 60px;
+    background-image: url("../../img/onboard/cashback-mobile.svg"), url("../../img/onboard/background-cashback-mobile.svg");
+    background-position: 1px 294px,-240px 297px;
+  }
+}
+
+.onboard--account {
+  background-image: url("../../img/onboard/account.svg"), url("../../img/onboard/background-account.svg");
+  background-position: 136px 241px,-227px 305px;
+}
+
+@media (max-width: 768px) {
+  .onboard--account {
+    background-image: url("../../img/onboard/account-mobile.svg"), url("../../img/onboard/background-account-mobile.svg");
+    background-position: 17px 334px,-170px 303px;
+  }
+}
+
+.onboard__heading {
+  position: relative;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  color: #263238;
+  margin: 0 0 49px 0 !important;
+}
+
+.onboard__heading::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 4px;
+  background: #FF006D;
+  bottom: -28px;
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .onboard__heading {
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0 0 51px 0 !important;
+  }
+  .onboard__heading::after {
+    bottom: -30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .onboard__heading--first {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.onboard__heading--bonus {
+  max-width: 494px;
+}
+
+.onboard__heading--stocks {
+  margin: 0 0 60px 0 !important;
+}
+
+@media (max-width: 768px) {
+  .onboard__heading--stocks {
+    margin: 0 0 51px 0 !important;
+  }
+}
+
+.onboard__heading--account {
+  max-width: 453px;
+}
+
+.onboard__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #263238;
+  margin: 0 0 30px 0;
+}
+
+@media (max-width: 768px) {
+  .onboard__text {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 21px;
+  }
+}
+
+.onboard__bold {
+  font-weight: 700;
+}
+
+.onboard__text--first {
+  max-width: 277px;
+}
+
+@media (max-width: 768px) {
+  .onboard__text--first {
+    font-size: 14px;
+  }
+}
+
+.onboard__text--bonus {
+  max-width: 495px;
+}
+
+.onboard__text--online-help {
+  max-width: 381px;
+}
+
+.onboard__text--account {
+  max-width: 541px;
+}
+
+.onboard__btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: 11px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.onboard__btn--content {
+  background-color: #FF006D;
+  transition: box-shadow 0.3s linear;
+}
+
+.onboard__btn--content:hover {
+  box-shadow: 0 10px 25px rgba(255, 0, 109, 0.4);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.onboard__links-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .onboard__links-wrapper {
+    justify-content: flex-start;
+  }
+}
+
+.onboard__links {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 310px;
+}
+
+@media (max-width: 768px) {
+  .onboard__links {
+    max-width: 100%;
+  }
+}
+
+.onboard__link {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  margin-right: 9px;
+  margin-bottom: 5px;
+  color: #263238;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .onboard__link {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.onboards {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.27);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  z-index: 2001;
+}
+
+.onboards__wrapper {
+  box-shadow: 0 0 51px rgba(1, 1, 1, 0.4);
+  position: fixed;
+  z-index: 2002;
+  width: 700px;
+  top: 50%;
+  right: 50%;
+  border-radius: 10px;
+  transform: translateY(-50%) translateX(50%);
+}
+
+@media (max-width: 768px) {
+  .onboards__wrapper {
+    width: 374px;
+  }
+}
+
+@media (max-width: 375px) {
+  .onboards__wrapper {
+    width: 320px;
+  }
+}
+
+.onboards__swiper {
+  border-radius: 10px;
+}
+
+.onboards__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.onboards__btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding: 11px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.onboards__btn--nav {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  background-color: #37474f;
+  transition: box-shadow 0.3s linear;
+}
+
+.onboards__btn--nav:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 25px #586271;
+}
+
+.onboards__btn--next,
+.onboards__btn--close {
+  z-index: 2;
+}
+
+.onboards__buttons-nav {
+  display: inline-block;
+  position: absolute;
+  top: 23px !important;
+  left: 286px !important;
+  z-index: 1;
+  bottom: auto !important;
+}
+
+@media (max-width: 768px) {
+  .onboards__buttons-nav {
+    top: 33px !important;
+    right: auto;
+    left: 31px !important;
+  }
+}
+
+.onboards__btn-nav {
+  width: 11px;
+  height: 4px;
+  border-radius: 20px;
+  margin: 0 5px 0 0 !important;
+  padding: 0;
+  background-color: #e8e8e8;
+}
+
+.onboards__btn-nav:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .onboards__btn-nav {
+    width: 6px;
+    margin-right: 2px;
+  }
+}
+
+.onboards__btn-nav--active {
+  width: 30px;
+  background-color: #FF006D;
+}
+
+@media (max-width: 768px) {
+  .onboards__btn-nav--active {
+    width: 18px;
+  }
+}
+
+.onboards__btn-close {
+  position: absolute;
+  border: none;
+  outline: none;
+  background: url("../../img/onboard/icon-close.svg") transparent;
+  width: 24px;
+  height: 24px;
+  top: 28px;
+  right: 28px;
+  z-index: 4;
+}
+
+.onboards__btn-close:hover {
+  cursor: pointer;
+}
+
+.onboards__hide {
+  display: none;
+}
