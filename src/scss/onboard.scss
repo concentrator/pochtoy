@@ -3,6 +3,7 @@
     width: 701px;
     min-height: 671px;
     background-repeat: no-repeat;
+    background-color: $white;
     margin: 0;
 
     @media (max-width: 768px) {
@@ -20,7 +21,6 @@
     background-color: $white;
     position: fixed;
     z-index: 2003;
-    width: 701px;
     border-radius: 10px;
     overflow: hidden;
     top: 50%;

@@ -29,7 +29,6 @@
 }
 
 .onboards__swiper {
-    background-color: $white;
     border-radius: 10px;
 }
 
@@ -37,7 +36,6 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    /*display: flex; /*Временно, пока они вряд выставленны*/
 }
 
 .onboards__btn {
@@ -79,9 +77,9 @@
     z-index: 1;
 
     @media (max-width: 768px) {
-        top: 33px;
+        top: 33px !important;
         right: auto;
-        left: 31px;
+        left: 31px !important;
     }
 }
 
@@ -131,25 +129,3 @@
 .onboards__hide {
     display: none;
 }
-
-@keyframes darkening {
-    0% {
-      opacity: 100%;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
-.onboards__darkening {
-    transition: all 1s ease 0s;
-    opacity: 0;
-    /*animation-name: darkening;
-    animation-duration: 1s;
-    z-index: 0;*/
-}
-
-
-
-
-
