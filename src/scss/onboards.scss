@@ -11,6 +11,7 @@
 
 .onboards__wrapper {
     background-color: $white;
+    box-shadow: 0 0 51px rgba(1,1,1, 0.4);
     position: fixed;
     z-index: 2002;
     width: 701px;
@@ -127,3 +128,41 @@
 .onboards__hide {
     display: none;
 }
+
+/*.onboard-over {
+    background-color: $white;
+    position: fixed;
+    z-index: 2003;
+    width: 701px;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);
+}
+
+.onboards__index {
+    z-index: 2020;
+}
+
+@keyframes darkening {
+    0% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+.onboards__darkening {
+    transition: all 1s ease 0s;
+    opacity: 0;
+    /*animation-name: darkening;
+    animation-duration: 1s;
+    z-index: 0;
+}
+
+*/
+
+
+
