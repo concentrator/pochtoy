@@ -18,11 +18,9 @@
 }
 
 .onboard--first {
-    background-color: $white;
     position: fixed;
     z-index: 2003;
     border-radius: 10px;
-    overflow: hidden;
     top: 50%;
     right: 50%;
     transform: translateY(-50%) translateX(50%);
@@ -34,6 +32,12 @@
         background-image: url("/img/onboard/background-first-mobile.svg"),
         url("/img/onboard/background-wave-first-mobile.svg");
         background-position: 0px 265px,-82px 243px;
+        width: 374px;
+        min-height: 666px;
+    }
+
+    @media (max-width: 375px) {
+        width: 320px;
     }
 }
 
