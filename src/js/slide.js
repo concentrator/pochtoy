@@ -11,7 +11,7 @@ let slideList = document.querySelector(".onboards__swiper");
 let slideFirst = document.querySelector(".onboard--first");
 
 var onboardSwiper = new Swiper(".onboards__swiper", {
-    loop: true,
+    loop: false,
     centeredSlides: true,
     slidesPerView: 1,
     // breakpoints: {
@@ -55,6 +55,4 @@ slideFirst.addEventListener("click", function(e) {
     activeSlide = nextSlide;
 });*/
 
-btnFirst.addEventListener("click", function() {
-    slideFirst.classList.add("onboards__darkening");
-});
+
