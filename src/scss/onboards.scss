@@ -36,7 +36,20 @@
     /*display: flex; /*Временно, пока они вряд выставленны*/
 }
 
-.onboards__btn--next {
+.onboards__btn {
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 11px 20px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: $white;
+    border-radius: 10px;
+}
+
+
+.onboards__btn--nav {
     position: absolute;
     right: 30px;
     bottom: 30px;
@@ -49,11 +62,16 @@
     }
 }
 
+.onboards__btn--next {
+    z-index: 2;
+}
+
 .onboards__buttons-nav {
     display: inline-block;
     position: absolute;
-    top: 23px;
-    right: 259px;
+    top: 23px !important;
+    left: 286px !important;
+    z-index: 1;
 
     @media (max-width: 768px) {
         top: 33px;
@@ -66,7 +84,7 @@
     width: 11px;
     height: 4px;
     border-radius: 20px;
-    margin: 0 5px 0 0;
+    margin: 0 5px 0 0 !important;
     padding: 0;
     background-color: $grey-light4;
 
@@ -98,6 +116,7 @@
     height: 24px;
     top: 28px;
     right: 28px;
+    z-index: 2;
 
     &:hover {
         cursor: pointer;

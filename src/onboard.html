@@ -301,14 +301,14 @@
 
         </div>
 
-        <div class="onboards">
+        <div class="onboards onboards__close">
             <div class="onboards__wrapper">
                 <div class="onboards__swiper swiper-container">
 
                     <ul class="onboards__list swiper-wrapper">
 
                         <li class="onboard--first onboard swiper-slide">
-                            <div class="onboard__content onboard__content--first ">
+                            <div class="onboard__content onboard__content--first onboard__swiper-next">
                                 <h3 class="onboard__heading onboard__heading--first">
                                     Спасибо, что зарегистрировались в&nbsp;Pochtoy.com
                                 </h3>
@@ -418,19 +418,10 @@
 
                     </ul>
 
-
-                    <button class="onboards__btn-close" aria-label="Закрыть"></button>
-                    <button class="onboards__btn onboards__btn--next ">Далее</button>
-                    <button class="onboards__btn onboards__btn--next ">Завершить</button>
-                    <div class="onboards__buttons-nav ">
-                        <button class="onboards__btn-nav onboards__btn-nav--active"></button>
-                        <button class="onboards__btn-nav"></button>
-                        <button class="onboards__btn-nav"></button>
-                        <button class="onboards__btn-nav"></button>
-                        <button class="onboards__btn-nav"></button>
-                        <button class="onboards__btn-nav"></button>
-                        <button class="onboards__btn-nav"></button>
-                    </div>
+                    <button class="onboards__btn-close onboards__close" aria-label="Закрыть"></button>
+                    <button class="onboards__btn onboards__btn--nav onboards__btn--next onboards__hide onboard__swiper-next">Далее</button>
+                    <button class="onboards__btn onboards__btn--nav onboards__close ">Завершить</button>
+                    <div class="onboards__buttons-nav onboards__hide"></div>
                 </div>
             </div>
         </div>
@@ -454,5 +445,6 @@
 
     </div>
     <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+    <script src="/js/slide.js"></script>
 </body>
 </html>
