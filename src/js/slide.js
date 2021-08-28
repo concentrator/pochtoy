@@ -15,6 +15,7 @@ var onboardSwiper = new Swiper(".onboards__swiper", {
     loop: false,
     centeredSlides: true,
     slidesPerView: 1,
+    resistanceRatio: 0,
     // breakpoints: {
     //     768: {
     //         width: 701
@@ -54,9 +55,19 @@ btnCloses.forEach(function(btnClose, i, btnCloses) {
     });
 });
 
+btnCloseNext.addEventListener ('click', function() {
+    onboards.classList.add('onboards__hide');
+});
+
 btnFirst.addEventListener ('click', function() {
     slideFirst.classList.add('onboard--fadeout');
 });
+
+onboardSwiper.on('reachEnd', function () {
+    btnCloseNext.classList.remove('onboards__hide');
+    btnNext.classList.add('onboards__hide');
+});
+
 
 
 /*btnFirst.addEventListener("click", function() {
