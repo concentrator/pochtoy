@@ -68,6 +68,12 @@ onboardSwiper.on('reachEnd', function () {
     btnNext.classList.add('onboards__hide');
 });
 
+onboardSwiper.on('slidePrevTransitionStart', function (e) {
+    if (e.realIndex === slides.length - 2) {
+        btnCloseNext.classList.add('onboards__hide');
+        btnNext.classList.remove('onboards__hide');
+    }
+});
 
 
 /*btnFirst.addEventListener("click", function() {
