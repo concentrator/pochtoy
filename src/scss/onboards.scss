@@ -132,22 +132,6 @@
     display: none;
 }
 
-.onboard-over {
-    background-color: $white;
-    position: fixed;
-    z-index: 2003;
-    width: 701px;
-    border-radius: 10px;
-    overflow: hidden;
-    top: 50%;
-    right: 50%;
-    transform: translateY(-50%) translateX(50%);
-}
-
-.onboards__index {
-    z-index: 2020;
-}
-
 @keyframes darkening {
     0% {
       opacity: 100%;

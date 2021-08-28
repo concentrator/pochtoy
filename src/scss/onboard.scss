@@ -17,6 +17,15 @@
 }
 
 .onboard--first {
+    background-color: $white;
+    position: fixed;
+    z-index: 2003;
+    width: 701px;
+    border-radius: 10px;
+    overflow: hidden;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);
     background-image: url("/img/onboard/background-first.svg"),
         url("/img/onboard/background-wave-first.svg");
     background-position: 60px 218px,-140px 254px;
@@ -26,6 +35,15 @@
         url("/img/onboard/background-wave-first-mobile.svg");
         background-position: 0px 265px,-82px 243px;
     }
+}
+
+.onboard--fadeout {
+    opacity: 0;
+    transition-property: opacity, z-index;
+    transition-delay: 0s, 0.3s;
+    transition-duration: 0.2s, 0s;
+    transition-timing-function: linear;
+    z-index: 2000;
 }
 
 .onboard--bonus {

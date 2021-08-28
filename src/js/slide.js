@@ -55,7 +55,7 @@ btnCloses.forEach(function(btnClose, i, btnCloses) {
 });
 
 btnFirst.addEventListener ('click', function() {
-    slide.classList.add('onboards__index');
+    slideFirst.classList.add('onboard--fadeout');
 });
 
 
