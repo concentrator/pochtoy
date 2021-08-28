@@ -1,4 +1,4 @@
-let btnCloses = document.querySelectorAll(".onboards__close");
+let btnCloses = document.querySelectorAll(".onboards__btn-close");
 let slide = document.querySelector(".onboards__wrapper");
 let slides = document.querySelectorAll(".swiper-slide");
 let btnCloseNext = document.querySelector(".onboards__btn--close");
@@ -9,6 +9,7 @@ let freeClose = document.querySelector(".onboards");
 let activeSlide = document.querySelector(".onboard__slide-active");
 let slideList = document.querySelector(".onboards__swiper");
 let slideFirst = document.querySelector(".onboard--first");
+const onboards = document.querySelector('.onboards');
 
 var onboardSwiper = new Swiper(".onboards__swiper", {
     loop: false,
@@ -32,19 +33,31 @@ var onboardSwiper = new Swiper(".onboards__swiper", {
     },
 });
 
-for (btnClose of btnCloses) {
-    btnClose.addEventListener("click", function() {
-        freeClose.classList.add("onboards__hide");
-    });
+const onboardsPointerUpHandler = function(e) {
+    e.preventDefault();
+    if (e.target === onboards) {
+        onboards.classList.add('onboards__hide');
+        onboards.removeEventListener('pointerup', onboardsPointerUpHandler);
+    }
 };
 
-slide.addEventListener("click", function(e) {
-    e.stopPropagation();
+onboards.addEventListener('pointerdown', function(e) {
+    e.preventDefault();
+    if (e.target === onboards) {
+        onboards.addEventListener('pointerup', onboardsPointerUpHandler);
+    }
 });
 
-slideFirst.addEventListener("click", function(e) {
-    e.stopPropagation();
+btnCloses.forEach(function(btnClose, i, btnCloses) {
+    btnClose.addEventListener ('click', function() {
+        onboards.classList.add('onboards__hide');
+    });
 });
+
+btnFirst.addEventListener ('click', function() {
+    slide.classList.add('onboards__index');
+});
+
 
 /*btnFirst.addEventListener("click", function() {
     btnNext.classList.remove("onboards__hide");

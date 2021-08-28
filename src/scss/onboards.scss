@@ -10,15 +10,13 @@
 }
 
 .onboards__wrapper {
-    background-color: $white;
     box-shadow: 0 0 51px rgba(1,1,1, 0.4);
     position: fixed;
     z-index: 2002;
-    width: 701px;
-    border-radius: 10px;
-    overflow: hidden;
+    width: 700px;
     top: 50%;
     right: 50%;
+    border-radius: 10px;
     transform: translateY(-50%) translateX(50%);
 
     @media (max-width: 768px) {
@@ -28,6 +26,11 @@
     @media (max-width: 375px) {
         width: 320px;
     }
+}
+
+.onboards__swiper {
+    background-color: $white;
+    border-radius: 10px;
 }
 
 .onboards__list {
@@ -118,7 +121,7 @@
     height: 24px;
     top: 28px;
     right: 28px;
-    z-index: 2;
+    z-index: 4;
 
     &:hover {
         cursor: pointer;
@@ -129,7 +132,7 @@
     display: none;
 }
 
-/*.onboard-over {
+.onboard-over {
     background-color: $white;
     position: fixed;
     z-index: 2003;
@@ -159,10 +162,10 @@
     opacity: 0;
     /*animation-name: darkening;
     animation-duration: 1s;
-    z-index: 0;
+    z-index: 0;*/
 }
 
-*/
+
 
 
 
