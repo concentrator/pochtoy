@@ -42,6 +42,7 @@
     background: url("/img/promo-code/close.svg"), #5CCEB0;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 }
 
 .promo-code__text {
@@ -123,4 +124,8 @@
         left: -23px;
         top: 1px;
     }
+}
+
+.promo-code__hide {
+    display: none;
 }
