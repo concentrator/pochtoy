@@ -5,7 +5,7 @@
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    background: $grey;
+    background: $white;
     border-radius: 7px;
 
     @media (max-width: 924px) {
@@ -19,6 +19,10 @@
 .promo-code__content {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 924px) {
+        flex-direction: column;
+    }
 }
 
  .promo-code__code-wrapper {
@@ -47,6 +51,11 @@
     color: $black;
     width: 260px;
     margin: 0 45px 0 0;
+
+    @media (max-width: 924px){
+        margin: 0 auto 23px auto;
+        text-align: center;
+    }
 }
 
 .promo-code__text span {
@@ -74,6 +83,10 @@
     margin: 0 0 3px 0;
     padding-top: 3px;
     padding-left: 5px;
+
+    @media (max-width: 924px) {
+        margin: 0 auto;
+    }
 }
 
 .promo-code__code-link {
@@ -87,6 +100,11 @@
     width: 200px;
     text-align: end;
     padding-top: 23px;
+
+    @media (max-width: 924px) {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .gratitude__date-time time {
