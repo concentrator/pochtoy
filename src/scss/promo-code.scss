@@ -1,0 +1,108 @@
+.promo-code {
+    position: fixed;
+    width: 887px;
+    padding: 52px 41px 40px 86px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background: $grey;
+    border-radius: 7px;
+
+    @media (max-width: 924px) {
+        max-width: 375px;
+        padding: 40px 10px 40px 10px;
+        text-align: center;
+        min-height: min-content;
+    }
+}
+
+.promo-code__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+ .promo-code__code-wrapper {
+    text-align: center;
+    padding-top: 7px;
+}
+
+.promo-code__btn-close {
+    position: absolute;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+    top: -17px;
+    right: -19px;
+    background: url("/img/promo-code/close.svg"), #5CCEB0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.promo-code__text {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    color: $black;
+    width: 260px;
+    margin: 0 45px 0 0;
+}
+
+.promo-code__text span {
+    display: inline-block;
+    background-color: $pink;
+    border-radius: 5px;
+    width: 55px;
+    height: 40px;
+    text-align: center;
+    color: $white;
+    margin-left: 8px;
+}
+
+.promo-code__code {
+    width: 256px;
+    height: 59px;
+    border: 2px solid $pink;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.1em;
+    color: $pink;
+    text-align: center;
+    margin: 0 0 3px 0;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+
+.promo-code__code-link {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 10px;
+    color: #5B72EC;
+}
+
+.gratitude__date-time {
+    width: 200px;
+    text-align: end;
+    padding-top: 23px;
+}
+
+.gratitude__date-time time {
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #73758E;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-image: url("/img/promo-code/icon-date.svg");
+        left: -23px;
+        top: 1px;
+    }
+}
