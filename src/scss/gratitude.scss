@@ -87,4 +87,9 @@
     background: url("/img/gratitude/close.svg"), #5CCEB0;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
+}
+
+.gratitude__hide {
+    display: none;
 }
