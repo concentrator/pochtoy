@@ -1,0 +1,49 @@
+.nr-my-coupon {
+    position: relative;
+    width: 245px;
+    padding: 51px 20px 71px 20px;
+    border-radius: 7px;
+    background-color: bisque;
+    text-align: center;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: url(/img/promo-code/);
+    }
+}
+
+.nr-my-coupon__text {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: $black;
+    margin-bottom: 26px;
+}
+
+.nr-my-coupon__code {
+    width: 197px;
+    min-height: 58px;
+    border: 2px solid $pink;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    border-radius: 5px;
+    font-family: "Gilroy", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    color: $pink;
+    margin: 0 auto 7px auto;
+    padding-top: 13px;
+    padding-left: 3px;
+}
+
+.nr-my-coupon__code-link {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 10px;
+    color: #5B72EC;
+}
