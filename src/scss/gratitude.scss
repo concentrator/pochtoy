@@ -12,10 +12,14 @@
     border-radius: 7px;
 
     @media (max-width: 924px) {
-        max-width: 375px;
+        width: 375px;
         padding: 40px 10px 40px 10px;
         text-align: center;
         min-height: min-content;
+    }
+
+    @media (max-width: 420px) {
+        width: 320px;
     }
 }
 
