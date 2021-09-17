@@ -1,9 +1,10 @@
 .nr-my-coupon {
     position: relative;
     width: 245px;
-    padding: 51px 20px 71px 20px;
+    min-height: 297px;
+    padding: 51px 20px 65px 20px;
     border-radius: 7px;
-    background-color: bisque;
+    background-color: white;
     text-align: center;
 
     &::before {
@@ -11,7 +12,10 @@
         content: "";
         width: 15px;
         height: 15px;
-        background: url(/img/promo-code/);
+        background: url("/img/promo-code/icon-date.svg");
+        bottom: 29px;
+        right: 50%;
+        transform: translateX(50%);
     }
 }
 
