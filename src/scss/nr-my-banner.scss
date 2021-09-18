@@ -1,0 +1,73 @@
+.nr-my-banner {
+    max-width: 749px;
+    padding: 40px 70px 42px 70px;
+    background: url("/img/nr-my-banner/background.png"), #5DB0A6;
+    background-repeat: no-repeat;
+    background-position: 420px 58px;
+    border-radius: 7px;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        background: #5DB0A6;
+        padding: 40px 20px 42px 20px;
+    }
+}
+
+.nr-my-banner__content {
+    width: 345px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.nr-my-banner__heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: $white;
+    margin: 0 0 15px 0 !important;
+
+    @media (max-width: 596px) {
+        font-size: 28px;
+        line-height: 33px;
+    }
+}
+
+.nr-my-banner__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: $white;
+    margin: 0 0 17px 0;
+
+    @media (max-width: 596px) {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.nr-my-banner__btn {
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 0 22px;
+    border-radius: 5px;
+    background: $white;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 40px;
+    color: #5DB0A6;
+    transition: box-shadow 0.3s linear;
+
+    @media (max-width: 596px) {
+        width: 100%;
+    }
+
+    &:hover {
+        box-shadow: 0 10px 25px $white-1;
+        color: #5DB0A6;
+        cursor: pointer;
+    }
+}
